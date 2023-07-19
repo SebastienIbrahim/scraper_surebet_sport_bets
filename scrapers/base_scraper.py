@@ -4,6 +4,16 @@ from bs4 import BeautifulSoup
 from lxml import etree
 from utils.helpers import Driver
 from urllib.parse import urlparse
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from utils.logger import setup_scraper_logger, setup_error_logger, setup_captcha_logger
+
+scrapper_logger, error_logger, captcha_logger = (
+    setup_scraper_logger(),
+    setup_error_logger(),
+    setup_captcha_logger(),
+)
 
 
 class BaseScraper:
@@ -20,7 +30,9 @@ class BaseScraper:
     def __init__(self, site_config, settings):
         self.home_page = site_config["home_page"]
         self.absolute_url = site_config["absolute_url"]
-        self.tags = site_config["tags"]
+        self.tags_chamionship = site_config["tags_chamionship"]
+        self.tags_button = site_config["tags_button"]
+        self.tags_odd = site_config["tags_odd"]
         self.sleep_delay = settings["sleep_delay"]
         self.driver = Driver(port=settings["port"])
 
@@ -43,6 +55,40 @@ class BaseScraper:
             # TODO: log this exception wtih logging module and also display with popupmsg alert
         return bs
 
+    def accept_cookies(self, cookie_selector: str) -> None:
+        try:
+            # Rechercher le bouton/élément pour accepter les cookies (utilisez le sélecteur approprié)
+            # Exemple : recherche par XPath
+            accept_button = self.driver.driver.find_element(By.XPATH, cookie_selector)
+
+            wait = WebDriverWait(self.driver.driver, 10)
+            wait.until(EC.element_to_be_clickable((By.XPATH, cookie_selector)))
+            # Cliquer sur le bouton pour accepter les cookies
+            accept_button.click()
+            scrapper_logger.info("Cookies accepted")
+        except Exception as e:
+            msg = f"This exception: {e} was raise when we try to accept cookies"
+            error_logger.error(msg)
+
+    def safe_get(self, page_obj: BeautifulSoup, selector: str) -> list[etree._Element]:
+        """Get the text of the element selected by the selector passed in parameter
+
+        Args:
+            page_obj (BeautifulSoup): The page object to get the text from the element selected by the selector
+            selector (str): The selector to select the element to get the text from
+
+        Returns:
+            str: The text of the element selected by the selector
+        """
+        if isinstance(page_obj, BeautifulSoup):
+            page_obj = etree.HTML(str(page_obj))
+        try:
+            selected_elems = page_obj.xpath(selector)
+        except Exception as e:
+            print(e)
+            selected_elems = []
+        return selected_elems
+
     def click_on_button(self, button_selector: str) -> None:
         """Click on a button
 
@@ -50,7 +96,8 @@ class BaseScraper:
             button_selector (str): The selector of the button to click on
         """
         try:
-            button = self.driver.find_element_by_xpath(button_selector)
+            button = self.driver.driver.find_element(By.XPATH, button_selector)
+            print("button", button)
             button.click()
         except Exception as e:
             msg = f"This exception: {e} was raise when we try to click on the button: {button_selector}"
@@ -64,24 +111,6 @@ class BaseScraper:
                 self.sleep_delay.get("max_secondes", 60),
             )
         )
-
-    def safe_get(self, page_obj: BeautifulSoup, selector: str) -> str:
-        """Get the text of the element selected by the selector passed in parameter
-
-        Args:
-            page_obj (BeautifulSoup): The page object to get the text from the element selected by the selector
-            selector (str): The selector to select the element to get the text from
-
-        Returns:
-            str: The text of the element selected by the selector
-        """
-        selected_elems = etree.HTML(str(page_obj)).xpath(selector)
-        if selected_elems is not None and len(selected_elems) > 0:
-            try:
-                return "\n".join([elem.text.strip() for elem in selected_elems])
-            except Exception as e:
-                return "\n".join([elem for elem in selected_elems])
-        return ""
 
     def check_captcha(self, page_obj: BeautifulSoup) -> bool:
         """Check if the page has captcha
