@@ -1,0 +1,24 @@
+parionsport:
+  url_home_page: https://www.enligne.parionssport.fdj.fr
+  tags_chamionship:
+    sport: //li[@class="psel-quicknav__item"]
+    sport_name: //span[@pselautotestid="quick_nav_ept_sport_lbl"]/text()
+      country_name: //span[@pselautotestid="quick_nav_ept_category_lbl"]
+        link_championship: //a[@pseltcclick="quickaccess_eptCompetition"]//@href
+        championship_name: //a[@pseltcclick="quickaccess_eptCompetition"]//text()
+  button_tag:
+    bet_type: //button[@class="psel-filters__label" and contains(., "1 N 2") and not(contains(., "Handicap"))]
+  tags_odd : 
+    bloc_match: //psel-event-main
+      date_hours: //time[@class="psel-timer"]/text() 
+        bloc_odd: //psel-templates
+          bloc_name_team_and_odd:
+            name_team : //p[@class="psel-market__label"]
+            odd : //span[@class="psel-outcome__data"]/text()
+            match: //div[@class="psel-market__col"]/text()
+
+
+
+
+
+
