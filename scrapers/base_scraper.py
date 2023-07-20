@@ -32,6 +32,7 @@ class BaseScraper:
         self.absolute_url = site_config["absolute_url"]
         self.tags_chamionship = site_config["tags_chamionship"]
         self.tags_button = site_config["tags_button"]
+        self.data_odd_type = site_config["data-odd-type"]
         self.tags_odd = site_config["tags_odd"]
         self.sleep_delay = settings["sleep_delay"]
         self.driver = Driver(port=settings["port"])

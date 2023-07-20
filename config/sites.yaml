@@ -11,13 +11,17 @@ parionsport:
     bet_filter: .//button[@class="psel-filters__label" and contains(., "1 N 2") and not(contains(., "Handicap"))]
     cookies: .//button[@id="popin_tc_privacy_button_2"]
   tags_odd : 
-    bloc_match: .//psel-event-main//text()
+    bloc_match: //psel-event-main
     date_hours: .//time[@class="psel-timer"]/text() 
     bloc_odd: .//psel-templates
     bloc_name_team_and_odd:
     name_team : .//p[@class="psel-market__label"]/text()
     odd : .//span[@class="psel-outcome__data"]/text()
     match: .//div[@class="psel-market__col"]/text()
+  data-odd-type:
+    - Win
+    - Draw
+    - Win
 
 
 

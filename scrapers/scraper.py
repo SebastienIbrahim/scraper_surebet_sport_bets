@@ -23,23 +23,18 @@ class SiteScraper(BaseScraper):
     def __init__(self, site_config, settings):
         super().__init__(site_config, settings)
 
-    def scrape(self):
+    def scrape(self) -> list[dict]:
+        """Scrape the website
+
+        Returns:
+            list[dict]: The list of all sports per country per competition per match per date
+        """
         home_page = self.get_page(self.home_page)
         self.accept_cookies(self.tags_button["cookies"])
         self.get_random_sleep_time()
         sports = self.extract_sports(home_page)
-        for sport in sports:
-            scraper_logger.info(sport.name)
-            countries = self.extract_countries(sport)
-            for contry in countries:
-                scraper_logger.info(contry.name)
-                competitions = self.extract_competitions(sport)
-                for competition in competitions:
-                    scraper_logger.info(competition.name)
-                    matches = self.extract_matches(competition)
-                    for match in matches:
-                        scraper_logger.info(match)
-                        # TODO: continue to implement the scraper
+        sports_data = [sport.to_dict() for sport in sports]
+        return sports_data
 
     def extract_sports(self, home_page: BeautifulSoup) -> list[Sport]:
         """Extract all sports from the home page
@@ -91,31 +86,31 @@ class SiteScraper(BaseScraper):
             competitions.append(competition)
         return competitions
 
-    def extract_matches(self, competition_link):
-        matches = [Match("test", "test")]
-        return matches
+    def extract_matches(self, competition_link: str) -> list[Match]:
+        """Extract all matches from the competition link
 
-    def extract_matches_day(self, day_tag):
+        Args:
+            competition_link (str): The competition link
+
+        Returns:
+            list[Match]: The list of all matches
+        """
         matches = []
-        for match_tag in day_tag.select(self.tags["match"]):
-            teams = self.get_teams(match_tag)
-            date_time = self.get_date_time(match_tag)
-            match = Match(teams, date_time)
+        match_page = self.get_page(competition_link)
+        self.get_random_sleep_time()
+        if self.tags_button.get("bet_filter"):
+            self.click_on_button(self.tags_button["bet_filter"])
+            match_page = BeautifulSoup(self.driver.driver.page_source, "html.parser")
+            self.get_random_sleep_time()
+        matches_blocs = self.safe_get(match_page, self.tags_odd["bloc_match"])
+        data_odd_type = self.data_odd_type
+        for match_bloc in matches_blocs:
+            teams_name = self.safe_get(match_bloc, self.tags_odd["name_team"])
+            teams = [Team(team_name) for team_name in teams_name]
+            date_time = self.safe_get(match_bloc, self.tags_odd["date_hours"])
+            odds_elements = self.safe_get(match_bloc, self.tags_odd["odd"])
+            odds = [Odd(value=v, type=t) for v, t in zip(odds_elements, data_odd_type)]
+            match = Match(teams, date_time, odds)
             matches.append(match)
+
         return matches
-
-    def extract_teams(self, match_tag):
-        teams = []
-        for team_tag in match_tag.select(self.tags["team"]):
-            team_name = self.get_tag_text(team_tag, self.tags["team_name"])
-            team = Team(team_name)
-            teams.append(team)
-        return teams
-
-    def extract_odds(self, match_tag):
-        odds = []
-        for odd_tag in match_tag.select(self.tags["odd"]):
-            odd_name = self.get_tag_text(odd_tag, self.tags["odd_name"])
-            odd = Odd(odd_name)
-            odds.append(odd)
-        return odds
