@@ -8,3 +8,7 @@ class Team(NamedTuple):
 class Odd(NamedTuple):
     value: str
     type: str
+    team_index: int = None
+
+    def __str__(self):
+        return f"{self.type}: {self.value}"

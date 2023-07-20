@@ -1,6 +1,29 @@
 from pathlib import Path
 import yaml
 from undetected_chromedriver import Chrome, ChromeOptions
+from utils.logger import setup_scraper_logger
+import json
+from datetime import datetime
+
+scraper_logger = setup_scraper_logger()
+
+
+def dump_json_data(sport, filename):
+    """
+    Dump the data of a sport to a JSON file.
+
+    Args:
+        sport (Sport): The Sport object containing the data to be saved.
+        filename (str): The name of the file to save the data to.
+    """
+    now = datetime.now()
+    timestamp = now.strftime("%Y-%m-%d_%H-%M-%S")
+    filename = f"{filename}_{timestamp}.json"
+    path = Path(__file__).parent.parent / filename
+    print(path)
+    with open(path, "w", encoding="utf-8") as file:
+        json.dump(sport.to_dict(), file, ensure_ascii=False, indent=4)
+    # scraper_logger.info(f"Data for {sport.name} saved to {filename}")
 
 
 class Driver:

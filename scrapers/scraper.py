@@ -1,14 +1,11 @@
-import requests
 from bs4 import BeautifulSoup
-import time
-import random
 from models.sport import Sport
 from models.country import Country
 from models.competition import Competition
 from models.match import Match
 from models.team_odd import Team, Odd
 from utils.logger import setup_scraper_logger, setup_error_logger, setup_captcha_logger
-from utils.helpers import load_config_file
+from utils.helpers import dump_json_data
 from scrapers.base_scraper import BaseScraper
 from lxml import etree
 
@@ -33,8 +30,8 @@ class SiteScraper(BaseScraper):
         self.accept_cookies(self.tags_button["cookies"])
         self.get_random_sleep_time()
         sports = self.extract_sports(home_page)
-        sports_data = [sport.to_dict() for sport in sports]
-        return sports_data
+        for sport in sports:
+            dump_json_data(sport, f"instance/sports/{sport.name}")
 
     def extract_sports(self, home_page: BeautifulSoup) -> list[Sport]:
         """Extract all sports from the home page
@@ -51,6 +48,9 @@ class SiteScraper(BaseScraper):
             sport = Sport(sport_name, sport_bloc)
             countries = self.extract_countries(sport)
             sport.countries.extend(countries)
+            scraper_logger.info(
+                f"Extracted {sport_name} sport with {len(countries)} countries"
+            )
             sports.append(sport)
         return sports
 
@@ -63,6 +63,10 @@ class SiteScraper(BaseScraper):
             country = Country(country_name)
             competitions = self.extract_competitions(sport)
             country.competitions.extend(competitions)
+            scraper_logger.info(
+                f"Extracted {country_name} country with {len(competitions)} competitions"
+            )
+            dump_json_data(country, f"instance/countries/{country.name}")
             countries.append(country)
         return countries
 
@@ -83,6 +87,10 @@ class SiteScraper(BaseScraper):
             competition = Competition(competition_name)
             matches = self.extract_matches(competition_link)
             competition.matches.extend(matches)
+            scraper_logger.info(
+                f"Extracted {competition_name} competition with {len(matches)} matches"
+            )
+            dump_json_data(competition, f"instance/competitions/{competition.name}")
             competitions.append(competition)
         return competitions
 
@@ -100,8 +108,8 @@ class SiteScraper(BaseScraper):
         self.get_random_sleep_time()
         if self.tags_button.get("bet_filter"):
             self.click_on_button(self.tags_button["bet_filter"])
-            match_page = BeautifulSoup(self.driver.driver.page_source, "html.parser")
             self.get_random_sleep_time()
+            match_page = BeautifulSoup(self.driver.driver.page_source, "html.parser")
         matches_blocs = self.safe_get(match_page, self.tags_odd["bloc_match"])
         data_odd_type = self.data_odd_type
         for match_bloc in matches_blocs:

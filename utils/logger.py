@@ -24,7 +24,7 @@ def setup_captcha_logger():
     """Setup the captcha logger"""
 
     logger = logging.getLogger("captcha_logger")
-    logger.setLevel(logging.CRITICAL)
+    logger.setLevel(logging.WARNING)
 
     formatter = logging.Formatter(
         "-" * 39 + "\n%(asctime)s - %(levelname)s - %(message)s"

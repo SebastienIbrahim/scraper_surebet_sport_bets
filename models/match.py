@@ -19,7 +19,11 @@ class Match:
         teams_str = " vs ".join(team.name for team in self.teams)
         odds_dict = {}
         for odd in self.odds:
-            odds_dict.setdefault(odd.type, []).append(odd.value)
+            if odd.type == "Win":
+                team_name = self.teams[self.odds.index(odd)].name
+                odds_dict[f"{team_name} - {odd.type}"] = odd.value
+            elif odd.type == "Draw":
+                odds_dict["Draw"] = odd.value
 
         match_dict = {
             "teams": teams_str,

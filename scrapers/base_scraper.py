@@ -48,11 +48,13 @@ class BaseScraper:
             self.driver.driver.get(url)
         except Exception as e:
             msg = f"This exception: {e} was raise when we try to get the page: {url}"
+            error_logger.error(msg)
             # TODO: log this exception wtih logging module and also display with popupmsg alert
             return None
         bs = BeautifulSoup(self.driver.driver.page_source, "html.parser")
         if self.check_captcha(bs):
             msg = f"Be carefule, we have captcha when we try to get the page: {url}, please check and resolve it"
+            captcha_logger.warning(msg)
             # TODO: log this exception wtih logging module and also display with popupmsg alert
         return bs
 
@@ -86,7 +88,9 @@ class BaseScraper:
         try:
             selected_elems = page_obj.xpath(selector)
         except Exception as e:
-            print(e)
+            error_logger.error(
+                f"Exception: {e} was raise when we try to get the text of the element selected by the selector: {selector}"
+            )
             selected_elems = []
         return selected_elems
 
@@ -98,10 +102,10 @@ class BaseScraper:
         """
         try:
             button = self.driver.driver.find_element(By.XPATH, button_selector)
-            print("button", button)
             button.click()
         except Exception as e:
             msg = f"This exception: {e} was raise when we try to click on the button: {button_selector}"
+            error_logger.error(msg)
             # TODO: log this exception wtih logging module and also display with popupmsg alert
 
     def get_random_sleep_time(self) -> None:
