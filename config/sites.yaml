@@ -3,28 +3,83 @@ parionsport:
   absolute_url: False
   tags_chamionship:
     sport: //li[@class="psel-quicknav__item"]
-    sport_name: //span[@pselautotestid="quick_nav_ept_sport_lbl"]/text()
-    country_name: .//span[@pselautotestid="quick_nav_ept_category_lbl"]//text()
-    link_championship: .//a[@pseltcclick="quickaccess_eptCompetition"]//@href
+    sport_name:  //span[@pselautotestid="quick_nav_ept_sport_lbl"]/text()
+    country_name:  .//span[@pselautotestid="quick_nav_ept_category_lbl"]//text()
+    country : //li[@class="psel-quicknav__item"]
+    championship:  .//a[@pseltcclick="quickaccess_eptCompetition"]//@href
     championship_name: .//a[@pseltcclick="quickaccess_eptCompetition"]//text()
   tags_button:
     bet_filter: .//button[@class="psel-filters__label" and contains(., "1 N 2") and not(contains(., "Handicap"))]
     cookies: .//button[@id="popin_tc_privacy_button_2"]
-  tags_odd : 
+  tags_odd: 
+    date : //h2[@class="psel-title-rubric__text"]
     bloc_match: //psel-event-main
     date_hours: .//time[@class="psel-timer"]/text() 
     bloc_odd: .//psel-templates
-    bloc_name_team_and_odd:
-    name_team : .//p[@class="psel-market__label"]/text()
-    odd : .//span[@class="psel-outcome__data"]/text()
-    match: .//div[@class="psel-market__col"]/text()
+    name_team: .//p[@class="psel-market__label ng-star-inserted"]/text()
+    odd:  .//span[@class="psel-outcome__data"]/text()
   data-odd-type:
     - Win
     - Draw
     - Win
 
+betclic :
+  home_page : https://www.betclic.fr/
+  absolute_url : False
+  tags_chamionship :
+    sport:  //a[@class="sportList_itemWrapper" and @id="block-link-null"]/div[@class="sportlist_name"]
+    sport_name:  //a[@class="sportList_itemWrapper" and @id="block-link-null"]/div[@class="sportlist_name"]/text()
+    country_name:  //div[@class="sportList_itemWrapper"]/div[@class="sportlist_name"] | //a[@class="sportList_itemWrapper ng-star-inserted"]
+    championship :  //ul[@class="sportList_listLv2 ng-star-inserted"]//div[@class="sportlist_name"]
+    championship_name :   //ul[@class="sportList_listLv2 ng-star-inserted"]//div[@class="sportlist_name"]/text()
+  tags_button:
+    bet_filter:
+    cookies: //button[@id="popin_tc_privacy_button_2" and @class="tc-reset-css tc-privacy-button"]
+  tags_odd:
+    date : //h2[@class="groupEvents_headTitle"]/text()
+    bloc_match: //sports-events-event[@class="groupEvents_card ng-star-inserted"] 
+    date_hours: //div[contains(@class,"scoreboard_hour ")] 
+    bloc_odd: //div[@class="market_odds ng-star-inserted"]
+    name_team:  //div[contains(@class,"scoreboard_contestantLabel ")]/text()
+    odd:  .//span[@class="psel-outcome__data"]/text()
+    match: 
+  data-odd-type:
+    - Win
+    - Draw
+    - Win
+
+bet365: 
+  home_page : https://www.bet365.com/
+  absolute_url : False
+  tags_chamionship :
+    sport: //div[@class="wn-PreMatchItem "]/span
+    sport_name: //div[@class="wn-PreMatchItem "]/span/text()
+    group :  //div[@class="sm-SplashMarketGroupButton_Text "]
+    country_name:  
+    championship : //div[@class="sm-SplashMarket_Title "]
+    championship_name : //span[@class="sm-CouponLink_Title "]/text()
+  tags_button:
+    cookies: .//button[@id="popin_tc_privacy_button_2"]
+  tags_odd:
+    bloc_teams_hours_date : //div[@class="rcl-ParticipantFixtureDetails_LhsContainerInner "]
+    name_team : //div[@class="rcl-ParticipantFixtureDetailsTeam_TeamName "]
+    date : //div[@class="rcl-MarketHeaderLabel rcl-MarketHeaderLabel-isdate "]
+    hours : //div[@class="rcl-ParticipantFixtureDetails_BookCloses "]
+    columns_odd :  //div[contains(@class,"MarketOddsExpand")]
+    info_column_which_teams_win :  //div[@class="rcl-MarketColumnHeader "]
+    odd : //span[@class="sgl-ParticipantOddsOnly80_Odds"]
+  data-odd-type:
+    - Win
+    - Draw
+    - Win
+
+# https://www.peopleperhour.com/freelance-jobs/technology-programming/programming-coding/web-scraping-prices-of-insurance-providers-3290248
 
 
 
 
+# https://github.com/migoya2020/bet365-playwright-starter
+
+
+#//li[@class="psel-quicknav__item"]//li[not(@*)]
 
