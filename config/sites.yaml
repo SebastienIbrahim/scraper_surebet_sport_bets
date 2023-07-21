@@ -5,7 +5,7 @@ parionsport:
     sport: //li[@class="psel-quicknav__item"]
     sport_name:  //span[@pselautotestid="quick_nav_ept_sport_lbl"]/text()
     country_name:  .//span[@pselautotestid="quick_nav_ept_category_lbl"]//text()
-    country : //li[@class="psel-quicknav__item"]
+    country : .//psel-ept-competitions
     championship:  .//a[@pseltcclick="quickaccess_eptCompetition"]//@href
     championship_name: .//a[@pseltcclick="quickaccess_eptCompetition"]//text()
   tags_button:
@@ -83,3 +83,4 @@ bet365:
 
 #//li[@class="psel-quicknav__item"]//li[not(@*)]
 
+#//ul[@class='psel-quicknav__list psel-quicknav__list-level-2']/psel-ept-categories/li[not(@*)]
