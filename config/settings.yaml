@@ -1,4 +1,5 @@
 sleep_delay:
-  min_seconds: 3
-  max_seconds: 5
+  min_seconds: 1
+  max_seconds: 3
 port: 2023
+chromedriver_path: /usr/local/bin/chromedriver

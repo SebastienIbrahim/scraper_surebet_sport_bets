@@ -1,6 +1,7 @@
 class Country:
-    def __init__(self, name):
+    def __init__(self, name, button):
         self.name = name
+        self.button = button
         self.competitions = []
 
     def __str__(self):

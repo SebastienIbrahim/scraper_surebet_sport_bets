@@ -32,13 +32,20 @@ class Driver:
         port (int, optional): The port to use to connect to the driver. Defaults to 2023.
     """
 
-    def __init__(self, port: int = 2023):
+    def __init__(self, port: int = 2023, chromedriver_path=None):
         self.port = port
         self.options = ChromeOptions()
         self.options.add_argument("--no-sandbox")
         self.options.add_argument("--disable-blink-features=AutomationControlled")
         self.options.add_argument(f"--remote-debugging-port={self.port}")
-        self.driver = Chrome(options=self.options)
+        self.driver = Chrome(options=self.options, executable_path=chromedriver_path)
+
+
+def normalize_teams_name(teams: list) -> list:
+    if len(teams) == 3:
+        return teams
+    elif len(teams) == 2:
+        return [teams[0], "Draw", teams[1]]
 
 
 def load_config_file(filename: str) -> dict[str, str]:

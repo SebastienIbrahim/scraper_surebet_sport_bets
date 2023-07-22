@@ -1,6 +1,8 @@
 class Match:
     def __init__(self, teams, date_time, odds=None):
         self.teams = teams
+        if isinstance(date_time, list) and len(date_time) == 1:
+            date_time = date_time[0].strip()
         self.date_time = date_time
         self.odds = odds if odds is not None else []
 

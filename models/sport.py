@@ -1,7 +1,7 @@
 class Sport:
-    def __init__(self, name, bloc):
+    def __init__(self, name, button):
         self.name = name
-        self.bloc = bloc
+        self.button = button
         self.countries = []
 
     def __str__(self):

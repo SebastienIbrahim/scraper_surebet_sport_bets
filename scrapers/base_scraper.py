@@ -7,6 +7,7 @@ from urllib.parse import urlparse
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import undetected_chromedriver
 from utils.logger import setup_scraper_logger, setup_error_logger, setup_captcha_logger
 
 scrapper_logger, error_logger, captcha_logger = (
@@ -35,7 +36,9 @@ class BaseScraper:
         self.data_odd_type = site_config["data-odd-type"]
         self.tags_odd = site_config["tags_odd"]
         self.sleep_delay = settings["sleep_delay"]
-        self.driver = Driver(port=settings["port"])
+        self.driver = Driver(
+            port=settings["port"], chromedriver_path=settings["chromedriver_path"]
+        )
 
     def get_page(self, url) -> BeautifulSoup:
         """Get the page with the url passed in parameter
@@ -83,13 +86,27 @@ class BaseScraper:
         Returns:
             str: The text of the element selected by the selector
         """
-        if isinstance(page_obj, BeautifulSoup):
-            page_obj = etree.HTML(str(page_obj))
         try:
-            selected_elems = page_obj.xpath(selector)
+            if isinstance(
+                page_obj,
+                (undetected_chromedriver.webelement.WebElement, BeautifulSoup, str),
+            ):
+                html_code = (
+                    page_obj.get_attribute("outerHTML")
+                    if isinstance(
+                        page_obj, undetected_chromedriver.webelement.WebElement
+                    )
+                    else str(page_obj)
+                )
+                page_obj = etree.HTML(html_code)
+                selected_elems = page_obj.xpath(selector)
+            elif isinstance(page_obj, undetected_chromedriver.Chrome):
+                selected_elems = page_obj.find_elements(By.XPATH, selector)
+            else:
+                selected_elems = page_obj.xpath(selector)
         except Exception as e:
             error_logger.error(
-                f"Exception: {e} was raise when we try to get the text of the element selected by the selector: {selector}"
+                f"Exception: {e} was raised when we tried to get elements by the selector: {selector}"
             )
             selected_elems = []
         return selected_elems
@@ -103,6 +120,7 @@ class BaseScraper:
         try:
             button = self.driver.driver.find_element(By.XPATH, button_selector)
             button.click()
+            # TODO: if we have captcha, log it and display it with popupmsg alert
         except Exception as e:
             msg = f"This exception: {e} was raise when we try to click on the button: {button_selector}"
             error_logger.error(msg)
