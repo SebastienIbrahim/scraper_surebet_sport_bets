@@ -2,11 +2,12 @@ parionsport:
   home_page: https://www.enligne.parionssport.fdj.fr
   absolute_url: False
   tags_chamionship:
-    sport: //li[@class="psel-quicknav__item"]
+    sport: //li[@class="psel-quicknav__item"] 
+    # //button[@pselautotestid="quick_nav_ept_sport_item"] 
     sport_name:  //span[@pselautotestid="quick_nav_ept_sport_lbl"]/text()
     country_name:  .//span[@pselautotestid="quick_nav_ept_category_lbl"]//text()
     country : .//psel-ept-competitions
-    championship:  .//a[@pseltcclick="quickaccess_eptCompetition"]//@href
+    championship:  //li[@pselautotestid="quick_nav_ept_competition_lbl"]
     championship_name: .//a[@pseltcclick="quickaccess_eptCompetition"]//text()
   tags_button:
     bet_filter: .//button[@class="psel-filters__label" and contains(., "1 N 2") and not(contains(., "Handicap"))]
@@ -85,3 +86,68 @@ bet365:
 #//li[@class="psel-quicknav__item"]//li[not(@*)]
 
 #//ul[@class='psel-quicknav__list psel-quicknav__list-level-2']/psel-ept-categories/li[not(@*)]
+
+
+import undetected_chromedriver.v2 as uc
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import time
+from bs4 import BeautifulSoup
+
+# ... Your existing imports ...
+
+class SiteScraper(BaseScraper):
+    # ... Your existing code ...
+
+    def click_element(self, element):
+        try:
+            element.click()
+        except:
+            # Scroll to the element if it is not in the visible area
+            actions = ActionChains(self.driver)
+            actions.move_to_element(element).perform()
+            # Wait for the element to be clickable
+            wait = WebDriverWait(self.driver, 10)
+            element = wait.until(EC.element_to_be_clickable(element))
+            element.click()
+
+    def extract_sports(self, home_page: BeautifulSoup) -> list[Sport]:
+        """Extract all sports from the home page
+        Args:
+            home_page (str): The home page of the website to scrape
+
+        Returns:
+            list[Sport]: The list of all sports
+        """
+        sports = []
+        sports_buttons = self.safe_get(self.driver.driver, self.tags_chamionship["sport"])
+        sports_name = self.safe_get(home_page, self.tags_chamionship["sport_name"])
+        for sport_button, sport_name in zip(sports_buttons, sports_name):
+            try:
+                self.click_element(sport_button)
+            except Exception as e:
+                scraper_logger.error(f"Failed to click sport button: {e}")
+                continue
+
+            self.get_random_sleep_time()
+            sport = Sport(sport_name, sport_button)
+            countries = self.extract_countries(sport)
+            sport.countries.extend(countries)
+            scraper_logger.info(
+                f"Processing of Sport {sport_name} with {len(countries)} countries"
+            )
+            sports.append(sport)
+        return sports
+
+    def extract_countries(self, sport: Sport) -> list[Country]:
+        # ... Your existing code ...
+
+    def extract_competitions(self, country: Country) -> list[Competition]:
+        # ... Your existing code ...
+
+    def extract_matches(self) -> list[Match]:
+        # ... Your existing code ...
+
+# The rest of your code remains the same...

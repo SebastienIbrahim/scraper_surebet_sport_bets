@@ -50,7 +50,11 @@ class SiteScraper(BaseScraper):
         )
         sports_name = self.safe_get(home_page, self.tags_chamionship["sport_name"])
         for sport_button, sport_name in zip(sports_buttons, sports_name):
-            sport_button.click()
+            try:
+                self.click_element(sport_button)
+            except Exception as e:
+                scraper_logger.error(f"Failed to click sport {sport.name} button: {e}")
+                continue
             self.get_random_sleep_time()
             sport = Sport(sport_name, sport_button)
             countries = self.extract_countries(sport)
@@ -70,7 +74,13 @@ class SiteScraper(BaseScraper):
             sport.button, self.tags_chamionship["country_name"]
         )
         for country_name, country_button in zip(countries_names, countries_buttons):
-            country_button.click()
+            try:
+                self.click_element(country_button)
+            except Exception as e:
+                scraper_logger.error(
+                    f"Failed to click country {country.name} button: {e}"
+                )
+                continue
             self.get_random_sleep_time()
             country = Country(country_name, country_button)
             competitions = self.extract_competitions(country)
@@ -93,7 +103,13 @@ class SiteScraper(BaseScraper):
         for competition_button, competition_name in zip(
             competitions_buttons, competitions_names
         ):
-            competition_button.click()
+            try:
+                self.click_element(competition_button)
+            except Exception as e:
+                scraper_logger.error(
+                    f"Failed to click competition {competition.name} button: {e}"
+                )
+                continue
             self.get_random_sleep_time()
             competition = Competition(competition_name)
             matches = self.extract_matches()

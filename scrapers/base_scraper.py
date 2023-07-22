@@ -7,6 +7,7 @@ from urllib.parse import urlparse
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.action_chains import ActionChains
 import undetected_chromedriver
 from utils.logger import setup_scraper_logger, setup_error_logger, setup_captcha_logger
 
@@ -125,6 +126,18 @@ class BaseScraper:
             msg = f"This exception: {e} was raise when we try to click on the button: {button_selector}"
             error_logger.error(msg)
             # TODO: log this exception wtih logging module and also display with popupmsg alert
+
+    def click_element(self, element):
+        try:
+            element.click()
+        except:
+            # Scroll to the element if it is not in the visible area
+            actions = ActionChains(self.driver.driver)
+            actions.move_to_element(element).perform()
+            # Wait for the element to be clickable
+            wait = WebDriverWait(self.driver, 10)
+            element = wait.until(EC.element_to_be_clickable(element))
+            element.click()
 
     def get_random_sleep_time(self) -> None:
         """Get a random sleep time between min_delay and max_delay"""
