@@ -53,7 +53,7 @@ class SiteScraper(BaseScraper):
             try:
                 self.click_element(sport_button)
             except Exception as e:
-                scraper_logger.error(f"Failed to click sport {sport.name} button: {e}")
+                scraper_logger.error(f"Failed to click sport {sport_name} button: {e}")
                 continue
             self.get_random_sleep_time()
             sport = Sport(sport_name, sport_button)
@@ -78,7 +78,7 @@ class SiteScraper(BaseScraper):
                 self.click_element(country_button)
             except Exception as e:
                 scraper_logger.error(
-                    f"Failed to click country {country.name} button: {e}"
+                    f"Failed to click country {country_name} button: {e}"
                 )
                 continue
             self.get_random_sleep_time()
@@ -107,7 +107,7 @@ class SiteScraper(BaseScraper):
                 self.click_element(competition_button)
             except Exception as e:
                 scraper_logger.error(
-                    f"Failed to click competition {competition.name} button: {e}"
+                    f"Failed to click competition {competition_name} button: {e}"
                 )
                 continue
             self.get_random_sleep_time()
