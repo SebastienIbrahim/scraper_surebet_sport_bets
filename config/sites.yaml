@@ -1,23 +1,23 @@
 parionsport:
+  philosophy: link # or link
   home_page: https://www.enligne.parionssport.fdj.fr
   absolute_url: False
   tags_chamionship:
-    sport: //li[@class="psel-quicknav__item"] 
-    # //button[@pselautotestid="quick_nav_ept_sport_item"] 
+    sport: //li[@class="psel-quicknav__item"]
     sport_name:  //span[@pselautotestid="quick_nav_ept_sport_lbl"]/text()
     country_name:  .//span[@pselautotestid="quick_nav_ept_category_lbl"]//text()
-    country : //button[@class="psel-quicknav__link psel-quicknav__link--subcategory"]
-    championship: //a[@pseltcclick="quickaccess_eptCompetition" and @class="psel-quicknav__link psel-quicknav__link--item psel-quicknav__link--without-icon"]
+    country : .//psel-ept-competitions
+    championship:  .//a[@pseltcclick="quickaccess_eptCompetition"]//@href
     championship_name: .//a[@pseltcclick="quickaccess_eptCompetition"]//text()
   tags_button:
     bet_filter: .//button[@class="psel-filters__label" and contains(., "1 N 2") and not(contains(., "Handicap"))]
     cookies: .//button[@id="popin_tc_privacy_button_2"]
   tags_odd: 
     date : //h2[@class="psel-title-rubric__text"]
-    bloc_match: //psel-event-main
+    bloc_match: .//psel-event-main
     date_hours: .//time[@class="psel-timer"]/text() 
     bloc_odd: .//psel-templates
-    name_team: .//p[@class="psel-market__label"]//text() #.//p[@class="psel-market__label ng-star-inserted"]/text()
+    name_team: .//p[contains(@class,"psel-market")]/text()
     odd:  .//span[@class="psel-outcome__data"]/text()
   data-odd-type:
     - Win
@@ -25,6 +25,7 @@ parionsport:
     - Win
 
 betclic :
+  philosophy: click # or link
   home_page : https://www.betclic.fr/
   absolute_url : False
   tags_chamionship :
@@ -51,6 +52,7 @@ betclic :
     - Win
 
 bet365: 
+  philosophy: click # or link
   home_page : https://www.bet365.com/
   absolute_url : False
   tags_chamionship :
@@ -86,47 +88,3 @@ bet365:
 #//li[@class="psel-quicknav__item"]//li[not(@*)]
 
 #//ul[@class='psel-quicknav__list psel-quicknav__list-level-2']/psel-ept-categories/li[not(@*)]
-
-import undetected_chromedriver.v2 as uc
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-import time
-from bs4 import BeautifulSoup
-from lxml.etree import _Element
-
-# ... Your existing imports ...
-
-class SiteScraper(BaseScraper):
-    # ... Your existing code ...
-
-    def element_from_lxml(self, lxml_element):
-        # Convert an lxml.etree._Element to a WebElement (either regular or undetected)
-        if isinstance(self.driver, uc.Chrome):
-            return uc.WebElement(self.driver, elem=lxml_element)
-        else:
-            return self.driver.driver.element_from_lxml(lxml_element)
-
-    def click_element(self, element):
-        if isinstance(element, _Element):
-            # Convert lxml.etree._Element to WebElement
-            element = self.element_from_lxml(element)
-
-        try:
-            element.click()
-        except Exception:
-            # Scroll to the element if it is not in the visible area
-            actions = ActionChains(self.driver)
-            actions.move_to_element(element).perform()
-            
-            if isinstance(self.driver, uc.Chrome):
-                # For undetected_chromedriver, we need to use JavaScript click
-                self.driver.execute_script("arguments[0].click();", element)
-            else:
-                # For regular Selenium, wait for the element to be clickable
-                wait = WebDriverWait(self.driver, 10)
-                element = wait.until(EC.element_to_be_clickable(element))
-                element.click()
-
-    # ... Your other methods ...

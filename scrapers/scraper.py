@@ -19,8 +19,8 @@ scraper_logger, error_logger, captcha_logger = (
 
 
 class SiteScraper(BaseScraper):
-    def __init__(self, site_config, settings):
-        super().__init__(site_config, settings)
+    def __init__(self, site_name, site_config, settings):
+        super().__init__(site_name, site_config, settings)
 
     def scrape(self) -> None:
         """Scrape the website
@@ -34,7 +34,7 @@ class SiteScraper(BaseScraper):
         self.get_random_sleep_time()
         sports = self.extract_sports(home_page)
         for sport in sports:
-            dump_json_data(sport, f"instance/sports/{sport.name}")
+            dump_json_data(sport, f"instance/sports/{self.site_name}@{sport.name}")
 
     def extract_sports(self, home_page: BeautifulSoup) -> list[Sport]:
         """Extract all sports from the home page
@@ -45,9 +45,13 @@ class SiteScraper(BaseScraper):
             list[Sport]: The list of all sports
         """
         sports = []
-        sports_buttons = self.safe_get(
-            self.driver.driver, self.tags_chamionship["sport"]
-        )
+        if self.philosophy == "click":
+            sports_buttons = self.safe_get(
+                self.driver.driver, self.tags_chamionship["sport"]
+            )
+        else:
+            sports_buttons = self.safe_get(home_page, self.tags_chamionship["sport"])
+
         sports_name = self.safe_get(home_page, self.tags_chamionship["sport_name"])
         for sport_button, sport_name in zip(sports_buttons, sports_name):
             try:
@@ -67,9 +71,14 @@ class SiteScraper(BaseScraper):
 
     def extract_countries(self, sport: Sport) -> list[Country]:
         countries = []
-        countries_buttons = self.safe_get(
-            self.driver.driver, self.tags_chamionship["country"]
-        )
+        if self.philosophy == "click":
+            countries_buttons = self.safe_get(
+                self.driver.driver, self.tags_chamionship["country"]
+            )
+        else:
+            countries_buttons = self.safe_get(
+                sport.button, self.tags_chamionship["country"]
+            )
         countries_names = self.safe_get(
             sport.button, self.tags_chamionship["country_name"]
         )
@@ -88,15 +97,22 @@ class SiteScraper(BaseScraper):
             scraper_logger.info(
                 f"Country: Extracted {country_name} country with {len(competitions)} competitions"
             )
-            dump_json_data(country, f"instance/countries/{country.name}")
+            dump_json_data(
+                country, f"instance/countries/{self.site_name}@{country.name}"
+            )
             countries.append(country)
         return countries
 
     def extract_competitions(self, country: Country) -> list[Competition]:
         competitions = []
-        competitions_buttons = self.safe_get(
-            self.driver.driver, self.tags_chamionship["championship"]
-        )
+        if self.philosophy == "click":
+            competitions_buttons = self.safe_get(
+                self.driver.driver, self.tags_chamionship["championship"]
+            )
+        else:
+            competitions_buttons = self.safe_get(
+                country.button, self.tags_chamionship["championship"]
+            )
         competitions_names = self.safe_get(
             country.button, self.tags_chamionship["championship_name"]
         )
@@ -105,23 +121,26 @@ class SiteScraper(BaseScraper):
         ):
             try:
                 self.click_element(competition_button)
+                self.get_random_sleep_time()
             except Exception as e:
                 scraper_logger.error(
                     f"Failed to click competition {competition_name} button: {e}"
                 )
                 continue
-            self.get_random_sleep_time()
             competition = Competition(competition_name)
-            matches = self.extract_matches()
+            matches = self.extract_matches(competition_button)
             competition.matches.extend(matches)
             scraper_logger.info(
                 f"Competition: Extracted {competition_name} competition with {len(matches)} matches"
             )
-            dump_json_data(competition, f"instance/competitions/{competition.name}")
+            dump_json_data(
+                competition,
+                f"instance/competitions/{self.site_name}@{competition.name}",
+            )
             competitions.append(competition)
         return competitions
 
-    def extract_matches(self) -> list[Match]:
+    def extract_matches(self, competition_button) -> list[Match]:
         """Extract all matches from the competition link
 
         Args:
@@ -131,10 +150,21 @@ class SiteScraper(BaseScraper):
             list[Match]: The list of all matches
         """
         matches = []
+        match_page = None
+        if self.philosophy == "link":
+            match_page = self.get_page(self.normalize_url(competition_button))
+            self.get_random_sleep_time()
         if self.tags_button.get("bet_filter"):
             self.click_on_button(self.tags_button["bet_filter"])
             self.get_random_sleep_time()
-        matches_blocs = self.safe_get(self.driver.driver, self.tags_odd["bloc_match"])
+            match_page = BeautifulSoup(self.driver.driver.page_source, "html.parser")
+            self.get_random_sleep_time()
+        if self.philosophy == "click":
+            matches_blocs = self.safe_get(
+                self.driver.driver, self.tags_odd["bloc_match"]
+            )
+        else:
+            matches_blocs = self.safe_get(match_page, self.tags_odd["bloc_match"])
         for match_bloc in matches_blocs:
             teams_name = self.safe_get(match_bloc, self.tags_odd["name_team"])
             teams_name = normalize_teams_name(teams_name)

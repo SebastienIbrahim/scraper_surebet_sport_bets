@@ -29,7 +29,8 @@ class BaseScraper:
         driver (Driver): The driver to use to scrape the website
     """
 
-    def __init__(self, site_config, settings):
+    def __init__(self, site_name, site_config, settings):
+        self.site_name = site_name
         self.home_page = site_config["home_page"]
         self.absolute_url = site_config["absolute_url"]
         self.tags_chamionship = site_config["tags_chamionship"]
@@ -37,6 +38,7 @@ class BaseScraper:
         self.data_odd_type = site_config["data-odd-type"]
         self.tags_odd = site_config["tags_odd"]
         self.sleep_delay = settings["sleep_delay"]
+        self.philosophy = site_config["philosophy"]
         self.driver = Driver(
             port=settings["port"], chromedriver_path=settings["chromedriver_path"]
         )
@@ -127,24 +129,34 @@ class BaseScraper:
             error_logger.error(msg)
             # TODO: log this exception wtih logging module and also display with popupmsg alert
 
-    def click_element(self, element):
-        try:
-            element.click()
-        except:
-            # Scroll to the element if it is not in the visible area
-            actions = ActionChains(self.driver.driver)
-            actions.move_to_element(element).perform()
-            # Wait for the element to be clickable
-            wait = WebDriverWait(self.driver, 10)
-            element = wait.until(EC.element_to_be_clickable(element))
-            element.click()
+    def click_element(
+        self, element: undetected_chromedriver.webelement.WebElement
+    ) -> None:
+        """Click on a button
+        Args:
+            element undetected_chromedriver.webelement.WebElement: The element to click on
+            Returns:
+        """
+        if isinstance(element, undetected_chromedriver.webelement.WebElement):
+            try:
+                element.click()
+            except Exception:
+                # Scroll to the element if it is not in the visible area
+                actions = ActionChains(self.driver.driver)
+                actions.move_to_element(element).perform()
+            try:
+                wait = WebDriverWait(self.driver.driver, 10)
+                element = wait.until(EC.element_to_be_clickable(element))
+                element.click()
+            except Exception:
+                self.driver.driver.execute_script("arguments[0].click();", element)
 
     def get_random_sleep_time(self) -> None:
         """Get a random sleep time between min_delay and max_delay"""
         time.sleep(
             random.randint(
-                self.sleep_delay.get("min_secondes", 20),
-                self.sleep_delay.get("max_secondes", 60),
+                self.sleep_delay.get("min_secondes", 3),
+                self.sleep_delay.get("max_secondes", 5),
             )
         )
 
