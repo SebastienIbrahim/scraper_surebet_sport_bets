@@ -1,0 +1,75 @@
+{
+    "name": "Chili Primera",
+    "matches": [
+        {
+            "teams": "Copiapo vs Draw vs Cobresal",
+            "date_time": "\n            \n                ",
+            "odds": {
+                "Copiapo - Win": "2,25",
+                "Draw": "3,35",
+                "Cobresal - Win": "2,85"
+            }
+        },
+        {
+            "teams": "Huachipato vs Draw vs O'Higgins",
+            "date_time": "Aujourd'hui 23:30",
+            "odds": {
+                "Huachipato - Win": "1,93",
+                "Draw": "3,25",
+                "O'Higgins - Win": "3,65"
+            }
+        },
+        {
+            "teams": "Universidad de Chile vs Draw vs Palestino",
+            "date_time": "Demain 02:00",
+            "odds": {
+                "Universidad de Chile - Win": "2,35",
+                "Draw": "3,12",
+                "Palestino - Win": "2,82"
+            }
+        },
+        {
+            "teams": "Everton Vina vs Draw vs Union Espanola",
+            "date_time": "Demain 21:00",
+            "odds": {
+                "Everton Vina - Win": "2,05",
+                "Draw": "3,23",
+                "Union Espanola - Win": "3,30"
+            }
+        },
+        {
+            "teams": "Universidad Catolica vs Draw vs Coquimbo Unido",
+            "date_time": "Après-demain 00:00",
+            "odds": {
+                "Universidad Catolica - Win": " Parier "
+            }
+        },
+        {
+            "teams": "Audax Italiano vs Draw vs Curico Unido",
+            "date_time": "25/07/2023 02:30",
+            "odds": {
+                "Audax Italiano - Win": "1,89",
+                "Draw": "3,40",
+                "Curico Unido - Win": "3,60"
+            }
+        },
+        {
+            "teams": "Nublense vs Draw vs Colo Colo",
+            "date_time": "26/07/2023 00:00",
+            "odds": {
+                "Nublense - Win": "3,20",
+                "Draw": "3,18",
+                "Colo Colo - Win": "2,11"
+            }
+        },
+        {
+            "teams": "O'Higgins vs Draw vs Nublense",
+            "date_time": "29/07/2023 00:00",
+            "odds": {
+                "O'Higgins - Win": "2,14",
+                "Draw": "3,00",
+                "Nublense - Win": "3,12"
+            }
+        }
+    ]
+}

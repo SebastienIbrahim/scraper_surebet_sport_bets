@@ -86,3 +86,47 @@ bet365:
 #//li[@class="psel-quicknav__item"]//li[not(@*)]
 
 #//ul[@class='psel-quicknav__list psel-quicknav__list-level-2']/psel-ept-categories/li[not(@*)]
+
+import undetected_chromedriver.v2 as uc
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import time
+from bs4 import BeautifulSoup
+from lxml.etree import _Element
+
+# ... Your existing imports ...
+
+class SiteScraper(BaseScraper):
+    # ... Your existing code ...
+
+    def element_from_lxml(self, lxml_element):
+        # Convert an lxml.etree._Element to a WebElement (either regular or undetected)
+        if isinstance(self.driver, uc.Chrome):
+            return uc.WebElement(self.driver, elem=lxml_element)
+        else:
+            return self.driver.driver.element_from_lxml(lxml_element)
+
+    def click_element(self, element):
+        if isinstance(element, _Element):
+            # Convert lxml.etree._Element to WebElement
+            element = self.element_from_lxml(element)
+
+        try:
+            element.click()
+        except Exception:
+            # Scroll to the element if it is not in the visible area
+            actions = ActionChains(self.driver)
+            actions.move_to_element(element).perform()
+            
+            if isinstance(self.driver, uc.Chrome):
+                # For undetected_chromedriver, we need to use JavaScript click
+                self.driver.execute_script("arguments[0].click();", element)
+            else:
+                # For regular Selenium, wait for the element to be clickable
+                wait = WebDriverWait(self.driver, 10)
+                element = wait.until(EC.element_to_be_clickable(element))
+                element.click()
+
+    # ... Your other methods ...

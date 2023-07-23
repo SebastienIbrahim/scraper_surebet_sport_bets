@@ -1,0 +1,86 @@
+{
+    "name": "Ligue 1 Uber Eats®",
+    "matches": [
+        {
+            "teams": "Rennes vs Draw vs Metz",
+            "date_time": "13/08/2023 15:00",
+            "odds": {
+                "Rennes - Win": "1,38",
+                "Draw": "4,30",
+                "Metz - Win": "6,60"
+            }
+        },
+        {
+            "teams": "Clermont vs Draw vs Monaco",
+            "date_time": "13/08/2023 15:00",
+            "odds": {
+                "Clermont - Win": "3,30",
+                "Draw": "3,50",
+                "Monaco - Win": "1,92"
+            }
+        },
+        {
+            "teams": "Strasbourg vs Draw vs Lyon",
+            "date_time": "13/08/2023 15:00",
+            "odds": {
+                "Strasbourg - Win": "2,45",
+                "Draw": "3,40",
+                "Lyon - Win": "2,45"
+            }
+        },
+        {
+            "teams": "Marseille vs Draw vs Reims",
+            "date_time": "13/08/2023 15:00",
+            "odds": {
+                "Marseille - Win": "1,50",
+                "Draw": "3,95",
+                "Reims - Win": "5,15"
+            }
+        },
+        {
+            "teams": "Paris SG vs Draw vs Lorient",
+            "date_time": "13/08/2023 15:00",
+            "odds": {
+                "Paris SG - Win": "1,16",
+                "Draw": "6,80",
+                "Lorient - Win": "11"
+            }
+        },
+        {
+            "teams": "Nantes vs Draw vs Toulouse",
+            "date_time": "13/08/2023 15:00",
+            "odds": {
+                "Nantes - Win": "2,25",
+                "Draw": "3,20",
+                "Toulouse - Win": "2,82"
+            }
+        },
+        {
+            "teams": "Nice vs Draw vs Lille",
+            "date_time": "13/08/2023 15:00",
+            "odds": {
+                "Nice - Win": "2,80",
+                "Draw": "3,30",
+                "Lille - Win": "2,22"
+            }
+        },
+        {
+            "teams": "Montpellier vs Draw vs Le Havre",
+            "date_time": "13/08/2023 15:00",
+            "odds": {
+                "Montpellier - Win": "1,85",
+                "Draw": "3,30",
+                "Le Havre - Win": "3,75"
+            }
+        },
+        {
+            "teams": "Brest vs Draw vs Lens",
+            "date_time": "13/08/2023 15:00",
+            "odds": {
+                "Brest - Win": "4,00",
+                "Draw": "3,40",
+                "Lens - Win": "1,77"
+            }
+        }
+    ]
+}

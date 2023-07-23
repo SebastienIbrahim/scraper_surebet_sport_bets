@@ -1,0 +1,55 @@
+{
+    "name": "Estonie",
+    "competitions": [
+        {
+            "name": "D1 Estonie",
+            "matches": [
+                {
+                    "teams": "Tallinna Kalev vs N vs Parnu JK Vapru",
+                    "date_time": "Aujourd'hui à 16h00",
+                    "odds": {
+                        "Tallinna Kalev - Win": "2,15",
+                        "Draw": "3,15",
+                        "Parnu JK Vapru - Win": "2,85"
+                    }
+                },
+                {
+                    "teams": "Nomme Kalju vs N vs Harju JK",
+                    "date_time": "Aujourd'hui à 18h30",
+                    "odds": {
+                        "Nomme Kalju - Win": "1,45",
+                        "Draw": "3,95",
+                        "Harju JK - Win": "5,30"
+                    }
+                },
+                {
+                    "teams": "FC Kuressaare vs N vs Paide",
+                    "date_time": "Demain à 15h00",
+                    "odds": {
+                        "FC Kuressaare - Win": "3,90",
+                        "Draw": "3,25",
+                        "Paide - Win": "1,76"
+                    }
+                },
+                {
+                    "teams": "Tammeka Tartu vs N vs FC Levadia",
+                    "date_time": "Demain à 17h00",
+                    "odds": {
+                        "Tammeka Tartu - Win": "8,00",
+                        "Draw": "4,55",
+                        "FC Levadia - Win": "1,27"
+                    }
+                },
+                {
+                    "teams": "FC Flora vs N vs FC Narva",
+                    "date_time": "Demain à 19h00",
+                    "odds": {
+                        "FC Flora - Win": "1,18",
+                        "Draw": "5,40",
+                        "FC Narva - Win": "10,00"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "name": "Argentine Primera",
+    "matches": [
+        {
+            "teams": "San Lorenzo vs Draw vs Argentinos Juniors",
+            "date_time": "\n            \n                ",
+            "odds": {
+                "San Lorenzo - Win": "8,75",
+                "Draw": "3,80",
+                "Argentinos Juniors - Win": "1,38"
+            }
+        },
+        {
+            "teams": "Estudiantes de La Plata vs Draw vs Belgrano",
+            "date_time": "Aujourd'hui 23:00",
+            "odds": {
+                "Estudiantes de La Plata - Win": "1,70",
+                "Draw": "3,35",
+                "Belgrano - Win": "5,20"
+            }
+        },
+        {
+            "teams": "Platense vs Draw vs CA Huracan",
+            "date_time": "Demain 01:30",
+            "odds": {
+                "Platense - Win": "2,42",
+                "Draw": "2,72",
+                "CA Huracan - Win": "3,35"
+            }
+        },
+        {
+            "teams": "Atletico Tucuman vs Draw vs Independiente",
+            "date_time": "Demain 21:30",
+            "odds": {
+                "Atletico Tucuman - Win": "2,32",
+                "Draw": "2,82",
+                "Independiente - Win": "3,15"
+            }
+        },
+        {
+            "teams": "Defensa y Justicia vs Draw vs Sarmiento",
+            "date_time": "Demain 23:45",
+            "odds": {
+                "Defensa y Justicia - Win": "1,82",
+                "Draw": "3,35",
+                "Sarmiento - Win": "3,95"
+            }
+        },
+        {
+            "teams": "Rosario Central vs Draw vs River Plate",
+            "date_time": "Après-demain 02:00",
+            "odds": {
+                "Rosario Central - Win": "3,10",
+                "Draw": "3,15",
+                "River Plate - Win": "2,15"
+            }
+        },
+        {
+            "teams": "Talleres vs Draw vs Gimnasia Y Esgrima",
+            "date_time": "Après-demain 21:30",
+            "odds": {
+                "Talleres - Win": "1,50",
+                "Draw": "3,80",
+                "Gimnasia Y Esgrima - Win": "5,80"
+            }
+        },
+        {
+            "teams": "Velez Sarsfield vs Draw vs Union Santa Fe",
+            "date_time": "Après-demain 21:30",
+            "odds": {
+                "Velez Sarsfield - Win": "2,30",
+                "Draw": "2,78",
+                "Union Santa Fe - Win": "3,30"
+            }
+        },
+        {
+            "teams": "Banfield vs Draw vs Godoy Cruz",
+            "date_time": "Après-demain 23:30",
+            "odds": {
+                "Banfield - Win": "2,25",
+                "Draw": "3,00",
+                "Godoy Cruz - Win": "3,10"
+            }
+        },
+        {
+            "teams": "Racing Club vs Draw vs Central Córdoba",
+            "date_time": "25/07/2023 00:30",
+            "odds": {
+                "Racing Club - Win": "1,87",
+                "Draw": "3,30",
+                "Central Córdoba - Win": "3,85"
+            }
+        },
+        {
+            "teams": "Boca Juniors vs Draw vs Newell's Old Boys",
+            "date_time": "25/07/2023 01:45",
+            "odds": {
+                "Boca Juniors - Win": "1,92",
+                "Draw": "3,05",
+                "Newell's Old Boys - Win": "4,00"
+            }
+        },
+        {
+            "teams": "Barracas Central vs Draw vs Arsenal Sarandi",
+            "date_time": "25/07/2023 20:30",
+            "odds": {
+                "Barracas Central - Win": "1,80",
+                "Draw": "3,25",
+                "Arsenal Sarandi - Win": "4,20"
+            }
+        },
+        {
+            "teams": "Colon vs Draw vs Tigre",
+            "date_time": "25/07/2023 23:00",
+            "odds": {
+                "Colon - Win": "2,25",
+                "Draw": "3,05",
+                "Tigre - Win": "2,88"
+            }
+        },
+        {
+            "teams": "Instituto AC Cordoba vs Draw vs Atletico Lanus",
+            "date_time": "26/07/2023 01:30",
+            "odds": {
+                "Instituto AC Cordoba - Win": "2,52",
+                "Draw": "2,80",
+                "Atletico Lanus - Win": "2,75"
+            }
+        }
+    ]
+}

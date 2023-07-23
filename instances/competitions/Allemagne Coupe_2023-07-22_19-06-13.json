@@ -1,0 +1,105 @@
+{
+    "name": "Allemagne Coupe",
+    "matches": [
+        {
+            "teams": "Sandhausen vs Draw vs Hanovre",
+            "date_time": "11/08/2023 18:00",
+            "odds": {}
+        },
+        {
+            "teams": "TUS Bersenbruck vs Draw vs B. M'gladbach",
+            "date_time": "11/08/2023 18:00",
+            "odds": {}
+        },
+        {
+            "teams": "Sarrebruck vs Draw vs Karlsruhe",
+            "date_time": "11/08/2023 18:00",
+            "odds": {}
+        },
+        {
+            "teams": "Braunschweig vs Draw vs Schalke",
+            "date_time": "11/08/2023 20:45",
+            "odds": {}
+        },
+        {
+            "teams": "Carl Zeiss Iena vs Draw vs Hertha Berlin",
+            "date_time": "12/08/2023 13:00",
+            "odds": {}
+        },
+        {
+            "teams": "TSG Balingen 1848 vs Draw vs Stuttgart",
+            "date_time": "12/08/2023 13:00",
+            "odds": {}
+        },
+        {
+            "teams": "Atlas Delmenhorst vs Draw vs St. Pauli",
+            "date_time": "12/08/2023 15:30",
+            "odds": {}
+        },
+        {
+            "teams": "Schott Mainz vs Draw vs Dortmund",
+            "date_time": "12/08/2023 15:30",
+            "odds": {}
+        },
+        {
+            "teams": "FC Oberneuland vs Draw vs Nuremberg",
+            "date_time": "12/08/2023 15:30",
+            "odds": {}
+        },
+        {
+            "teams": "Gutersloh vs Draw vs Holstein Kiel",
+            "date_time": "12/08/2023 15:30",
+            "odds": {}
+        },
+        {
+            "teams": "FC Teutonia Ottensen 1905 vs Draw vs B. Leverkusen",
+            "date_time": "12/08/2023 15:30",
+            "odds": {}
+        },
+        {
+            "teams": "Viktoria Köln vs Draw vs Werder Brême",
+            "date_time": "12/08/2023 15:30",
+            "odds": {}
+        },
+        {
+            "teams": "Elversberg vs Draw vs Mayence",
+            "date_time": "12/08/2023 18:00",
+            "odds": {}
+        },
+        {
+            "teams": "Arminia vs Draw vs Bochum",
+            "date_time": "12/08/2023 18:00",
+            "odds": {}
+        },
+        {
+            "teams": "Hallescher vs Draw vs Greuther Fürth",
+            "date_time": "12/08/2023 18:00",
+            "odds": {}
+        },
+        {
+            "teams": "Rostocker FC vs Draw vs Heidenheim",
+            "date_time": "13/08/2023 13:00",
+            "odds": {}
+        },
+        {
+            "teams": "Rot-Weiss Essen vs Draw vs Hamburger SV",
+            "date_time": "13/08/2023 13:00",
+            "odds": {}
+        },
+        {
+            "teams": "Coblence vs Draw vs Kaiserslautern",
+            "date_time": "13/08/2023 15:30",
+            "odds": {}
+        },
+        {
+            "teams": "SV Oberachern vs Draw vs Fribourg",
+            "date_time": "13/08/2023 15:30",
+            "odds": {}
+        },
+        {
+            "teams": "SpVgg Unterhaching vs Draw vs Augsbourg",
+            "date_time": "13/08/2023 15:30",
+            "odds": {}
+        }
+    ]
+}

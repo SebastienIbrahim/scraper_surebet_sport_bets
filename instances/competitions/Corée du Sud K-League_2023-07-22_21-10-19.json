@@ -1,0 +1,59 @@
+{
+    "name": "Corée du Sud K-League",
+    "matches": [
+        {
+            "teams": "FC Séoul vs Draw vs Pohang Steelers",
+            "date_time": "04/08/2023 12:30",
+            "odds": {
+                "FC Séoul - Win": "2,40",
+                "Draw": "3,00",
+                "Pohang Steelers - Win": "2,55"
+            }
+        },
+        {
+            "teams": "Gwangju FC vs Draw vs Daejeon Citizen",
+            "date_time": "04/08/2023 12:30",
+            "odds": {
+                "Gwangju FC - Win": "2,05",
+                "Draw": "3,15",
+                "Daejeon Citizen - Win": "3,00"
+            }
+        },
+        {
+            "teams": "Suwon Samsung Bluewings vs Draw vs Suwon FC",
+            "date_time": "05/08/2023 12:00",
+            "odds": {
+                "Suwon Samsung Bluewings - Win": "2,05",
+                "Draw": "3,15",
+                "Suwon FC - Win": "3,00"
+            }
+        },
+        {
+            "teams": "Daegu vs Draw vs Ulsan Hyundai",
+            "date_time": "05/08/2023 12:30",
+            "odds": {
+                "Daegu - Win": "3,50",
+                "Draw": "3,30",
+                "Ulsan Hyundai - Win": "1,82"
+            }
+        },
+        {
+            "teams": "Jeonbuk vs Draw vs Incheon United",
+            "date_time": "06/08/2023 12:00",
+            "odds": {
+                "Jeonbuk - Win": "1,87",
+                "Draw": "3,25",
+                "Incheon United - Win": "3,35"
+            }
+        },
+        {
+            "teams": "Jeju United vs Draw vs Gangwon",
+            "date_time": "06/08/2023 12:30",
+            "odds": {
+                "Jeju United - Win": "1,93",
+                "Draw": "3,15",
+                "Gangwon - Win": "3,25"
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Liga Portugal",
+    "matches": [
+        {
+            "teams": "Benfica vs N vs FC Porto",
+            "date_time": "mardi 08 août à 21h45",
+            "odds": {
+                "Benfica - Win": "1,83",
+                "Draw": "3,30",
+                "FC Porto - Win": "3,70"
+            }
+        }
+    ]
+}

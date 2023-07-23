@@ -1,0 +1,45 @@
+{
+    "name": "Chili Primera",
+    "matches": [
+        {
+            "teams": "Copiapo vs Draw vs Cobresal",
+            "date_time": "Aujourd'hui 21:00",
+            "odds": {}
+        },
+        {
+            "teams": "Huachipato vs Draw vs O'Higgins",
+            "date_time": "Aujourd'hui 23:30",
+            "odds": {}
+        },
+        {
+            "teams": "Universidad de Chile vs Draw vs Palestino",
+            "date_time": "Demain 02:00",
+            "odds": {}
+        },
+        {
+            "teams": "Everton Vina vs Draw vs Union Espanola",
+            "date_time": "Demain 21:00",
+            "odds": {}
+        },
+        {
+            "teams": "Universidad Catolica vs Draw vs Coquimbo Unido",
+            "date_time": "Après-demain 00:00",
+            "odds": {}
+        },
+        {
+            "teams": "Audax Italiano vs Draw vs Curico Unido",
+            "date_time": "25/07/2023 02:30",
+            "odds": {}
+        },
+        {
+            "teams": "Nublense vs Draw vs Colo Colo",
+            "date_time": "26/07/2023 00:00",
+            "odds": {}
+        },
+        {
+            "teams": "O'Higgins vs Draw vs Nublense",
+            "date_time": "29/07/2023 00:00",
+            "odds": {}
+        }
+    ]
+}

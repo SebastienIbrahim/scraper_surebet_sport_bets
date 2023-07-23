@@ -1,0 +1,45 @@
+{
+    "name": "Belgique Division 1A",
+    "matches": [
+        {
+            "teams": "Union Saint-Gilloise vs Draw vs Anderlecht",
+            "date_time": "28/07/2023 20:45",
+            "odds": {}
+        },
+        {
+            "teams": "Eupen vs Draw vs Westerlo",
+            "date_time": "29/07/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Royal Charleroi SC vs Draw vs Oud-Heverlee Leuven",
+            "date_time": "29/07/2023 18:15",
+            "odds": {}
+        },
+        {
+            "teams": "RWD Molenbeek vs Draw vs Genk",
+            "date_time": "29/07/2023 20:45",
+            "odds": {}
+        },
+        {
+            "teams": "Anvers vs Draw vs Cercle Bruges",
+            "date_time": "30/07/2023 13:30",
+            "odds": {}
+        },
+        {
+            "teams": "La Gantoise vs Draw vs Courtrai",
+            "date_time": "30/07/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Club Bruges vs Draw vs Malines",
+            "date_time": "30/07/2023 18:30",
+            "odds": {}
+        },
+        {
+            "teams": "St Truiden vs Draw vs Standard Liège",
+            "date_time": "30/07/2023 19:15",
+            "odds": {}
+        }
+    ]
+}

@@ -1,0 +1,193 @@
+{
+    "name": "Espagne",
+    "competitions": [
+        {
+            "name": "LaLiga",
+            "matches": [
+                {
+                    "teams": "Almeria vs N vs Rayo Vallecano",
+                    "date_time": "vendredi 11 août à 19h30",
+                    "odds": {
+                        "Almeria - Win": "2,25",
+                        "Draw": "3,15",
+                        "Rayo Vallecano - Win": "2,75"
+                    }
+                },
+                {
+                    "teams": "FC Séville vs N vs CF Valence",
+                    "date_time": "vendredi 11 août à 21h30",
+                    "odds": {
+                        "FC Séville - Win": "2,15",
+                        "Draw": "3,10",
+                        "CF Valence - Win": "3,05"
+                    }
+                },
+                {
+                    "teams": "Real Sociedad vs N vs Gérone",
+                    "date_time": "samedi 12 août à 17h00",
+                    "odds": {
+                        "Real Sociedad - Win": "1,59",
+                        "Draw": "3,65",
+                        "Gérone - Win": "4,65"
+                    }
+                },
+                {
+                    "teams": "Las Palmas vs N vs Majorque",
+                    "date_time": "samedi 12 août à 19h30",
+                    "odds": {
+                        "Las Palmas - Win": "2,35",
+                        "Draw": "2,85",
+                        "Majorque - Win": "2,95"
+                    }
+                },
+                {
+                    "teams": "Ath. Bilbao vs N vs Real Madrid",
+                    "date_time": "samedi 12 août à 21h30",
+                    "odds": {
+                        "Ath. Bilbao - Win": "3,05",
+                        "Draw": "3,20",
+                        "Real Madrid - Win": "2,10"
+                    }
+                },
+                {
+                    "teams": "Celta Vigo vs N vs Osasuna",
+                    "date_time": "dimanche 13 août à 17h00",
+                    "odds": {
+                        "Celta Vigo - Win": "2,05",
+                        "Draw": "3,05",
+                        "Osasuna - Win": "3,25"
+                    }
+                },
+                {
+                    "teams": "Villarreal vs N vs Betis Séville",
+                    "date_time": "dimanche 13 août à 19h30",
+                    "odds": {
+                        "Villarreal - Win": "1,69",
+                        "Draw": "3,60",
+                        "Betis Séville - Win": "4,00"
+                    }
+                },
+                {
+                    "teams": "Getafe vs N vs FC Barcelone",
+                    "date_time": "dimanche 13 août à 21h30",
+                    "odds": {
+                        "Getafe - Win": "4,90",
+                        "Draw": "3,60",
+                        "FC Barcelone - Win": "1,57"
+                    }
+                },
+                {
+                    "teams": "Cadix vs N vs Alaves",
+                    "date_time": "lundi 14 août à 19h30",
+                    "odds": {
+                        "Cadix - Win": "2,10",
+                        "Draw": "2,90",
+                        "Alaves - Win": "3,35"
+                    }
+                },
+                {
+                    "teams": "Atl. Madrid vs N vs Granada CF",
+                    "date_time": "lundi 14 août à 21h30",
+                    "odds": {
+                        "Atl. Madrid - Win": "1,27",
+                        "Draw": "4,65",
+                        "Granada CF - Win": "8,30"
+                    }
+                },
+                {
+                    "teams": "Majorque vs N vs Villarreal",
+                    "date_time": "vendredi 18 août à 19h30",
+                    "odds": {
+                        "Majorque - Win": "3,10",
+                        "Draw": "3,00",
+                        "Villarreal - Win": "2,15"
+                    }
+                },
+                {
+                    "teams": "CF Valence vs N vs Las Palmas",
+                    "date_time": "vendredi 18 août à 21h30",
+                    "odds": {
+                        "CF Valence - Win": "1,69",
+                        "Draw": "3,30",
+                        "Las Palmas - Win": "4,45"
+                    }
+                },
+                {
+                    "teams": "Real Sociedad vs N vs Celta Vigo",
+                    "date_time": "samedi 19 août à 17h00",
+                    "odds": {
+                        "Real Sociedad - Win": "1,62",
+                        "Draw": "3,35",
+                        "Celta Vigo - Win": "4,80"
+                    }
+                },
+                {
+                    "teams": "Almeria vs N vs Real Madrid",
+                    "date_time": "samedi 19 août à 19h30",
+                    "odds": {
+                        "Almeria - Win": "6,60",
+                        "Draw": "4,55",
+                        "Real Madrid - Win": "1,34"
+                    }
+                },
+                {
+                    "teams": "Osasuna vs N vs Ath. Bilbao",
+                    "date_time": "samedi 19 août à 21h30",
+                    "odds": {
+                        "Osasuna - Win": "2,70",
+                        "Draw": "3,00",
+                        "Ath. Bilbao - Win": "2,40"
+                    }
+                },
+                {
+                    "teams": "Gérone vs N vs Getafe",
+                    "date_time": "dimanche 20 août à 17h30",
+                    "odds": {
+                        "Gérone - Win": "2,55",
+                        "Draw": "2,85",
+                        "Getafe - Win": "2,65"
+                    }
+                },
+                {
+                    "teams": "FC Barcelone vs N vs Cadix",
+                    "date_time": "dimanche 20 août à 19h30",
+                    "odds": {
+                        "FC Barcelone - Win": "1,19",
+                        "Draw": "5,40",
+                        "Cadix - Win": "10,50"
+                    }
+                },
+                {
+                    "teams": "Betis Séville vs N vs Atl. Madrid",
+                    "date_time": "dimanche 20 août à 21h30",
+                    "odds": {
+                        "Betis Séville - Win": "2,90",
+                        "Draw": "3,05",
+                        "Atl. Madrid - Win": "2,25"
+                    }
+                },
+                {
+                    "teams": "Alaves vs N vs FC Séville",
+                    "date_time": "lundi 21 août à 19h00",
+                    "odds": {
+                        "Alaves - Win": "3,45",
+                        "Draw": "3,00",
+                        "FC Séville - Win": "2,00"
+                    }
+                },
+                {
+                    "teams": "Granada CF vs N vs Rayo Vallecano",
+                    "date_time": "lundi 21 août à 21h30",
+                    "odds": {
+                        "Granada CF - Win": "2,55",
+                        "Draw": "2,95"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Copa del Rey",
+            "matches": []
+        }
+    ]
+}

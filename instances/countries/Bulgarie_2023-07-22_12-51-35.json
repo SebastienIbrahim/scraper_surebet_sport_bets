@@ -1,0 +1,55 @@
+{
+    "name": "Bulgarie",
+    "competitions": [
+        {
+            "name": "D1 Bulgarie",
+            "matches": [
+                {
+                    "teams": "Botev Plovdiv vs N vs Levski Sofia",
+                    "date_time": "Aujourd'hui à 18h15",
+                    "odds": {
+                        "Botev Plovdiv - Win": "3,40",
+                        "Draw": "3,20",
+                        "Levski Sofia - Win": "1,95"
+                    }
+                },
+                {
+                    "teams": "Ludogorets vs N vs Etar Tarnovo",
+                    "date_time": "Aujourd'hui à 20h30",
+                    "odds": {
+                        "Ludogorets - Win": "1,10",
+                        "Draw": "7,00",
+                        "Etar Tarnovo - Win": "14,50"
+                    }
+                },
+                {
+                    "teams": "Cherno More vs N vs FC Hebar",
+                    "date_time": "Demain à 18h00",
+                    "odds": {
+                        "Cherno More - Win": "1,72",
+                        "Draw": "3,35",
+                        "FC Hebar - Win": "4,15"
+                    }
+                },
+                {
+                    "teams": "Lokomo.Sofia vs N vs Lokomo.Plovdiv",
+                    "date_time": "Demain à 20h15",
+                    "odds": {
+                        "Lokomo.Sofia - Win": "2,75",
+                        "Draw": "3,00",
+                        "Lokomo.Plovdiv - Win": "2,35"
+                    }
+                },
+                {
+                    "teams": "Beroe vs N vs FC Arda",
+                    "date_time": "lundi 24 juillet à 20h15",
+                    "odds": {
+                        "Beroe - Win": "3,35",
+                        "Draw": "3,15",
+                        "FC Arda - Win": "1,95"
+                    }
+                }
+            ]
+        }
+    ]
+}

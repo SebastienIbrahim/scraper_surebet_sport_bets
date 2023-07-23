@@ -1,0 +1,37 @@
+{
+    "name": "Finlande",
+    "competitions": [
+        {
+            "name": "Finlande Veikkausliiga",
+            "matches": [
+                {
+                    "teams": "Lahti vs Draw vs Mariehamn",
+                    "date_time": "Demain 14:00",
+                    "odds": {
+                        "Lahti - Win": "2,25",
+                        "Draw": "3,15",
+                        "Mariehamn - Win": "3,10"
+                    }
+                },
+                {
+                    "teams": "Vaasa vs Draw vs Haka Valkeakoski",
+                    "date_time": "Demain 17:30",
+                    "odds": {
+                        "Vaasa - Win": "1,82",
+                        "Draw": "3,50",
+                        "Haka Valkeakoski - Win": "4,15"
+                    }
+                },
+                {
+                    "teams": "Seinajoen JK vs Draw vs HJK Helsinki",
+                    "date_time": "29/07/2023 16:00",
+                    "odds": {
+                        "Seinajoen JK - Win": "2,52",
+                        "Draw": "2,95",
+                        "HJK Helsinki - Win": "2,60"
+                    }
+                }
+            ]
+        }
+    ]
+}

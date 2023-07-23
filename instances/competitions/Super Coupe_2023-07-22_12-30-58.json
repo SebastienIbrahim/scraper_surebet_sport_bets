@@ -1,0 +1,14 @@
+{
+    "name": "Super Coupe",
+    "matches": [
+        {
+            "teams": "Bayern Munich vs N vs RB Leipzig",
+            "date_time": "samedi 12 août à 20h45",
+            "odds": {
+                "Bayern Munich - Win": "1,54",
+                "Draw": "4,00",
+                "RB Leipzig - Win": "4,55"
+            }
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "name": "D1 Roumanie",
+    "matches": [
+        {
+            "teams": "FC Constanta vs N vs CS Voluntari",
+            "date_time": "Aujourd'hui à 17h15",
+            "odds": {
+                "FC Constanta - Win": "1,98",
+                "Draw": "3,25",
+                "CS Voluntari - Win": "3,50"
+            }
+        },
+        {
+            "teams": "FCSB vs N vs DinamoBucarest",
+            "date_time": "Aujourd'hui à 20h30",
+            "odds": {
+                "FCSB - Win": "1,37",
+                "Draw": "4,55",
+                "DinamoBucarest - Win": "6,70"
+            }
+        },
+        {
+            "teams": "Politehnica I. vs N vs Hermannstadt",
+            "date_time": "Demain à 17h30",
+            "odds": {
+                "Politehnica I. - Win": "2,75",
+                "Draw": "2,95",
+                "Hermannstadt - Win": "2,30"
+            }
+        },
+        {
+            "teams": "Universit Cluj vs N vs Rapid Bucarest",
+            "date_time": "Demain à 20h30",
+            "odds": {
+                "Universit Cluj - Win": "2,65",
+                "Draw": "3,05",
+                "Rapid Bucarest - Win": "2,35"
+            }
+        },
+        {
+            "teams": "FC Botosani vs N vs Pet.Ploiesti",
+            "date_time": "lundi 24 juillet à 17h30",
+            "odds": {
+                "FC Botosani - Win": "2,55",
+                "Draw": "3,05",
+                "Pet.Ploiesti - Win": "2,45"
+            }
+        },
+        {
+            "teams": "Uni.Craiova vs N vs Otelul Galati",
+            "date_time": "lundi 24 juillet à 20h30",
+            "odds": {
+                "Uni.Craiova - Win": "1,37",
+                "Draw": "3,90",
+                "Otelul Galati - Win": "7,00"
+            }
+        }
+    ]
+}

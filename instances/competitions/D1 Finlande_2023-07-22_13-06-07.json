@@ -1,0 +1,50 @@
+{
+    "name": "D1 Finlande",
+    "matches": [
+        {
+            "teams": "HJK Helsinki vs N vs Ilves",
+            "date_time": "Aujourd'hui à 16h00",
+            "odds": {
+                "HJK Helsinki - Win": "1,67",
+                "Draw": "3,50",
+                "Ilves - Win": "4,70"
+            }
+        },
+        {
+            "teams": "Inter Turku vs N vs SJK Seinäjoen",
+            "date_time": "Aujourd'hui à 16h00",
+            "odds": {
+                "Inter Turku - Win": "2,65",
+                "Draw": "3,20",
+                "SJK Seinäjoen - Win": "2,40"
+            }
+        },
+        {
+            "teams": "AC Oulu vs N vs FC Ktp",
+            "date_time": "Aujourd'hui à 16h00",
+            "odds": {
+                "AC Oulu - Win": "1,74",
+                "Draw": "3,55",
+                "FC Ktp - Win": "4,10"
+            }
+        },
+        {
+            "teams": "FC Lahti vs N vs Mariehamn",
+            "date_time": "Demain à 14h00",
+            "odds": {
+                "FC Lahti - Win": "2,15",
+                "Draw": "3,00",
+                "Mariehamn - Win": "2,95"
+            }
+        },
+        {
+            "teams": "VPS Vaasan vs N vs FC Haka",
+            "date_time": "Demain à 17h30",
+            "odds": {
+                "VPS Vaasan - Win": "1,72",
+                "Draw": "3,40",
+                "FC Haka - Win": "3,95"
+            }
+        }
+    ]
+}

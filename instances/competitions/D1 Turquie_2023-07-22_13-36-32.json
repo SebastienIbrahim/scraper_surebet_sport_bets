@@ -1,0 +1,95 @@
+{
+    "name": "D1 Turquie",
+    "matches": [
+        {
+            "teams": "Kayserispor vs N vs Galatasaray",
+            "date_time": "dimanche 13 août à 17h00",
+            "odds": {
+                "Kayserispor - Win": "3,80",
+                "Draw": "3,60",
+                "Galatasaray - Win": "1,64"
+            }
+        },
+        {
+            "teams": "Fenerbahce vs N vs Gaziantep Spor",
+            "date_time": "dimanche 13 août à 17h00",
+            "odds": {
+                "Fenerbahce - Win": "1,31",
+                "Draw": "4,60",
+                "Gaziantep Spor - Win": "5,90"
+            }
+        },
+        {
+            "teams": "Sivasspor vs N vs Samsunspor",
+            "date_time": "dimanche 13 août à 17h00",
+            "odds": {
+                "Sivasspor - Win": "1,96",
+                "Draw": "3,20",
+                "Samsunspor - Win": "3,05"
+            }
+        },
+        {
+            "teams": "Karagumruk vs N vs Besiktas",
+            "date_time": "dimanche 13 août à 17h00",
+            "odds": {
+                "Karagumruk - Win": "2,80",
+                "Draw": "3,50",
+                "Besiktas - Win": "1,98"
+            }
+        },
+        {
+            "teams": "Trabzonspor vs N vs Antalyaspor",
+            "date_time": "dimanche 13 août à 17h00",
+            "odds": {
+                "Trabzonspor - Win": "1,64",
+                "Draw": "3,55",
+                "Antalyaspor - Win": "3,85"
+            }
+        },
+        {
+            "teams": "Alanyaspor vs N vs Basaksehir",
+            "date_time": "dimanche 13 août à 17h00",
+            "odds": {
+                "Alanyaspor - Win": "2,55",
+                "Draw": "3,30",
+                "Basaksehir - Win": "2,20"
+            }
+        },
+        {
+            "teams": "A.Demirspor vs N vs Caykur",
+            "date_time": "dimanche 13 août à 17h00",
+            "odds": {
+                "A.Demirspor - Win": "1,49",
+                "Draw": "3,85",
+                "Caykur - Win": "4,60"
+            }
+        },
+        {
+            "teams": "Kasimpasa vs N vs Ankaragücü",
+            "date_time": "dimanche 13 août à 17h00",
+            "odds": {
+                "Kasimpasa - Win": "2,20",
+                "Draw": "3,30",
+                "Ankaragücü - Win": "2,55"
+            }
+        },
+        {
+            "teams": "Pendikspor vs N vs Hatayspor",
+            "date_time": "dimanche 13 août à 17h00",
+            "odds": {
+                "Pendikspor - Win": "2,35",
+                "Draw": "3,25",
+                "Hatayspor - Win": "2,40"
+            }
+        },
+        {
+            "teams": "Konyaspor vs N vs Istanbulspor",
+            "date_time": "dimanche 13 août à 17h00",
+            "odds": {
+                "Konyaspor - Win": "1,84",
+                "Draw": "3,20",
+                "Istanbulspor - Win": "3,40"
+            }
+        }
+    ]
+}

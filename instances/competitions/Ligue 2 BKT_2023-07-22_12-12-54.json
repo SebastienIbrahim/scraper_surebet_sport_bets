@@ -1,0 +1,102 @@
+{
+    "name": "Ligue 2 BKT",
+    "matches": [
+        {
+            "teams": "Vainqueur - Oui vs Bordeaux vs Auxerre vs Troyes",
+            "date_time": "samedi 05 août à 14h59",
+            "odds": {
+                "Vainqueur - Oui - Win": "5,00",
+                "Draw": "5,50",
+                "Auxerre - Win": "5,50"
+            }
+        },
+        {
+            "teams": "St Etienne vs N vs Grenoble",
+            "date_time": "samedi 05 août à 15h00",
+            "odds": {
+                "St Etienne - Win": "1,56",
+                "Draw": "3,70",
+                "Grenoble - Win": "4,85"
+            }
+        },
+        {
+            "teams": "Sochaux vs N vs Guingamp",
+            "date_time": "samedi 05 août à 19h00",
+            "odds": {
+                "Sochaux - Win": "2,45",
+                "Draw": "3,25"
+            }
+        },
+        {
+            "teams": "AC Ajaccio vs N vs Rodez",
+            "date_time": "samedi 05 août à 19h00",
+            "odds": {
+                "AC Ajaccio - Win": "1,90",
+                "Draw": "3,10",
+                "Rodez - Win": "3,70"
+            }
+        },
+        {
+            "teams": "Amiens vs N vs Quevilly Rouen",
+            "date_time": "samedi 05 août à 19h00",
+            "odds": {
+                "Amiens - Win": "2,30",
+                "Draw": "3,20",
+                "Quevilly Rouen - Win": "2,65"
+            }
+        },
+        {
+            "teams": "Paris FC vs N vs Caen",
+            "date_time": "samedi 05 août à 19h00",
+            "odds": {
+                "Paris FC - Win": "2,30",
+                "Draw": "3,10",
+                "Caen - Win": "2,75"
+            }
+        },
+        {
+            "teams": "Laval vs N vs Angers",
+            "date_time": "samedi 05 août à 19h00",
+            "odds": {
+                "Laval - Win": "2,50",
+                "Draw": "3,05",
+                "Angers - Win": "2,55"
+            }
+        },
+        {
+            "teams": "Valenciennes vs N vs Auxerre",
+            "date_time": "samedi 05 août à 19h00",
+            "odds": {
+                "Valenciennes - Win": "3,10",
+                "Draw": "3,25",
+                "Auxerre - Win": "2,05"
+            }
+        },
+        {
+            "teams": "Concarneau vs N vs Bastia",
+            "date_time": "samedi 05 août à 19h00",
+            "odds": {
+                "Concarneau - Win": "2,85",
+                "Draw": "3,05",
+                "Bastia - Win": "2,30"
+            }
+        },
+        {
+            "teams": "Dunkerque vs N vs Troyes",
+            "date_time": "samedi 05 août à 19h00",
+            "odds": {
+                "Dunkerque - Win": "2,55",
+                "Draw": "3,00"
+            }
+        },
+        {
+            "teams": "Pau vs N vs Bordeaux",
+            "date_time": "lundi 07 août à 20h45",
+            "odds": {
+                "Pau - Win": "3,60",
+                "Draw": "3,15",
+                "Bordeaux - Win": "1,90"
+            }
+        }
+    ]
+}

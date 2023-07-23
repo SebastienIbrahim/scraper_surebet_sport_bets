@@ -1,0 +1,41 @@
+{
+    "name": "Hongrie NB 1",
+    "matches": [
+        {
+            "teams": "MTK Budapest vs Draw vs Paksi",
+            "date_time": "28/07/2023 20:00",
+            "odds": {
+                "MTK Budapest - Win": "2,40",
+                "Draw": "3,75",
+                "Paksi - Win": "2,19"
+            }
+        },
+        {
+            "teams": "Diosgyori V vs Draw vs Puskas Akademia",
+            "date_time": "29/07/2023 18:00",
+            "odds": {
+                "Diosgyori V - Win": "3,12",
+                "Draw": "3,30",
+                "Puskas Akademia - Win": "1,94"
+            }
+        },
+        {
+            "teams": "Ujpest vs Draw vs Fehérvár FC",
+            "date_time": "29/07/2023 20:15",
+            "odds": {
+                "Ujpest - Win": "2,32",
+                "Draw": "3,17",
+                "Fehérvár FC - Win": "2,54"
+            }
+        },
+        {
+            "teams": "Debreceni vs Draw vs Mezokovesd",
+            "date_time": "31/07/2023 20:00",
+            "odds": {
+                "Debreceni - Win": "1,78",
+                "Draw": "3,25",
+                "Mezokovesd - Win": "3,43"
+            }
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "name": "D1 Danemark",
+    "matches": [
+        {
+            "teams": "Lyngby BK vs N vs FC Copenhague",
+            "date_time": "Aujourd'hui à 16h00",
+            "odds": {
+                "Lyngby BK - Win": "5,00",
+                "Draw": "3,65",
+                "FC Copenhague - Win": "1,55"
+            }
+        },
+        {
+            "teams": "Aarhus GF vs N vs Vejle",
+            "date_time": "Demain à 14h00",
+            "odds": {
+                "Aarhus GF - Win": "1,51",
+                "Draw": "3,60",
+                "Vejle - Win": "5,60"
+            }
+        },
+        {
+            "teams": "Odense vs N vs Randers FC",
+            "date_time": "Demain à 16h00",
+            "odds": {
+                "Odense - Win": "1,92",
+                "Draw": "3,35",
+                "Randers FC - Win": "3,30"
+            }
+        },
+        {
+            "teams": "Silkeborg vs N vs Brøndby",
+            "date_time": "Demain à 18h00",
+            "odds": {
+                "Silkeborg - Win": "2,60",
+                "Draw": "3,25",
+                "Brøndby - Win": "2,35"
+            }
+        },
+        {
+            "teams": "Nordsjaelland vs N vs Viborg FF",
+            "date_time": "lundi 24 juillet à 19h00",
+            "odds": {
+                "Nordsjaelland - Win": "2,40",
+                "Draw": "3,30",
+                "Viborg FF - Win": "2,50"
+            }
+        },
+        {
+            "teams": "Viborg FF vs N vs Lyngby BK",
+            "date_time": "vendredi 28 juillet à 19h00",
+            "odds": {
+                "Viborg FF - Win": "1,73",
+                "Draw": "3,35",
+                "Lyngby BK - Win": "3,50"
+            }
+        },
+        {
+            "teams": "Vejle vs N vs FC Copenhague",
+            "date_time": "samedi 29 juillet à 16h00",
+            "odds": {
+                "Vejle - Win": "4,60",
+                "Draw": "3,60",
+                "FC Copenhague - Win": "1,50"
+            }
+        },
+        {
+            "teams": "Midtjylland vs N vs Silkeborg",
+            "date_time": "dimanche 30 juillet à 14h00",
+            "odds": {
+                "Midtjylland - Win": "1,73",
+                "Draw": "3,35",
+                "Silkeborg - Win": "3,50"
+            }
+        },
+        {
+            "teams": "Brøndby vs N vs Odense",
+            "date_time": "dimanche 30 juillet à 18h00",
+            "odds": {
+                "Brøndby - Win": "1,71",
+                "Draw": "3,30",
+                "Odense - Win": "3,70"
+            }
+        },
+        {
+            "teams": "Aarhus GF vs N vs Nordsjaelland",
+            "date_time": "lundi 31 juillet à 19h00",
+            "odds": {
+                "Aarhus GF - Win": "2,25",
+                "Draw": "2,95",
+                "Nordsjaelland - Win": "2,60"
+            }
+        }
+    ]
+}

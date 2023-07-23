@@ -1,0 +1,158 @@
+{
+    "name": "Cpe Allemagne",
+    "matches": [
+        {
+            "teams": "Werder Brême vs N vs Bayern Munich",
+            "date_time": "vendredi 18 août à 20h30",
+            "odds": {
+                "Werder Brême - Win": "7,70",
+                "Draw": "5,50",
+                "Bayern Munich - Win": "1,24"
+            }
+        },
+        {
+            "teams": "Stuttgart vs N vs Bochum",
+            "date_time": "samedi 19 août à 15h30",
+            "odds": {
+                "Stuttgart - Win": "1,64",
+                "Draw": "3,65",
+                "Bochum - Win": "4,25"
+            }
+        },
+        {
+            "teams": "Hoffenheim vs N vs Fribourg",
+            "date_time": "samedi 19 août à 15h30",
+            "odds": {
+                "Hoffenheim - Win": "2,10",
+                "Draw": "3,25",
+                "Fribourg - Win": "2,90"
+            }
+        },
+        {
+            "teams": "Augsburg vs N vs M'Gladbach",
+            "date_time": "samedi 19 août à 15h30",
+            "odds": {
+                "Augsburg - Win": "2,55",
+                "Draw": "3,30",
+                "M'Gladbach - Win": "2,35"
+            }
+        },
+        {
+            "teams": "Wolfsburg vs N vs FC Heidenheim",
+            "date_time": "samedi 19 août à 15h30",
+            "odds": {
+                "Wolfsburg - Win": "1,54",
+                "Draw": "3,80",
+                "FC Heidenheim - Win": "4,80"
+            }
+        },
+        {
+            "teams": "Leverkusen vs N vs RB Leipzig",
+            "date_time": "samedi 19 août à 15h30",
+            "odds": {
+                "Leverkusen - Win": "2,30",
+                "Draw": "3,20",
+                "RB Leipzig - Win": "2,70"
+            }
+        },
+        {
+            "teams": "Dortmund vs N vs Cologne",
+            "date_time": "samedi 19 août à 18h30",
+            "odds": {
+                "Dortmund - Win": "1,41",
+                "Draw": "4,35",
+                "Cologne - Win": "5,50"
+            }
+        },
+        {
+            "teams": "Union Berlin vs N vs Mayence",
+            "date_time": "dimanche 20 août à 15h30",
+            "odds": {
+                "Union Berlin - Win": "1,96",
+                "Draw": "3,15",
+                "Mayence - Win": "3,40"
+            }
+        },
+        {
+            "teams": "Ein.Francfort vs N vs SV Darmstadt",
+            "date_time": "dimanche 20 août à 17h30",
+            "odds": {
+                "Ein.Francfort - Win": "1,38",
+                "Draw": "4,25",
+                "SV Darmstadt - Win": "6,20"
+            }
+        },
+        {
+            "teams": "RB Leipzig vs N vs Stuttgart",
+            "date_time": "vendredi 25 août à 20h30",
+            "odds": {
+                "RB Leipzig - Win": "1,32",
+                "Draw": "4,65",
+                "Stuttgart - Win": "6,90"
+            }
+        },
+        {
+            "teams": "Cologne vs N vs Wolfsburg",
+            "date_time": "samedi 26 août à 15h30",
+            "odds": {
+                "Cologne - Win": "2,25",
+                "Draw": "3,15",
+                "Wolfsburg - Win": "2,75"
+            }
+        },
+        {
+            "teams": "SV Darmstadt vs N vs Union Berlin",
+            "date_time": "samedi 26 août à 15h30",
+            "odds": {
+                "SV Darmstadt - Win": "3,15",
+                "Draw": "3,20",
+                "Union Berlin - Win": "2,05"
+            }
+        },
+        {
+            "teams": "FC Heidenheim vs N vs Hoffenheim",
+            "date_time": "samedi 26 août à 15h30",
+            "odds": {
+                "FC Heidenheim - Win": "3,05",
+                "Draw": "3,45",
+                "Hoffenheim - Win": "2,00"
+            }
+        },
+        {
+            "teams": "Fribourg vs N vs Werder Brême",
+            "date_time": "samedi 26 août à 15h30",
+            "odds": {
+                "Fribourg - Win": "1,56",
+                "Draw": "3,90",
+                "Werder Brême - Win": "4,50"
+            }
+        },
+        {
+            "teams": "M'Gladbach vs N vs Leverkusen",
+            "date_time": "samedi 26 août à 18h30",
+            "odds": {
+                "M'Gladbach - Win": "2,75",
+                "Draw": "3,40",
+                "Leverkusen - Win": "2,15"
+            }
+        },
+        {
+            "teams": "Mayence vs N vs Ein.Francfort",
+            "date_time": "dimanche 27 août à 15h30",
+            "odds": {
+                "Mayence - Win": "2,25",
+                "Draw": "3,35",
+                "Ein.Francfort - Win": "2,65"
+            }
+        },
+        {
+            "teams": "Bayern Munich vs N vs Augsburg",
+            "date_time": "dimanche 27 août à 17h30",
+            "odds": {
+                "Bayern Munich - Win": "1,10",
+                "Draw": "7,40",
+                "Augsburg - Win": "13,50"
+            }
+        }
+    ]
+}

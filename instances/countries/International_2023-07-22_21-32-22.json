@@ -1,0 +1,271 @@
+{
+    "name": "International",
+    "competitions": [
+        {
+            "name": "Coupe du Monde 2023 F.",
+            "matches": [
+                {
+                    "teams": "Suède F. vs Draw vs Afrique du Sud F.",
+                    "date_time": "Demain 07:00",
+                    "odds": {
+                        "Suède F. - Win": "1,09",
+                        "Draw": "9,20",
+                        "Afrique du Sud F. - Win": "29"
+                    }
+                },
+                {
+                    "teams": "Pays-Bas F. vs Draw vs Portugal F.",
+                    "date_time": "Demain 09:30",
+                    "odds": {
+                        "Pays-Bas F. - Win": "1,50",
+                        "Draw": "4,50",
+                        "Portugal F. - Win": "5,85"
+                    }
+                },
+                {
+                    "teams": "France F. vs Draw vs Jamaïque F.",
+                    "date_time": "Demain 12:00",
+                    "odds": {
+                        "France F. - Win": "1,03",
+                        "Draw": "17",
+                        "Jamaïque F. - Win": "30"
+                    }
+                },
+                {
+                    "teams": "Italie F. vs Draw vs Argentine F.",
+                    "date_time": "Après-demain 08:00",
+                    "odds": {
+                        "Italie F. - Win": "1,52",
+                        "Draw": "4,10",
+                        "Argentine F. - Win": "5,95"
+                    }
+                },
+                {
+                    "teams": "Allemagne F. vs Draw vs Maroc F.",
+                    "date_time": "Après-demain 10:30",
+                    "odds": {
+                        "Allemagne F. - Win": "1,05",
+                        "Draw": "12,50",
+                        "Maroc F. - Win": "40"
+                    }
+                },
+                {
+                    "teams": "Brésil F. vs Draw vs Panama F.",
+                    "date_time": "Après-demain 13:00",
+                    "odds": {
+                        "Brésil F. - Win": "1,01",
+                        "Draw": "13",
+                        "Panama F. - Win": "43,50"
+                    }
+                },
+                {
+                    "teams": "Colombie F. vs Draw vs Corée du Sud F.",
+                    "date_time": "25/07/2023 04:00",
+                    "odds": {
+                        "Colombie F. - Win": "2,65",
+                        "Draw": "3,05",
+                        "Corée du Sud F. - Win": "2,65"
+                    }
+                },
+                {
+                    "teams": "Nlle-Zélande F. vs Draw vs Philippines F.",
+                    "date_time": "25/07/2023 07:30",
+                    "odds": {
+                        "Nlle-Zélande F. - Win": "1,27",
+                        "Draw": "5,10",
+                        "Philippines F. - Win": "10"
+                    }
+                },
+                {
+                    "teams": "Suisse F. vs Draw vs Norvège F.",
+                    "date_time": "25/07/2023 10:00",
+                    "odds": {
+                        "Suisse F. - Win": "3,30",
+                        "Draw": "3,35",
+                        "Norvège F. - Win": "2,10"
+                    }
+                },
+                {
+                    "teams": "Japon F. vs Draw vs Costa Rica F.",
+                    "date_time": "26/07/2023 07:00",
+                    "odds": {
+                        "Japon F. - Win": "1,03",
+                        "Draw": "19",
+                        "Costa Rica F. - Win": "40"
+                    }
+                },
+                {
+                    "teams": "Espagne F. vs Draw vs Zambie F.",
+                    "date_time": "26/07/2023 09:30",
+                    "odds": {
+                        "Espagne F. - Win": " Parier "
+                    }
+                },
+                {
+                    "teams": "Canada F. vs Draw vs Irlande F.",
+                    "date_time": "26/07/2023 14:00",
+                    "odds": {
+                        "Canada F. - Win": "1,50",
+                        "Draw": "3,95",
+                        "Irlande F. - Win": "6,25"
+                    }
+                },
+                {
+                    "teams": "États-Unis F. vs Draw vs Pays-Bas F.",
+                    "date_time": "27/07/2023 03:00",
+                    "odds": {
+                        "États-Unis F. - Win": "1,90",
+                        "Draw": "3,50",
+                        "Pays-Bas F. - Win": "3,70"
+                    }
+                },
+                {
+                    "teams": "Portugal F. vs Draw vs Viêt Nam F.",
+                    "date_time": "27/07/2023 09:30",
+                    "odds": {
+                        "Portugal F. - Win": "1,03",
+                        "Draw": "16",
+                        "Viêt Nam F. - Win": "40"
+                    }
+                },
+                {
+                    "teams": "Australie F. vs Draw vs Nigeria F.",
+                    "date_time": "27/07/2023 12:00",
+                    "odds": {
+                        "Australie F. - Win": "1,38",
+                        "Draw": "4,55",
+                        "Nigeria F. - Win": "7,45"
+                    }
+                },
+                {
+                    "teams": "Angleterre F. vs Draw vs Danemark F.",
+                    "date_time": "28/07/2023 10:30",
+                    "odds": {
+                        "Angleterre F. - Win": "1,49",
+                        "Draw": "4,15",
+                        "Danemark F. - Win": "5,95"
+                    }
+                },
+                {
+                    "teams": "Chine F. vs Draw vs Haïti F.",
+                    "date_time": "28/07/2023 13:00",
+                    "odds": {
+                        "Chine F. - Win": " Parier "
+                    }
+                },
+                {
+                    "teams": "Suède F. vs Draw vs Italie F.",
+                    "date_time": "29/07/2023 09:30",
+                    "odds": {
+                        "Suède F. - Win": "1,64",
+                        "Draw": "3,80",
+                        "Italie F. - Win": "4,80"
+                    }
+                },
+                {
+                    "teams": "France F. vs Draw vs Brésil F.",
+                    "date_time": "29/07/2023 12:00",
+                    "odds": {
+                        "France F. - Win": "1,70",
+                        "Draw": "3,85",
+                        "Brésil F. - Win": "4,30"
+                    }
+                },
+                {
+                    "teams": "Corée du Sud F. vs Draw vs Maroc F.",
+                    "date_time": "30/07/2023 06:30",
+                    "odds": {
+                        "Corée du Sud F. - Win": "1,40",
+                        "Draw": "4,35",
+                        "Maroc F. - Win": "6,30"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Coupe du Monde",
+            "matches": []
+        },
+        {
+            "name": "Copa Libertadores",
+            "matches": [
+                {
+                    "teams": "Argentinos Juniors vs Draw vs Fluminense",
+                    "date_time": "02/08/2023 00:00",
+                    "odds": {
+                        "Argentinos Juniors - Win": "2,30",
+                        "Draw": "2,95",
+                        "Fluminense - Win": "2,70"
+                    }
+                },
+                {
+                    "teams": "River Plate vs Draw vs Internacional",
+                    "date_time": "02/08/2023 02:00",
+                    "odds": {
+                        "River Plate - Win": "1,46",
+                        "Draw": "3,65",
+                        "Internacional - Win": "5,55"
+                    }
+                },
+                {
+                    "teams": "Bolivar vs Draw vs Atletico Paranaense",
+                    "date_time": "02/08/2023 02:00",
+                    "odds": {
+                        "Bolivar - Win": "1,80",
+                        "Draw": "3,25",
+                        "Atletico Paranaense - Win": "3,55"
+                    }
+                },
+                {
+                    "teams": "Nacional Montevideo vs Draw vs Boca Juniors",
+                    "date_time": "03/08/2023 02:00",
+                    "odds": {
+                        "Nacional Montevideo - Win": "2,40",
+                        "Draw": "2,85",
+                        "Boca Juniors - Win": "2,68"
+                    }
+                },
+                {
+                    "teams": "Deportes Pereira vs Draw vs Del Valle",
+                    "date_time": "03/08/2023 02:00",
+                    "odds": {
+                        "Deportes Pereira - Win": "2,82",
+                        "Draw": "3,05",
+                        "Del Valle - Win": "2,18"
+                    }
+                },
+                {
+                    "teams": "Atletico Mineiro vs Draw vs Palmeiras",
+                    "date_time": "03/08/2023 02:30",
+                    "odds": {
+                        "Atletico Mineiro - Win": "2,35",
+                        "Draw": "2,95",
+                        "Palmeiras - Win": "2,62"
+                    }
+                },
+                {
+                    "teams": "Flamengo vs Draw vs Olimpia Asuncion",
+                    "date_time": "04/08/2023 02:00",
+                    "odds": {
+                        "Flamengo - Win": "1,17",
+                        "Draw": "5,80",
+                        "Olimpia Asuncion - Win": "9,90"
+                    }
+                },
+                {
+                    "teams": "Atletico Nacional vs Draw vs Racing Club",
+                    "date_time": "04/08/2023 02:00",
+                    "odds": {
+                        "Atletico Nacional - Win": "2,15",
+                        "Draw": "2,95",
+                        "Racing Club - Win": "2,95"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Copa Sudamericana",
+            "matches": []
+        }
+    ]
+}

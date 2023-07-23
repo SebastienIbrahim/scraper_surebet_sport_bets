@@ -1,0 +1,77 @@
+{
+    "name": "Copa Libertadores",
+    "matches": [
+        {
+            "teams": "Argentinos Juniors vs Draw vs Fluminense",
+            "date_time": "02/08/2023 00:00",
+            "odds": {
+                "Argentinos Juniors - Win": "2,30",
+                "Draw": "2,95",
+                "Fluminense - Win": "2,70"
+            }
+        },
+        {
+            "teams": "River Plate vs Draw vs Internacional",
+            "date_time": "02/08/2023 02:00",
+            "odds": {
+                "River Plate - Win": "1,46",
+                "Draw": "3,65",
+                "Internacional - Win": "5,55"
+            }
+        },
+        {
+            "teams": "Bolivar vs Draw vs Atletico Paranaense",
+            "date_time": "02/08/2023 02:00",
+            "odds": {
+                "Bolivar - Win": "1,80",
+                "Draw": "3,25",
+                "Atletico Paranaense - Win": "3,55"
+            }
+        },
+        {
+            "teams": "Nacional Montevideo vs Draw vs Boca Juniors",
+            "date_time": "03/08/2023 02:00",
+            "odds": {
+                "Nacional Montevideo - Win": "2,40",
+                "Draw": "2,85",
+                "Boca Juniors - Win": "2,68"
+            }
+        },
+        {
+            "teams": "Deportes Pereira vs Draw vs Del Valle",
+            "date_time": "03/08/2023 02:00",
+            "odds": {
+                "Deportes Pereira - Win": "2,82",
+                "Draw": "3,05",
+                "Del Valle - Win": "2,18"
+            }
+        },
+        {
+            "teams": "Atletico Mineiro vs Draw vs Palmeiras",
+            "date_time": "03/08/2023 02:30",
+            "odds": {
+                "Atletico Mineiro - Win": "2,35",
+                "Draw": "2,95",
+                "Palmeiras - Win": "2,62"
+            }
+        },
+        {
+            "teams": "Flamengo vs Draw vs Olimpia Asuncion",
+            "date_time": "04/08/2023 02:00",
+            "odds": {
+                "Flamengo - Win": "1,17",
+                "Draw": "5,80",
+                "Olimpia Asuncion - Win": "9,90"
+            }
+        },
+        {
+            "teams": "Atletico Nacional vs Draw vs Racing Club",
+            "date_time": "04/08/2023 02:00",
+            "odds": {
+                "Atletico Nacional - Win": "2,15",
+                "Draw": "2,95",
+                "Racing Club - Win": "2,95"
+            }
+        }
+    ]
+}

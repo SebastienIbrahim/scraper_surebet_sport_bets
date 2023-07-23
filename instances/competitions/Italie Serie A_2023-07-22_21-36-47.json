@@ -1,0 +1,95 @@
+{
+    "name": "Italie Serie A",
+    "matches": [
+        {
+            "teams": "Empoli vs Draw vs Vérone",
+            "date_time": "19/08/2023 18:30",
+            "odds": {
+                "Empoli - Win": "2,30",
+                "Draw": "3,10",
+                "Vérone - Win": "2,85"
+            }
+        },
+        {
+            "teams": "Frosinone vs Draw vs Naples",
+            "date_time": "19/08/2023 18:30",
+            "odds": {
+                "Frosinone - Win": "5,95",
+                "Draw": "4,20",
+                "Naples - Win": "1,42"
+            }
+        },
+        {
+            "teams": "Genoa vs Draw vs Fiorentina",
+            "date_time": "19/08/2023 20:45",
+            "odds": {
+                "Genoa - Win": "2,90",
+                "Draw": "3,15",
+                "Fiorentina - Win": "2,22"
+            }
+        },
+        {
+            "teams": "Inter vs Draw vs Monza",
+            "date_time": "19/08/2023 20:45",
+            "odds": {
+                "Inter - Win": "1,38",
+                "Draw": "4,40",
+                "Monza - Win": "6,45"
+            }
+        },
+        {
+            "teams": "Sassuolo vs Draw vs Atalanta",
+            "date_time": "20/08/2023 18:30",
+            "odds": {
+                "Sassuolo - Win": "2,95",
+                "Draw": "3,40",
+                "Atalanta - Win": "2,10"
+            }
+        },
+        {
+            "teams": "Roma vs Draw vs Salernitana",
+            "date_time": "20/08/2023 18:30",
+            "odds": {
+                "Roma - Win": "1,44",
+                "Draw": "3,95",
+                "Salernitana - Win": "6,10"
+            }
+        },
+        {
+            "teams": "Lecce vs Draw vs Lazio",
+            "date_time": "20/08/2023 20:45",
+            "odds": {
+                "Lecce - Win": "3,25",
+                "Draw": "3,10",
+                "Lazio - Win": "2,10"
+            }
+        },
+        {
+            "teams": "Udinese vs Draw vs Juventus",
+            "date_time": "20/08/2023 20:45",
+            "odds": {
+                "Udinese - Win": "3,90",
+                "Draw": "3,25",
+                "Juventus - Win": "1,82"
+            }
+        },
+        {
+            "teams": "Torino vs Draw vs Cagliari",
+            "date_time": "21/08/2023 18:30",
+            "odds": {
+                "Torino - Win": "1,72",
+                "Draw": "3,35",
+                "Cagliari - Win": "4,30"
+            }
+        },
+        {
+            "teams": "Bologne vs Draw vs Milan",
+            "date_time": "21/08/2023 20:45",
+            "odds": {
+                "Bologne - Win": "3,35",
+                "Draw": "3,25",
+                "Milan - Win": "1,98"
+            }
+        }
+    ]
+}

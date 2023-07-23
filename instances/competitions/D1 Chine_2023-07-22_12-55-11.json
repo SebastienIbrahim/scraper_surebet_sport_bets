@@ -1,0 +1,59 @@
+{
+    "name": "D1 Chine",
+    "matches": [
+        {
+            "teams": "Changchun vs N vs Shanghai Shen.",
+            "date_time": "Aujourd'hui à 13h35",
+            "odds": {
+                "Changchun - Win": "2,70",
+                "Draw": "3,15",
+                "Shanghai Shen. - Win": "2,40"
+            }
+        },
+        {
+            "teams": "Beijing Guoan vs N vs Qingdao Jonoon",
+            "date_time": "Aujourd'hui à 13h35",
+            "odds": {
+                "Beijing Guoan - Win": "1,61",
+                "Draw": "3,80",
+                "Qingdao Jonoon - Win": "4,45"
+            }
+        },
+        {
+            "teams": "Zhejiang FC vs N vs Shandong",
+            "date_time": "Aujourd'hui à 13h35",
+            "odds": {
+                "Zhejiang FC - Win": "3,10",
+                "Draw": "3,30",
+                "Shandong - Win": "2,05"
+            }
+        },
+        {
+            "teams": "Chengdu Rong. vs N vs Dalian Pro",
+            "date_time": "Aujourd'hui à 13h35",
+            "odds": {
+                "Chengdu Rong. - Win": "1,52",
+                "Draw": "3,85",
+                "Dalian Pro - Win": "5,20"
+            }
+        },
+        {
+            "teams": "Wuhan Th.Towns vs N vs Meizhou Hakka",
+            "date_time": "Demain à 13h35",
+            "odds": {
+                "Wuhan Th.Towns - Win": "1,59",
+                "Draw": "4,00",
+                "Meizhou Hakka - Win": "4,35"
+            }
+        },
+        {
+            "teams": "Henan SL vs N vs Shenzhen FC",
+            "date_time": "vendredi 28 juillet à 13h35",
+            "odds": {
+                "Henan SL - Win": "1,17",
+                "Draw": "5,10",
+                "Shenzhen FC - Win": "11,50"
+            }
+        }
+    ]
+}

@@ -1,0 +1,443 @@
+{
+    "name": "Angleterre",
+    "competitions": [
+        {
+            "name": "Premier League",
+            "matches": [
+                {
+                    "teams": "Man. City vs N vs Arsenal",
+                    "date_time": "dimanche 06 août à 17h00",
+                    "odds": {
+                        "Man. City - Win": "1,66",
+                        "Draw": "3,70",
+                        "Arsenal - Win": "4,05"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Championship",
+            "matches": [
+                {
+                    "teams": "Vainqueur - Oui vs Leicester vs Leeds vs Southampton",
+                    "date_time": "vendredi 04 août à 20h45",
+                    "odds": {
+                        "Vainqueur - Oui - Win": "5,50",
+                        "Draw": "7,50",
+                        "Leeds - Win": "9,00"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Community Shield",
+            "matches": [
+                {
+                    "teams": "Newport County vs N vs Charlton",
+                    "date_time": "mardi 08 août à 20h30",
+                    "odds": {
+                        "Newport County - Win": "2,90",
+                        "Draw": "3,20",
+                        "Charlton - Win": "2,05"
+                    }
+                },
+                {
+                    "teams": "Peterborough vs N vs Swindon",
+                    "date_time": "mardi 08 août à 20h30",
+                    "odds": {
+                        "Peterborough - Win": "1,55",
+                        "Draw": "3,70",
+                        "Swindon - Win": "4,25"
+                    }
+                },
+                {
+                    "teams": "Mansfield Town vs N vs Grimsby Town",
+                    "date_time": "mardi 08 août à 20h30",
+                    "odds": {
+                        "Mansfield Town - Win": "1,82",
+                        "Draw": "3,20",
+                        "Grimsby Town - Win": "3,50"
+                    }
+                },
+                {
+                    "teams": "Swansea vs N vs Northampton",
+                    "date_time": "mardi 08 août à 20h30",
+                    "odds": {
+                        "Swansea - Win": "1,50",
+                        "Draw": "3,75",
+                        "Northampton - Win": "4,70"
+                    }
+                },
+                {
+                    "teams": "Cheltenham vs N vs Birmingham",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Cheltenham - Win": "2,65",
+                        "Draw": "3,20",
+                        "Birmingham - Win": "2,15"
+                    }
+                },
+                {
+                    "teams": "Barnsley vs N vs Tranmere",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Barnsley - Win": "1,56",
+                        "Draw": "3,70",
+                        "Tranmere - Win": "4,20"
+                    }
+                },
+                {
+                    "teams": "Accrington St. vs N vs Bradford",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Accrington St. - Win": "2,50",
+                        "Draw": "3,05",
+                        "Bradford - Win": "2,35"
+                    }
+                },
+                {
+                    "teams": "Bolton vs N vs Barrow AFC",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Bolton - Win": "1,58",
+                        "Draw": "3,60",
+                        "Barrow AFC - Win": "4,15"
+                    }
+                },
+                {
+                    "teams": "Blackburn vs N vs Walsall",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Blackburn - Win": "1,44",
+                        "Draw": "3,95",
+                        "Walsall - Win": "4,90"
+                    }
+                },
+                {
+                    "teams": "Milton Keynes vs N vs Wycombe Wand.",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Milton Keynes - Win": "3,00",
+                        "Draw": "3,10",
+                        "Wycombe Wand. - Win": "2,05"
+                    }
+                },
+                {
+                    "teams": "Forest Green R. vs N vs Portsmouth",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Forest Green R. - Win": "3,15",
+                        "Draw": "3,25",
+                        "Portsmouth - Win": "1,91"
+                    }
+                },
+                {
+                    "teams": "Exeter vs N vs Crawley",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Exeter - Win": "1,52",
+                        "Draw": "3,65",
+                        "Crawley - Win": "4,55"
+                    }
+                },
+                {
+                    "teams": "Harrogate vs N vs Carlisle",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Harrogate - Win": "3,10",
+                        "Draw": "3,25",
+                        "Carlisle - Win": "1,92"
+                    }
+                },
+                {
+                    "teams": "Gillingham vs N vs Southampton",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Gillingham - Win": "4,25",
+                        "Draw": "3,65",
+                        "Southampton - Win": "1,56"
+                    }
+                },
+                {
+                    "teams": "Hull City vs N vs Doncaster",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Hull City - Win": "1,45",
+                        "Draw": "3,85",
+                        "Doncaster - Win": "5,00"
+                    }
+                },
+                {
+                    "teams": "Derby vs N vs Blackpool",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Derby - Win": "2,05",
+                        "Draw": "3,20",
+                        "Blackpool - Win": "2,90"
+                    }
+                },
+                {
+                    "teams": "Notts County vs N vs Lincoln",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Notts County - Win": "2,05",
+                        "Draw": "3,15",
+                        "Lincoln - Win": "2,85"
+                    }
+                },
+                {
+                    "teams": "Plymouth vs N vs Leyton Orient",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Plymouth - Win": "1,62",
+                        "Draw": "3,45",
+                        "Leyton Orient - Win": "4,10"
+                    }
+                },
+                {
+                    "teams": "Preston vs N vs Salford City",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Preston - Win": "1,51",
+                        "Draw": "3,75",
+                        "Salford City - Win": "4,50"
+                    }
+                },
+                {
+                    "teams": "Port Vale vs N vs Fleetwood Town",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Port Vale - Win": "2,15",
+                        "Draw": "3,10",
+                        "Fleetwood Town - Win": "2,75"
+                    }
+                },
+                {
+                    "teams": "Rotherham vs N vs Morecambe",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Rotherham - Win": "1,43",
+                        "Draw": "3,90",
+                        "Morecambe - Win": "5,20"
+                    }
+                },
+                {
+                    "teams": "Millwall vs N vs Reading",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Millwall - Win": "1,46",
+                        "Draw": "3,65",
+                        "Reading - Win": "5,30"
+                    }
+                },
+                {
+                    "teams": "Sutton United vs N vs Cambridge",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Sutton United - Win": "2,45",
+                        "Draw": "3,15",
+                        "Cambridge - Win": "2,35"
+                    }
+                },
+                {
+                    "teams": "Sunderland vs N vs Crewe",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Sunderland - Win": "1,33",
+                        "Draw": "4,30",
+                        "Crewe - Win": "5,90"
+                    }
+                },
+                {
+                    "teams": "Sheffield Wed. vs N vs Stockport",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Sheffield Wed. - Win": "1,62",
+                        "Draw": "3,45",
+                        "Stockport - Win": "4,05"
+                    }
+                },
+                {
+                    "teams": "Stoke City vs N vs West Bromwich",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Stoke City - Win": "2,30",
+                        "Draw": "3,00",
+                        "West Bromwich - Win": "2,60"
+                    }
+                },
+                {
+                    "teams": "Stevenage vs N vs Watford",
+                    "date_time": "mardi 08 août à 20h45",
+                    "odds": {
+                        "Stevenage - Win": "3,25",
+                        "Draw": "3,15",
+                        "Watford - Win": "1,91"
+                    }
+                },
+                {
+                    "teams": "Wrexham vs N vs Wigan",
+                    "date_time": "mardi 08 août à 21h00",
+                    "odds": {
+                        "Wrexham - Win": "1,73",
+                        "Draw": "3,35",
+                        "Wigan - Win": "3,60"
+                    }
+                },
+                {
+                    "teams": "Cardiff vs N vs Colchester",
+                    "date_time": "mercredi 09 août à 20h45",
+                    "odds": {
+                        "Cardiff - Win": "1,31",
+                        "Draw": "4,40",
+                        "Colchester - Win": "6,30"
+                    }
+                },
+                {
+                    "teams": "Wimbledon vs N vs Coventry",
+                    "date_time": "mercredi 09 août à 20h45",
+                    "odds": {
+                        "Wimbledon - Win": "3,90",
+                        "Draw": "3,55",
+                        "Coventry - Win": "1,64"
+                    }
+                },
+                {
+                    "teams": "Bristol City vs N vs Oxford",
+                    "date_time": "mercredi 09 août à 20h45",
+                    "odds": {
+                        "Bristol City - Win": "1,75",
+                        "Draw": "3,35",
+                        "Oxford - Win": "3,60"
+                    }
+                },
+                {
+                    "teams": "Leeds Utd vs N vs Shrewsbury",
+                    "date_time": "mercredi 09 août à 20h45",
+                    "odds": {
+                        "Leeds Utd - Win": "1,37",
+                        "Draw": "4,20",
+                        "Shrewsbury - Win": "5,50"
+                    }
+                },
+                {
+                    "teams": "Ipswich vs N vs Bristol Rovers",
+                    "date_time": "mercredi 09 août à 20h45",
+                    "odds": {
+                        "Ipswich - Win": "1,57",
+                        "Draw": "3,50",
+                        "Bristol Rovers - Win": "4,35"
+                    }
+                },
+                {
+                    "teams": "Queens Park R. vs N vs Norwich",
+                    "date_time": "mercredi 16 août à 20h45",
+                    "odds": {
+                        "Queens Park R. - Win": "2,55",
+                        "Draw": "3,10",
+                        "Norwich - Win": "2,30"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "FA Cup",
+            "matches": []
+        },
+        {
+            "name": "EFL Cup",
+            "matches": [
+                {
+                    "teams": "Burnley vs N vs Man. City",
+                    "date_time": "vendredi 11 août à 21h00",
+                    "odds": {
+                        "Burnley - Win": "7,70",
+                        "Draw": "4,80",
+                        "Man. City - Win": "1,28"
+                    }
+                },
+                {
+                    "teams": "Arsenal vs N vs Nottingham F.",
+                    "date_time": "samedi 12 août à 13h30",
+                    "odds": {
+                        "Arsenal - Win": "1,23",
+                        "Draw": "5,30",
+                        "Nottingham F. - Win": "8,30"
+                    }
+                },
+                {
+                    "teams": "Sheffield Utd vs N vs Crystal Palace",
+                    "date_time": "samedi 12 août à 16h00",
+                    "odds": {
+                        "Sheffield Utd - Win": "2,75",
+                        "Draw": "3,05",
+                        "Crystal Palace - Win": "2,30"
+                    }
+                },
+                {
+                    "teams": "Bournemouth vs N vs West Ham",
+                    "date_time": "samedi 12 août à 16h00",
+                    "odds": {
+                        "Bournemouth - Win": "2,70",
+                        "Draw": "3,15",
+                        "West Ham - Win": "2,30"
+                    }
+                },
+                {
+                    "teams": "Everton vs N vs Fulham",
+                    "date_time": "samedi 12 août à 16h00",
+                    "odds": {
+                        "Everton - Win": "2,10",
+                        "Draw": "3,25",
+                        "Fulham - Win": "3,00"
+                    }
+                },
+                {
+                    "teams": "Brighton Hove vs N vs Luton Town",
+                    "date_time": "samedi 12 août à 16h00",
+                    "odds": {
+                        "Brighton Hove - Win": "1,29",
+                        "Draw": "4,70",
+                        "Luton Town - Win": "7,60"
+                    }
+                },
+                {
+                    "teams": "Newcastle vs N vs Aston Villa",
+                    "date_time": "samedi 12 août à 18h30",
+                    "odds": {
+                        "Newcastle - Win": "1,63",
+                        "Draw": "3,65",
+                        "Aston Villa - Win": "4,30"
+                    }
+                },
+                {
+                    "teams": "Brentford vs N vs Tottenham",
+                    "date_time": "dimanche 13 août à 15h00",
+                    "odds": {
+                        "Brentford - Win": "2,80",
+                        "Draw": "3,25",
+                        "Tottenham - Win": "2,20"
+                    }
+                },
+                {
+                    "teams": "Chelsea vs N vs Liverpool",
+                    "date_time": "dimanche 13 août à 17h30",
+                    "odds": {
+                        "Chelsea - Win": "2,70",
+                        "Draw": "3,30",
+                        "Liverpool - Win": "2,25"
+                    }
+                },
+                {
+                    "teams": "Man. United vs N vs Wolverhampton",
+                    "date_time": "lundi 14 août à 21h00",
+                    "odds": {
+                        "Man. United - Win": "1,32",
+                        "Draw": "4,60",
+                        "Wolverhampton - Win": "6,80"
+                    }
+                }
+            ]
+        }
+    ]
+}

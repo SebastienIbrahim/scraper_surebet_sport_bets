@@ -1,0 +1,46 @@
+{
+    "name": "Slovénie",
+    "competitions": [
+        {
+            "name": "D1 Slovénie",
+            "matches": [
+                {
+                    "teams": "NK Bravo vs N vs NK Rogaska",
+                    "date_time": "Aujourd'hui à 17h30",
+                    "odds": {
+                        "NK Bravo - Win": "1,87",
+                        "Draw": "3,15",
+                        "NK Rogaska - Win": "3,45"
+                    }
+                },
+                {
+                    "teams": "FC Koper vs N vs O.Ljubljana",
+                    "date_time": "Aujourd'hui à 20h15",
+                    "odds": {
+                        "FC Koper - Win": "2,90",
+                        "Draw": "3,10",
+                        "O.Ljubljana - Win": "2,10"
+                    }
+                },
+                {
+                    "teams": "NK Radomlje vs N vs NK Maribor",
+                    "date_time": "Demain à 17h30",
+                    "odds": {
+                        "NK Radomlje - Win": "4,10",
+                        "Draw": "3,55",
+                        "NK Maribor - Win": "1,63"
+                    }
+                },
+                {
+                    "teams": "Aluminij vs N vs NK Celje",
+                    "date_time": "Demain à 20h15",
+                    "odds": {
+                        "Aluminij - Win": "4,50",
+                        "Draw": "3,65",
+                        "NK Celje - Win": "1,56"
+                    }
+                }
+            ]
+        }
+    ]
+}

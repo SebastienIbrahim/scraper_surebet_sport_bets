@@ -1,0 +1,185 @@
+{
+    "name": "Ligue Europa Conférence",
+    "matches": [
+        {
+            "teams": "New Saints vs Draw vs Swift Hesperange",
+            "date_time": "25/07/2023 20:00",
+            "odds": {
+                "New Saints - Win": "1,83",
+                "Draw": "3,45",
+                "Swift Hesperange - Win": "3,78"
+            }
+        },
+        {
+            "teams": "Hamrun Spartans vs Draw vs Dinamo Tbilisi",
+            "date_time": "25/07/2023 20:00",
+            "odds": {
+                "Hamrun Spartans - Win": "2,83",
+                "Draw": "3,10",
+                "Dinamo Tbilisi - Win": "2,36"
+            }
+        },
+        {
+            "teams": "Tre Penne vs Draw vs Valmiera",
+            "date_time": "25/07/2023 20:45",
+            "odds": {
+                "Tre Penne - Win": "15",
+                "Draw": "6,90",
+                "Valmiera - Win": "1,12"
+            }
+        },
+        {
+            "teams": "KF Ballkani vs Draw vs Larne",
+            "date_time": "25/07/2023 20:45",
+            "odds": {
+                "KF Ballkani - Win": "1,76",
+                "Draw": "3,30",
+                "Larne - Win": "4,37"
+            }
+        },
+        {
+            "teams": "Struga Trim-Lum vs Draw vs Buducnost Podgorica",
+            "date_time": "26/07/2023 17:00",
+            "odds": {
+                "Struga Trim-Lum - Win": "2,41",
+                "Draw": "3,03",
+                "Buducnost Podgorica - Win": "2,83"
+            }
+        },
+        {
+            "teams": "Fenerbahçe vs Draw vs Zimbru Chisinau",
+            "date_time": "26/07/2023 20:00",
+            "odds": {
+                "Fenerbahçe - Win": "1,15",
+                "Draw": "6,70",
+                "Zimbru Chisinau - Win": "12,25"
+            }
+        },
+        {
+            "teams": "Neman Grodno vs Draw vs Balzan Youths",
+            "date_time": "26/07/2023 20:00",
+            "odds": {
+                "Neman Grodno - Win": "2,07",
+                "Draw": "3,35",
+                "Balzan Youths - Win": "3,13"
+            }
+        },
+        {
+            "teams": "Ordabasy vs Draw vs Legia Varsovie",
+            "date_time": "27/07/2023 17:00",
+            "odds": {
+                "Ordabasy - Win": "3,52",
+                "Draw": "3,45",
+                "Legia Varsovie - Win": "1,83"
+            }
+        },
+        {
+            "teams": "Ararat-Armenia vs Draw vs Aris Thessaloniki",
+            "date_time": "27/07/2023 17:00",
+            "odds": {
+                "Ararat-Armenia - Win": "3,37",
+                "Draw": "3,10",
+                "Aris Thessaloniki - Win": "2,00"
+            }
+        },
+        {
+            "teams": "Qabala vs Draw vs Omonia Nicosie",
+            "date_time": "27/07/2023 18:00",
+            "odds": {
+                "Qabala - Win": "2,14",
+                "Draw": "3,00",
+                "Omonia Nicosie - Win": "3,15"
+            }
+        },
+        {
+            "teams": "CSKA Sofia vs Draw vs Sepsi",
+            "date_time": "27/07/2023 19:00",
+            "odds": {
+                "CSKA Sofia - Win": "1,83",
+                "Draw": "3,28",
+                "Sepsi - Win": "3,73"
+            }
+        },
+        {
+            "teams": "APOEL Nicosie vs Draw vs Vojvodina",
+            "date_time": "27/07/2023 19:00",
+            "odds": {
+                "APOEL Nicosie - Win": "1,74",
+                "Draw": "3,27",
+                "Vojvodina - Win": "4,20"
+            }
+        },
+        {
+            "teams": "Auda vs Draw vs Spartak Trnava",
+            "date_time": "27/07/2023 19:00",
+            "odds": {
+                "Auda - Win": "3,25",
+                "Draw": "3,12",
+                "Spartak Trnava - Win": "2,03"
+            }
+        },
+        {
+            "teams": "FC Bâle vs Draw vs Tobol Kostanay",
+            "date_time": "27/07/2023 19:30",
+            "odds": {
+                "FC Bâle - Win": "1,27",
+                "Draw": "4,77",
+                "Tobol Kostanay - Win": "8,35"
+            }
+        },
+        {
+            "teams": "PAOK vs Draw vs Beitar Jérusalem",
+            "date_time": "27/07/2023 19:30",
+            "odds": {
+                "PAOK - Win": "1,45",
+                "Draw": "3,82",
+                "Beitar Jérusalem - Win": "6,00"
+            }
+        },
+        {
+            "teams": "Farul Constanta vs Draw vs Urartu",
+            "date_time": "27/07/2023 19:30",
+            "odds": {
+                "Farul Constanta - Win": "1,32",
+                "Draw": "4,40",
+                "Urartu - Win": "7,25"
+            }
+        },
+        {
+            "teams": "CFR Cluj vs Draw vs Adana Demirspor",
+            "date_time": "27/07/2023 19:30",
+            "odds": {
+                "CFR Cluj - Win": "2,05",
+                "Draw": "2,99",
+                "Adana Demirspor - Win": "3,35"
+            }
+        },
+        {
+            "teams": "Besiktas vs Draw vs Tirana",
+            "date_time": "27/07/2023 20:00",
+            "odds": {
+                "Besiktas - Win": "1,32",
+                "Draw": "4,58",
+                "Tirana - Win": "7,00"
+            }
+        },
+        {
+            "teams": "Club Bruges vs Draw vs AGF Aarhus",
+            "date_time": "27/07/2023 20:00",
+            "odds": {
+                "Club Bruges - Win": "1,35",
+                "Draw": "4,38",
+                "AGF Aarhus - Win": "6,65"
+            }
+        },
+        {
+            "teams": "Twente vs Draw vs Hammarby",
+            "date_time": "27/07/2023 20:00",
+            "odds": {
+                "Twente - Win": "1,35",
+                "Draw": "4,33",
+                "Hammarby - Win": "6,70"
+            }
+        }
+    ]
+}

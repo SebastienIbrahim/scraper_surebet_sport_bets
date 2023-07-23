@@ -1,0 +1,95 @@
+{
+    "name": "Serie A",
+    "matches": [
+        {
+            "teams": "Empoli vs N vs Hellas Vérone",
+            "date_time": "samedi 19 août à 18h30",
+            "odds": {
+                "Empoli - Win": "2,30",
+                "Draw": "3,05",
+                "Hellas Vérone - Win": "2,80"
+            }
+        },
+        {
+            "teams": "Frosinone vs N vs Naples",
+            "date_time": "samedi 19 août à 18h30",
+            "odds": {
+                "Frosinone - Win": "5,90",
+                "Draw": "4,15",
+                "Naples - Win": "1,41"
+            }
+        },
+        {
+            "teams": "Genoa vs N vs Fiorentina",
+            "date_time": "samedi 19 août à 20h45",
+            "odds": {
+                "Genoa - Win": "2,85",
+                "Draw": "3,15",
+                "Fiorentina - Win": "2,20"
+            }
+        },
+        {
+            "teams": "Inter Milan vs N vs AC Monza",
+            "date_time": "samedi 19 août à 20h45",
+            "odds": {
+                "Inter Milan - Win": "1,37",
+                "Draw": "4,30",
+                "AC Monza - Win": "6,30"
+            }
+        },
+        {
+            "teams": "AS Rome vs N vs Salernitana",
+            "date_time": "dimanche 20 août à 18h30",
+            "odds": {
+                "AS Rome - Win": "1,44",
+                "Draw": "3,90",
+                "Salernitana - Win": "6,00"
+            }
+        },
+        {
+            "teams": "Sassuolo vs N vs Atalanta",
+            "date_time": "dimanche 20 août à 18h30",
+            "odds": {
+                "Sassuolo - Win": "2,95",
+                "Draw": "3,35",
+                "Atalanta - Win": "2,05"
+            }
+        },
+        {
+            "teams": "Lecce vs N vs Lazio Rome",
+            "date_time": "dimanche 20 août à 20h45",
+            "odds": {
+                "Lecce - Win": "3,20",
+                "Draw": "3,05",
+                "Lazio Rome - Win": "2,10"
+            }
+        },
+        {
+            "teams": "Udinese vs N vs Juventus Turin",
+            "date_time": "dimanche 20 août à 20h45",
+            "odds": {
+                "Udinese - Win": "3,85",
+                "Draw": "3,25",
+                "Juventus Turin - Win": "1,81"
+            }
+        },
+        {
+            "teams": "Torino vs N vs Cagliari",
+            "date_time": "lundi 21 août à 18h30",
+            "odds": {
+                "Torino - Win": "1,71",
+                "Draw": "3,35",
+                "Cagliari - Win": "4,25"
+            }
+        },
+        {
+            "teams": "Bologne vs N vs Milan AC",
+            "date_time": "lundi 21 août à 20h45",
+            "odds": {
+                "Bologne - Win": "3,30",
+                "Draw": "3,25",
+                "Milan AC - Win": "1,97"
+            }
+        }
+    ]
+}

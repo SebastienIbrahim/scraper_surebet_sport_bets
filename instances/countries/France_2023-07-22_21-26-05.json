@@ -1,0 +1,181 @@
+{
+    "name": "France",
+    "competitions": [
+        {
+            "name": "Ligue 1 Uber Eats®",
+            "matches": [
+                {
+                    "teams": "Rennes vs Draw vs Metz",
+                    "date_time": "13/08/2023 15:00",
+                    "odds": {
+                        "Rennes - Win": "1,38",
+                        "Draw": "4,30",
+                        "Metz - Win": "6,60"
+                    }
+                },
+                {
+                    "teams": "Clermont vs Draw vs Monaco",
+                    "date_time": "13/08/2023 15:00",
+                    "odds": {
+                        "Clermont - Win": "3,30",
+                        "Draw": "3,50",
+                        "Monaco - Win": "1,92"
+                    }
+                },
+                {
+                    "teams": "Strasbourg vs Draw vs Lyon",
+                    "date_time": "13/08/2023 15:00",
+                    "odds": {
+                        "Strasbourg - Win": "2,45",
+                        "Draw": "3,40",
+                        "Lyon - Win": "2,45"
+                    }
+                },
+                {
+                    "teams": "Marseille vs Draw vs Reims",
+                    "date_time": "13/08/2023 15:00",
+                    "odds": {
+                        "Marseille - Win": "1,50",
+                        "Draw": "3,95",
+                        "Reims - Win": "5,15"
+                    }
+                },
+                {
+                    "teams": "Paris SG vs Draw vs Lorient",
+                    "date_time": "13/08/2023 15:00",
+                    "odds": {
+                        "Paris SG - Win": "1,16",
+                        "Draw": "6,80",
+                        "Lorient - Win": "11"
+                    }
+                },
+                {
+                    "teams": "Nantes vs Draw vs Toulouse",
+                    "date_time": "13/08/2023 15:00",
+                    "odds": {
+                        "Nantes - Win": "2,25",
+                        "Draw": "3,20",
+                        "Toulouse - Win": "2,82"
+                    }
+                },
+                {
+                    "teams": "Nice vs Draw vs Lille",
+                    "date_time": "13/08/2023 15:00",
+                    "odds": {
+                        "Nice - Win": "2,80",
+                        "Draw": "3,30",
+                        "Lille - Win": "2,22"
+                    }
+                },
+                {
+                    "teams": "Montpellier vs Draw vs Le Havre",
+                    "date_time": "13/08/2023 15:00",
+                    "odds": {
+                        "Montpellier - Win": "1,85",
+                        "Draw": "3,30",
+                        "Le Havre - Win": "3,75"
+                    }
+                },
+                {
+                    "teams": "Brest vs Draw vs Lens",
+                    "date_time": "13/08/2023 15:00",
+                    "odds": {
+                        "Brest - Win": "4,00",
+                        "Draw": "3,40",
+                        "Lens - Win": "1,77"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Ligue 2 BKT®",
+            "matches": [
+                {
+                    "teams": "Saint-Etienne vs Draw vs Grenoble",
+                    "date_time": "05/08/2023 15:00",
+                    "odds": {
+                        "Saint-Etienne - Win": "1,60",
+                        "Draw": "3,85",
+                        "Grenoble - Win": "5,10"
+                    }
+                },
+                {
+                    "teams": "Ajaccio vs Draw vs Rodez",
+                    "date_time": "05/08/2023 19:00",
+                    "odds": {
+                        "Ajaccio - Win": "1,95",
+                        "Draw": "3,25",
+                        "Rodez - Win": "3,90"
+                    }
+                },
+                {
+                    "teams": "Amiens vs Draw vs Quevilly",
+                    "date_time": "05/08/2023 19:00",
+                    "odds": {
+                        "Amiens - Win": "2,38",
+                        "Draw": "3,35",
+                        "Quevilly - Win": "2,75"
+                    }
+                },
+                {
+                    "teams": "Laval vs Draw vs Angers",
+                    "date_time": "05/08/2023 19:00",
+                    "odds": {
+                        "Laval - Win": "2,50",
+                        "Draw": "3,25",
+                        "Angers - Win": "2,70"
+                    }
+                },
+                {
+                    "teams": "Dunkerque vs Draw vs Troyes",
+                    "date_time": "05/08/2023 19:00",
+                    "odds": {
+                        "Dunkerque - Win": "2,68",
+                        "Draw": "3,15",
+                        "Troyes - Win": "2,58"
+                    }
+                },
+                {
+                    "teams": "Valenciennes vs Draw vs Auxerre",
+                    "date_time": "05/08/2023 19:00",
+                    "odds": {
+                        "Valenciennes - Win": "3,40",
+                        "Draw": "3,30",
+                        "Auxerre - Win": "2,08"
+                    }
+                },
+                {
+                    "teams": "Paris FC vs Draw vs Caen",
+                    "date_time": "05/08/2023 19:00",
+                    "odds": {
+                        "Paris FC - Win": "2,35",
+                        "Draw": "3,25",
+                        "Caen - Win": "2,88"
+                    }
+                },
+                {
+                    "teams": "Concarneau vs Draw vs Bastia",
+                    "date_time": "05/08/2023 19:00",
+                    "odds": {
+                        "Concarneau - Win": "3,00",
+                        "Draw": "3,15",
+                        "Bastia - Win": "2,32"
+                    }
+                },
+                {
+                    "teams": "Pau vs Draw vs Bordeaux",
+                    "date_time": "07/08/2023 20:45",
+                    "odds": {
+                        "Pau - Win": "3,60",
+                        "Draw": "3,20",
+                        "Bordeaux - Win": "1,92"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Coupe de France",
+            "matches": []
+        }
+    ]
+}

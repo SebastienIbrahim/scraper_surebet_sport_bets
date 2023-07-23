@@ -1,0 +1,70 @@
+{
+    "name": "Autriche",
+    "competitions": [
+        {
+            "name": "Autriche Bundesliga",
+            "matches": [
+                {
+                    "teams": "LASK Linz vs Draw vs Rapid Vienne",
+                    "date_time": "28/07/2023 20:30",
+                    "odds": {}
+                },
+                {
+                    "teams": "Hartberg vs Draw vs Austria Lustenau",
+                    "date_time": "29/07/2023 17:00",
+                    "odds": {}
+                },
+                {
+                    "teams": "Wolfsberger vs Draw vs Blau-Weiss Linz",
+                    "date_time": "29/07/2023 17:00",
+                    "odds": {}
+                },
+                {
+                    "teams": "WSG Swarovski Tirol vs Draw vs Austria Klagenfurt",
+                    "date_time": "29/07/2023 17:00",
+                    "odds": {}
+                },
+                {
+                    "teams": "Altach vs Draw vs Salzbourg",
+                    "date_time": "29/07/2023 19:30",
+                    "odds": {}
+                },
+                {
+                    "teams": "Austria Vienne vs Draw vs Sturm Graz",
+                    "date_time": "30/07/2023 17:00",
+                    "odds": {}
+                },
+                {
+                    "teams": "Austria Klagenfurt vs Draw vs Wolfsberger",
+                    "date_time": "05/08/2023 17:00",
+                    "odds": {}
+                },
+                {
+                    "teams": "Rapid Vienne vs Draw vs Altach",
+                    "date_time": "05/08/2023 17:00",
+                    "odds": {}
+                },
+                {
+                    "teams": "Sturm Graz vs Draw vs LASK Linz",
+                    "date_time": "05/08/2023 19:30",
+                    "odds": {}
+                },
+                {
+                    "teams": "Austria Lustenau vs Draw vs Austria Vienne",
+                    "date_time": "06/08/2023 17:00",
+                    "odds": {}
+                },
+                {
+                    "teams": "Salzbourg vs Draw vs WSG Swarovski Tirol",
+                    "date_time": "06/08/2023 17:00",
+                    "odds": {}
+                },
+                {
+                    "teams": "Blau-Weiss Linz vs Draw vs Hartberg",
+                    "date_time": "06/08/2023 17:00",
+                    "odds": {}
+                }
+            ]
+        }
+    ]
+}

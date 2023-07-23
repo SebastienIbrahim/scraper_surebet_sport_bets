@@ -1,0 +1,41 @@
+{
+    "name": "D1 Kazakhstan",
+    "matches": [
+        {
+            "teams": "Taldykorgan vs N vs FK Aksu",
+            "date_time": "Aujourd'hui à 14h00",
+            "odds": {
+                "Taldykorgan - Win": "2,00",
+                "Draw": "3,10",
+                "FK Aksu - Win": "2,95"
+            }
+        },
+        {
+            "teams": "FC Astana vs N vs FK Atyrau",
+            "date_time": "Aujourd'hui à 15h00",
+            "odds": {
+                "FC Astana - Win": "1,28",
+                "Draw": "4,20",
+                "FK Atyrau - Win": "7,60"
+            }
+        },
+        {
+            "teams": "Fk Aktobe vs N vs Kaisar Kyz.",
+            "date_time": "Aujourd'hui à 16h00",
+            "odds": {
+                "Fk Aktobe - Win": "1,44",
+                "Draw": "3,65",
+                "Kaisar Kyz. - Win": "5,40"
+            }
+        },
+        {
+            "teams": "FK Ordabasy vs N vs FK Kyzylzhar",
+            "date_time": "Aujourd'hui à 17h00",
+            "odds": {
+                "FK Ordabasy - Win": "1,43",
+                "Draw": "3,55",
+                "FK Kyzylzhar - Win": "5,90"
+            }
+        }
+    ]
+}

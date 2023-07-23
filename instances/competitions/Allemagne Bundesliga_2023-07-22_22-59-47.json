@@ -1,0 +1,158 @@
+{
+    "name": "Allemagne Bundesliga",
+    "matches": [
+        {
+            "teams": "Werder Brême vs Draw vs Bayern Munich",
+            "date_time": "18/08/2023 20:30",
+            "odds": {
+                "Werder Brême - Win": "7,90",
+                "Draw": "5,60",
+                "Bayern Munich - Win": "1,24"
+            }
+        },
+        {
+            "teams": "B. Leverkusen vs Draw vs RB Leipzig",
+            "date_time": "19/08/2023 15:30",
+            "odds": {
+                "B. Leverkusen - Win": "2,30",
+                "Draw": "3,25",
+                "RB Leipzig - Win": "2,75"
+            }
+        },
+        {
+            "teams": "Wolfsburg vs Draw vs Heidenheim",
+            "date_time": "19/08/2023 15:30",
+            "odds": {
+                "Wolfsburg - Win": "1,55",
+                "Draw": "3,85",
+                "Heidenheim - Win": "4,85"
+            }
+        },
+        {
+            "teams": "Stuttgart vs Draw vs Bochum",
+            "date_time": "19/08/2023 15:30",
+            "odds": {
+                "Stuttgart - Win": "1,66",
+                "Draw": "3,70",
+                "Bochum - Win": "4,25"
+            }
+        },
+        {
+            "teams": "Augsbourg vs Draw vs B. M'gladbach",
+            "date_time": "19/08/2023 15:30",
+            "odds": {
+                "Augsbourg - Win": "2,58",
+                "Draw": "3,30",
+                "B. M'gladbach - Win": "2,38"
+            }
+        },
+        {
+            "teams": "Hoffenheim vs Draw vs Fribourg",
+            "date_time": "19/08/2023 15:30",
+            "odds": {
+                "Hoffenheim - Win": "2,13",
+                "Draw": "3,30",
+                "Fribourg - Win": "2,95"
+            }
+        },
+        {
+            "teams": "Dortmund vs Draw vs Cologne",
+            "date_time": "19/08/2023 18:30",
+            "odds": {
+                "Dortmund - Win": "1,42",
+                "Draw": "4,45",
+                "Cologne - Win": "5,55"
+            }
+        },
+        {
+            "teams": "Union Berlin vs Draw vs Mayence",
+            "date_time": "20/08/2023 15:30",
+            "odds": {
+                "Union Berlin - Win": "1,97",
+                "Draw": "3,20",
+                "Mayence - Win": "3,45"
+            }
+        },
+        {
+            "teams": "Francfort vs Draw vs Darmstadt",
+            "date_time": "20/08/2023 17:30",
+            "odds": {
+                "Francfort - Win": "1,39",
+                "Draw": "4,35",
+                "Darmstadt - Win": "6,25"
+            }
+        },
+        {
+            "teams": "RB Leipzig vs Draw vs Stuttgart",
+            "date_time": "25/08/2023 20:30",
+            "odds": {
+                "RB Leipzig - Win": "1,33",
+                "Draw": "4,70",
+                "Stuttgart - Win": "7,00"
+            }
+        },
+        {
+            "teams": "Fribourg vs Draw vs Werder Brême",
+            "date_time": "26/08/2023 15:30",
+            "odds": {
+                "Fribourg - Win": "1,57",
+                "Draw": "3,95",
+                "Werder Brême - Win": "4,60"
+            }
+        },
+        {
+            "teams": "Cologne vs Draw vs Wolfsburg",
+            "date_time": "26/08/2023 15:30",
+            "odds": {
+                "Cologne - Win": "2,30",
+                "Draw": "3,20",
+                "Wolfsburg - Win": "2,78"
+            }
+        },
+        {
+            "teams": "Heidenheim vs Draw vs Hoffenheim",
+            "date_time": "26/08/2023 15:30",
+            "odds": {
+                "Heidenheim - Win": "3,10",
+                "Draw": "3,45",
+                "Hoffenheim - Win": "2,02"
+            }
+        },
+        {
+            "teams": "Darmstadt vs Draw vs Union Berlin",
+            "date_time": "26/08/2023 15:30",
+            "odds": {
+                "Darmstadt - Win": "3,15",
+                "Draw": "3,20",
+                "Union Berlin - Win": "2,07"
+            }
+        },
+        {
+            "teams": "B. M'gladbach vs Draw vs B. Leverkusen",
+            "date_time": "26/08/2023 18:30",
+            "odds": {
+                "B. M'gladbach - Win": "2,78",
+                "Draw": "3,45",
+                "B. Leverkusen - Win": "2,17"
+            }
+        },
+        {
+            "teams": "Mayence vs Draw vs Francfort",
+            "date_time": "27/08/2023 15:30",
+            "odds": {
+                "Mayence - Win": "2,28",
+                "Draw": "3,35",
+                "Francfort - Win": "2,65"
+            }
+        },
+        {
+            "teams": "Bayern Munich vs Draw vs Augsbourg",
+            "date_time": "27/08/2023 17:30",
+            "odds": {
+                "Bayern Munich - Win": "1,10",
+                "Draw": "8,90",
+                "Augsbourg - Win": "14"
+            }
+        }
+    ]
+}

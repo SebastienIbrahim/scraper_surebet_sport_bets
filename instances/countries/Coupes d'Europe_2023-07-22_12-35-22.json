@@ -1,0 +1,271 @@
+{
+    "name": "Coupes d'Europe",
+    "competitions": [
+        {
+            "name": "ChampionsLeague",
+            "matches": [
+                {
+                    "teams": "Man. City vs N vs FC Séville",
+                    "date_time": "mercredi 16 août à 21h00",
+                    "odds": {
+                        "Man. City - Win": "1,32",
+                        "Draw": "4,55",
+                        "FC Séville - Win": "7,00"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Europa Conference",
+            "matches": [
+                {
+                    "teams": "HJK Helsinki vs N vs Molde",
+                    "date_time": "mardi 25 juillet à 18h00",
+                    "odds": {
+                        "HJK Helsinki - Win": "3,50",
+                        "Draw": "3,35",
+                        "Molde - Win": "2,00"
+                    }
+                },
+                {
+                    "teams": "Servette FC vs N vs RC Genk",
+                    "date_time": "mardi 25 juillet à 20h30",
+                    "odds": {
+                        "Servette FC - Win": "2,80",
+                        "Draw": "3,40",
+                        "RC Genk - Win": "2,35"
+                    }
+                },
+                {
+                    "teams": "ZrinjskiMostar vs N vs Slo.Bratislava",
+                    "date_time": "mardi 25 juillet à 21h00",
+                    "odds": {
+                        "ZrinjskiMostar - Win": "2,55",
+                        "Draw": "3,20",
+                        "Slo.Bratislava - Win": "2,70"
+                    }
+                },
+                {
+                    "teams": "Breidablik vs N vs FC Copenhague",
+                    "date_time": "mardi 25 juillet à 21h15",
+                    "odds": {
+                        "Breidablik - Win": "5,20",
+                        "Draw": "3,90",
+                        "FC Copenhague - Win": "1,58"
+                    }
+                },
+                {
+                    "teams": "SherifTiraspol vs N vs Maccabi Haifa",
+                    "date_time": "mercredi 26 juillet à 19h00",
+                    "odds": {
+                        "SherifTiraspol - Win": "2,55",
+                        "Draw": "3,20"
+                    }
+                },
+                {
+                    "teams": "Aris Limassol vs N vs Bate Borisov",
+                    "date_time": "mercredi 26 juillet à 19h00",
+                    "odds": {
+                        "Aris Limassol - Win": "1,79",
+                        "Draw": "3,45",
+                        "Bate Borisov - Win": "4,10"
+                    }
+                },
+                {
+                    "teams": "KI Klaksvik vs N vs Häcken",
+                    "date_time": "mercredi 26 juillet à 20h45",
+                    "odds": {
+                        "KI Klaksvik - Win": "3,90",
+                        "Draw": "3,40",
+                        "Häcken - Win": "1,85"
+                    }
+                },
+                {
+                    "teams": "Ludogorets vs N vs O.Ljubljana",
+                    "date_time": "mercredi 26 juillet à 20h45",
+                    "odds": {
+                        "Ludogorets - Win": "1,64",
+                        "Draw": "3,40",
+                        "O.Ljubljana - Win": "4,55"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Supercoupe d'Europe",
+            "matches": [
+                {
+                    "teams": "The New Saints vs N vs Sw.Hesperange",
+                    "date_time": "mardi 25 juillet à 20h00",
+                    "odds": {
+                        "The New Saints - Win": "1,89",
+                        "Draw": "3,35",
+                        "Sw.Hesperange - Win": "3,55"
+                    }
+                },
+                {
+                    "teams": "HamrunSpartans vs N vs Dinamo Tbilisi",
+                    "date_time": "mardi 25 juillet à 20h00",
+                    "odds": {
+                        "HamrunSpartans - Win": "2,80",
+                        "Draw": "3,05",
+                        "Dinamo Tbilisi - Win": "2,35"
+                    }
+                },
+                {
+                    "teams": "SP Tre Penne vs N vs Valmiera FK",
+                    "date_time": "mardi 25 juillet à 20h45",
+                    "odds": {
+                        "SP Tre Penne - Win": "14,50",
+                        "Draw": "6,70",
+                        "Valmiera FK - Win": "1,12"
+                    }
+                },
+                {
+                    "teams": "KF Ballkani vs N vs FC Larne",
+                    "date_time": "mardi 25 juillet à 20h45",
+                    "odds": {
+                        "KF Ballkani - Win": "1,75",
+                        "Draw": "3,25",
+                        "FC Larne - Win": "4,30"
+                    }
+                },
+                {
+                    "teams": "Ararat Armenia vs N vs Aris Salonique",
+                    "date_time": "jeudi 27 juillet à 17h00",
+                    "odds": {
+                        "Ararat Armenia - Win": "3,35",
+                        "Draw": "3,05",
+                        "Aris Salonique - Win": "1,98"
+                    }
+                },
+                {
+                    "teams": "FK Gabala vs N vs Omonia Nicosie",
+                    "date_time": "jeudi 27 juillet à 18h00",
+                    "odds": {
+                        "FK Gabala - Win": "2,15",
+                        "Draw": "3,05",
+                        "Omonia Nicosie - Win": "3,05"
+                    }
+                },
+                {
+                    "teams": "FK Auda vs N vs Spartak Trnava",
+                    "date_time": "jeudi 27 juillet à 19h00",
+                    "odds": {
+                        "FK Auda - Win": "3,25",
+                        "Draw": "3,10",
+                        "Spartak Trnava - Win": "2,00"
+                    }
+                },
+                {
+                    "teams": "CSKA Sofia vs N vs ACS Sepsi",
+                    "date_time": "jeudi 27 juillet à 19h00",
+                    "odds": {
+                        "CSKA Sofia - Win": "1,81",
+                        "Draw": "3,25",
+                        "ACS Sepsi - Win": "3,70"
+                    }
+                },
+                {
+                    "teams": "FC Bâle vs N vs Tobol Kosta.",
+                    "date_time": "jeudi 27 juillet à 19h30",
+                    "odds": {
+                        "FC Bâle - Win": "1,26",
+                        "Draw": "4,70",
+                        "Tobol Kosta. - Win": "8,20"
+                    }
+                },
+                {
+                    "teams": "Cfr Cluj vs N vs A.Demirspor",
+                    "date_time": "jeudi 27 juillet à 19h30",
+                    "odds": {
+                        "Cfr Cluj - Win": "2,05",
+                        "Draw": "2,95",
+                        "A.Demirspor - Win": "3,30"
+                    }
+                },
+                {
+                    "teams": "PAOK Salonique vs N vs Beit.Jerusalem",
+                    "date_time": "jeudi 27 juillet à 19h30",
+                    "odds": {
+                        "PAOK Salonique - Win": "1,44",
+                        "Draw": "3,75",
+                        "Beit.Jerusalem - Win": "5,90"
+                    }
+                },
+                {
+                    "teams": "FC Constanta vs N vs FC Urartu",
+                    "date_time": "jeudi 27 juillet à 19h30",
+                    "odds": {
+                        "FC Constanta - Win": "1,32",
+                        "Draw": "4,35",
+                        "FC Urartu - Win": "7,10"
+                    }
+                },
+                {
+                    "teams": "NK Osijek vs N vs Zalaegerszeg",
+                    "date_time": "jeudi 27 juillet à 20h00",
+                    "odds": {
+                        "NK Osijek - Win": "1,44",
+                        "Draw": "3,80",
+                        "Zalaegerszeg - Win": "5,90"
+                    }
+                },
+                {
+                    "teams": "NK Celje vs N vs Guimaraes",
+                    "date_time": "jeudi 27 juillet à 20h00",
+                    "odds": {
+                        "NK Celje - Win": "4,15",
+                        "Draw": "3,25",
+                        "Guimaraes - Win": "1,73"
+                    }
+                },
+                {
+                    "teams": "Torpedo-Belaz vs N vs Aek Larnaca",
+                    "date_time": "jeudi 27 juillet à 20h00",
+                    "odds": {
+                        "Torpedo-Belaz - Win": "3,35",
+                        "Draw": "3,15",
+                        "Aek Larnaca - Win": "1,95"
+                    }
+                },
+                {
+                    "teams": "Besiktas vs N vs KF Tirana",
+                    "date_time": "jeudi 27 juillet à 20h00",
+                    "odds": {
+                        "Besiktas - Win": "1,31",
+                        "Draw": "4,50",
+                        "KF Tirana - Win": "6,90"
+                    }
+                },
+                {
+                    "teams": "Austria Vienne vs N vs BoracBanjaLuka",
+                    "date_time": "jeudi 27 juillet à 20h30",
+                    "odds": {
+                        "Austria Vienne - Win": "1,27",
+                        "Draw": "4,45",
+                        "BoracBanjaLuka - Win": "8,50"
+                    }
+                },
+                {
+                    "teams": "Lech Poznan vs N vs Kauno Zalgiris",
+                    "date_time": "jeudi 27 juillet à 20h30",
+                    "odds": {
+                        "Lech Poznan - Win": "1,14",
+                        "Draw": "5,90",
+                        "Kauno Zalgiris - Win": "12,50"
+                    }
+                },
+                {
+                    "teams": "FK Shkupi vs N vs Levski Sofia",
+                    "date_time": "jeudi 27 juillet à 21h00",
+                    "odds": {
+                        "FK Shkupi - Win": "2,75",
+                        "Draw": "3,05",
+                        "Levski Sofia - Win": "2,25"
+                    }
+                }
+            ]
+        }
+    ]
+}

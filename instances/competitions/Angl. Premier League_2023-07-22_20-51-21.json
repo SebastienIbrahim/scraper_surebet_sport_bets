@@ -1,0 +1,95 @@
+{
+    "name": "Angl. Premier League",
+    "matches": [
+        {
+            "teams": "Burnley vs Draw vs Manchester City",
+            "date_time": "11/08/2023 21:00",
+            "odds": {
+                "Burnley - Win": "7,85",
+                "Draw": "4,90",
+                "Manchester City - Win": "1,29"
+            }
+        },
+        {
+            "teams": "Arsenal vs Draw vs Nottingham Forest",
+            "date_time": "12/08/2023 13:30",
+            "odds": {
+                "Arsenal - Win": "1,24",
+                "Draw": "5,40",
+                "Nottingham Forest - Win": "8,45"
+            }
+        },
+        {
+            "teams": "Bournemouth vs Draw vs West Ham",
+            "date_time": "12/08/2023 16:00",
+            "odds": {
+                "Bournemouth - Win": "2,72",
+                "Draw": "3,20",
+                "West Ham - Win": "2,32"
+            }
+        },
+        {
+            "teams": "Brighton vs Draw vs Luton",
+            "date_time": "12/08/2023 16:00",
+            "odds": {
+                "Brighton - Win": "1,29",
+                "Draw": "4,80",
+                "Luton - Win": "7,75"
+            }
+        },
+        {
+            "teams": "Sheffield Utd vs Draw vs Crystal Palace",
+            "date_time": "12/08/2023 16:00",
+            "odds": {
+                "Sheffield Utd - Win": "2,80",
+                "Draw": "3,10",
+                "Crystal Palace - Win": "2,32"
+            }
+        },
+        {
+            "teams": "Everton vs Draw vs Fulham",
+            "date_time": "12/08/2023 16:00",
+            "odds": {
+                "Everton - Win": "2,12",
+                "Draw": "3,25",
+                "Fulham - Win": "3,05"
+            }
+        },
+        {
+            "teams": "Newcastle vs Draw vs Aston Villa",
+            "date_time": "12/08/2023 18:30",
+            "odds": {
+                "Newcastle - Win": "1,64",
+                "Draw": "3,70",
+                "Aston Villa - Win": "4,35"
+            }
+        },
+        {
+            "teams": "Brentford vs Draw vs Tottenham",
+            "date_time": "13/08/2023 15:00",
+            "odds": {
+                "Brentford - Win": "2,82",
+                "Draw": "3,30",
+                "Tottenham - Win": "2,22"
+            }
+        },
+        {
+            "teams": "Chelsea vs Draw vs Liverpool",
+            "date_time": "13/08/2023 17:30",
+            "odds": {
+                "Chelsea - Win": "2,72",
+                "Draw": "3,35",
+                "Liverpool - Win": "2,25"
+            }
+        },
+        {
+            "teams": "Manchester Utd vs Draw vs Wolverhampton",
+            "date_time": "14/08/2023 21:00",
+            "odds": {
+                "Manchester Utd - Win": "1,33",
+                "Draw": "4,65",
+                "Wolverhampton - Win": "7,00"
+            }
+        }
+    ]
+}

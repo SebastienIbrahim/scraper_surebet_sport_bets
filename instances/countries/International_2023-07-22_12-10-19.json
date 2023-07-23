@@ -1,0 +1,285 @@
+{
+    "name": "International",
+    "competitions": [
+        {
+            "name": "Coupe du Monde (F) 2023",
+            "matches": [
+                {
+                    "teams": "Danemark (F) vs N vs Chine (F)",
+                    "date_time": "Aujourd'hui à 14h00",
+                    "odds": {
+                        "Danemark (F) - Win": "1,86",
+                        "Draw": "3,50",
+                        "Chine (F) - Win": "4,70"
+                    }
+                },
+                {
+                    "teams": "Suède (F) vs N vs AfriqueSud(F)",
+                    "date_time": "Demain à 07h00",
+                    "odds": {
+                        "Suède (F) - Win": "1,09",
+                        "Draw": "9,90",
+                        "AfriqueSud(F) - Win": "21,00"
+                    }
+                },
+                {
+                    "teams": "Pays-Bas (F) vs N vs Portugal (F)",
+                    "date_time": "Demain à 09h30",
+                    "odds": {
+                        "Pays-Bas (F) - Win": "1,43",
+                        "Draw": "4,70",
+                        "Portugal (F) - Win": "6,20"
+                    }
+                },
+                {
+                    "teams": "France (F) vs N vs Jamaïque (F)",
+                    "date_time": "Demain à 12h00",
+                    "odds": {
+                        "France (F) - Win": "1,03",
+                        "Draw": "14,00",
+                        "Jamaïque (F) - Win": "43,00"
+                    }
+                },
+                {
+                    "teams": "Italie (F) vs N vs Argentine (F)",
+                    "date_time": "lundi 24 juillet à 08h00",
+                    "odds": {
+                        "Italie (F) - Win": "1,55",
+                        "Draw": "4,00",
+                        "Argentine (F) - Win": "5,70"
+                    }
+                },
+                {
+                    "teams": "Allemagne (F) vs N vs Maroc (F)",
+                    "date_time": "lundi 24 juillet à 10h30",
+                    "odds": {
+                        "Allemagne (F) - Win": "1,05",
+                        "Draw": "11,00",
+                        "Maroc (F) - Win": "37,00"
+                    }
+                },
+                {
+                    "teams": "Brésil (F) vs N vs Panama (F)",
+                    "date_time": "lundi 24 juillet à 13h00",
+                    "odds": {
+                        "Brésil (F) - Win": "1,01",
+                        "Draw": "14,50",
+                        "Panama (F) - Win": "48,00"
+                    }
+                },
+                {
+                    "teams": "Colombie (F) vs N vs Rép.Corée (F)",
+                    "date_time": "mardi 25 juillet à 04h00",
+                    "odds": {
+                        "Colombie (F) - Win": "2,60",
+                        "Draw": "3,15",
+                        "Rép.Corée (F) - Win": "2,65"
+                    }
+                },
+                {
+                    "teams": "N.Zélande (F) vs N vs Philippines (F)",
+                    "date_time": "mardi 25 juillet à 07h30",
+                    "odds": {
+                        "N.Zélande (F) - Win": "1,21",
+                        "Draw": "5,80",
+                        "Philippines (F) - Win": "12,50"
+                    }
+                },
+                {
+                    "teams": "Suisse (F) vs N vs Norvège (F)",
+                    "date_time": "mardi 25 juillet à 10h00",
+                    "odds": {
+                        "Suisse (F) - Win": "3,40",
+                        "Draw": "3,30",
+                        "Norvège (F) - Win": "2,05"
+                    }
+                },
+                {
+                    "teams": "Canada (F) vs N vs Irlande (F)",
+                    "date_time": "mercredi 26 juillet à 14h00",
+                    "odds": {
+                        "Canada (F) - Win": "1,44",
+                        "Draw": "4,10",
+                        "Irlande (F) - Win": "6,50"
+                    }
+                },
+                {
+                    "teams": "Etats-Unis (F) vs N vs Pays-Bas (F)",
+                    "date_time": "jeudi 27 juillet à 03h00",
+                    "odds": {
+                        "Etats-Unis (F) - Win": "1,76",
+                        "Draw": "3,60",
+                        "Pays-Bas (F) - Win": "4,10"
+                    }
+                },
+                {
+                    "teams": "Portugal (F) vs N vs Vietnam (F)",
+                    "date_time": "jeudi 27 juillet à 09h30",
+                    "odds": {
+                        "Portugal (F) - Win": "1,03",
+                        "Draw": "11,50",
+                        "Vietnam (F) - Win": "32,00"
+                    }
+                },
+                {
+                    "teams": "Australie (F) vs N vs Nigéria (F)",
+                    "date_time": "jeudi 27 juillet à 12h00",
+                    "odds": {
+                        "Australie (F) - Win": "1,38",
+                        "Draw": "4,45",
+                        "Nigéria (F) - Win": "7,10"
+                    }
+                },
+                {
+                    "teams": "Angleterre (F) vs N vs Danemark (F)",
+                    "date_time": "vendredi 28 juillet à 10h30",
+                    "odds": {
+                        "Angleterre (F) - Win": "1,48",
+                        "Draw": "4,00",
+                        "Danemark (F) - Win": "5,70"
+                    }
+                },
+                {
+                    "teams": "Chine (F) vs N vs Haïti (F)",
+                    "date_time": "vendredi 28 juillet à 13h00",
+                    "odds": {
+                        "Chine (F) - Win": "1,23",
+                        "Draw": "5,10",
+                        "Haïti (F) - Win": "9,40"
+                    }
+                },
+                {
+                    "teams": "Suède (F) vs N vs Italie (F)",
+                    "date_time": "samedi 29 juillet à 09h30",
+                    "odds": {
+                        "Suède (F) - Win": "1,60",
+                        "Draw": "3,60",
+                        "Italie (F) - Win": "4,55"
+                    }
+                },
+                {
+                    "teams": "France (F) vs N vs Brésil (F)",
+                    "date_time": "samedi 29 juillet à 12h00",
+                    "odds": {
+                        "France (F) - Win": "1,61",
+                        "Draw": "3,55",
+                        "Brésil (F) - Win": "4,60"
+                    }
+                },
+                {
+                    "teams": "Rép.Corée (F) vs N vs Maroc (F)",
+                    "date_time": "dimanche 30 juillet à 06h30",
+                    "odds": {
+                        "Rép.Corée (F) - Win": "1,39",
+                        "Draw": "4,25",
+                        "Maroc (F) - Win": "6,10"
+                    }
+                },
+                {
+                    "teams": "Allemagne (F) vs N vs Colombie (F)",
+                    "date_time": "dimanche 30 juillet à 11h30",
+                    "odds": {
+                        "Allemagne (F) - Win": "1,16",
+                        "Draw": "5,70",
+                        "Colombie (F) - Win": "12,00"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Qualifs Euro 2024",
+            "matches": [
+                {
+                    "teams": "Angleterre vs Italie vs Ukraine",
+                    "date_time": "jeudi 07 septembre à 18h00",
+                    "odds": {
+                        "Angleterre - Win": "1,15",
+                        "Draw": "5,50",
+                        "Ukraine - Win": "15,00"
+                    }
+                },
+                {
+                    "teams": "Danemark vs Finlande vs Slovénie",
+                    "date_time": "jeudi 07 septembre à 18h00",
+                    "odds": {
+                        "Danemark - Win": "1,28",
+                        "Draw": "5,00",
+                        "Slovénie - Win": "9,00"
+                    }
+                },
+                {
+                    "teams": "Croatie vs Turquie vs Arménie",
+                    "date_time": "jeudi 07 septembre à 20h45",
+                    "odds": {
+                        "Croatie - Win": "1,80",
+                        "Draw": "2,10",
+                        "Arménie - Win": "20,00"
+                    }
+                },
+                {
+                    "teams": "Suisse vs Roumanie vs Israël",
+                    "date_time": "jeudi 07 septembre à 20h45",
+                    "odds": {
+                        "Suisse - Win": "1,22",
+                        "Draw": "5,50",
+                        "Israël - Win": "10,00"
+                    }
+                },
+                {
+                    "teams": "France vs Pays-Bas vs Grèce",
+                    "date_time": "jeudi 07 septembre à 20h45",
+                    "odds": {
+                        "France - Win": "1,12",
+                        "Draw": "6,00",
+                        "Grèce - Win": "30,00"
+                    }
+                },
+                {
+                    "teams": "Serbie vs Hongrie vs Monténégro",
+                    "date_time": "jeudi 07 septembre à 20h45",
+                    "odds": {
+                        "Serbie - Win": "1,70",
+                        "Draw": "2,35",
+                        "Monténégro - Win": "15,00"
+                    }
+                },
+                {
+                    "teams": "Espagne vs Ecosse vs Norvège",
+                    "date_time": "jeudi 07 septembre à 20h45",
+                    "odds": {
+                        "Espagne - Win": "1,28",
+                        "Draw": "3,50",
+                        "Norvège - Win": "25,00"
+                    }
+                },
+                {
+                    "teams": "Slovaquie vs Bosnie Herzég. vs Luxembourg",
+                    "date_time": "jeudi 07 septembre à 20h45",
+                    "odds": {
+                        "Slovaquie - Win": "1,40",
+                        "Draw": "4,50",
+                        "Luxembourg - Win": "7,00"
+                    }
+                },
+                {
+                    "teams": "Belgique vs Autriche vs Suède",
+                    "date_time": "jeudi 07 septembre à 20h45",
+                    "odds": {
+                        "Belgique - Win": "1,30",
+                        "Draw": "3,00",
+                        "Suède - Win": "40,00"
+                    }
+                },
+                {
+                    "teams": "Rép.Tchèque vs Pologne vs Albanie",
+                    "date_time": "jeudi 07 septembre à 20h45",
+                    "odds": {
+                        "Rép.Tchèque - Win": "1,40",
+                        "Draw": "4,00",
+                        "Albanie - Win": "7,00"
+                    }
+                }
+            ]
+        }
+    ]
+}

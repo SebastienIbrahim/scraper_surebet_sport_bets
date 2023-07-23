@@ -1,0 +1,185 @@
+{
+    "name": "Allemagne Coupe",
+    "matches": [
+        {
+            "teams": "Sandhausen vs Draw vs Hanovre",
+            "date_time": "11/08/2023 18:00",
+            "odds": {
+                "Sandhausen - Win": "2,43",
+                "Draw": "3,05",
+                "Hanovre - Win": "2,13"
+            }
+        },
+        {
+            "teams": "TUS Bersenbruck vs Draw vs B. M'gladbach",
+            "date_time": "11/08/2023 18:00",
+            "odds": {
+                "TUS Bersenbruck - Win": "15",
+                "Draw": "6,85",
+                "B. M'gladbach - Win": "1,01"
+            }
+        },
+        {
+            "teams": "Sarrebruck vs Draw vs Karlsruhe",
+            "date_time": "11/08/2023 18:00",
+            "odds": {
+                "Sarrebruck - Win": "2,42",
+                "Draw": "3,02",
+                "Karlsruhe - Win": "2,15"
+            }
+        },
+        {
+            "teams": "Braunschweig vs Draw vs Schalke",
+            "date_time": "11/08/2023 20:45",
+            "odds": {
+                "Braunschweig - Win": "2,71",
+                "Draw": "3,10",
+                "Schalke - Win": "1,93"
+            }
+        },
+        {
+            "teams": "Carl Zeiss Iena vs Draw vs Hertha Berlin",
+            "date_time": "12/08/2023 13:00",
+            "odds": {
+                "Carl Zeiss Iena - Win": "4,18",
+                "Draw": "3,52",
+                "Hertha Berlin - Win": "1,46"
+            }
+        },
+        {
+            "teams": "TSG Balingen 1848 vs Draw vs Stuttgart",
+            "date_time": "12/08/2023 13:00",
+            "odds": {
+                "TSG Balingen 1848 - Win": "9,90",
+                "Draw": "7,15",
+                "Stuttgart - Win": "1,03"
+            }
+        },
+        {
+            "teams": "Atlas Delmenhorst vs Draw vs St. Pauli",
+            "date_time": "12/08/2023 15:30",
+            "odds": {
+                "Atlas Delmenhorst - Win": "14",
+                "Draw": "6,75",
+                "St. Pauli - Win": "1,01"
+            }
+        },
+        {
+            "teams": "Schott Mainz vs Draw vs Dortmund",
+            "date_time": "12/08/2023 15:30",
+            "odds": {
+                "Schott Mainz - Win": "15",
+                "Draw": "6,90",
+                "Dortmund - Win": "1,01"
+            }
+        },
+        {
+            "teams": "FC Oberneuland vs Draw vs Nuremberg",
+            "date_time": "12/08/2023 15:30",
+            "odds": {
+                "FC Oberneuland - Win": "13,25",
+                "Draw": "6,65",
+                "Nuremberg - Win": "1,02"
+            }
+        },
+        {
+            "teams": "Gutersloh vs Draw vs Holstein Kiel",
+            "date_time": "12/08/2023 15:30",
+            "odds": {
+                "Gutersloh - Win": "12,25",
+                "Draw": "6,00",
+                "Holstein Kiel - Win": "1,04"
+            }
+        },
+        {
+            "teams": "FC Teutonia Ottensen 1905 vs Draw vs B. Leverkusen",
+            "date_time": "12/08/2023 15:30",
+            "odds": {
+                "FC Teutonia Ottensen 1905 - Win": "10,25",
+                "Draw": "7,10",
+                "B. Leverkusen - Win": "1,03"
+            }
+        },
+        {
+            "teams": "Viktoria Köln vs Draw vs Werder Brême",
+            "date_time": "12/08/2023 15:30",
+            "odds": {
+                "Viktoria Köln - Win": "4,43",
+                "Draw": "3,60",
+                "Werder Brême - Win": "1,42"
+            }
+        },
+        {
+            "teams": "Elversberg vs Draw vs Mayence",
+            "date_time": "12/08/2023 18:00",
+            "odds": {
+                "Elversberg - Win": "2,84",
+                "Draw": "3,18",
+                "Mayence - Win": "1,84"
+            }
+        },
+        {
+            "teams": "Arminia vs Draw vs Bochum",
+            "date_time": "12/08/2023 18:00",
+            "odds": {
+                "Arminia - Win": "2,90",
+                "Draw": "3,17",
+                "Bochum - Win": "1,82"
+            }
+        },
+        {
+            "teams": "Hallescher vs Draw vs Greuther Fürth",
+            "date_time": "12/08/2023 18:00",
+            "odds": {
+                "Hallescher - Win": "2,80",
+                "Draw": "3,08",
+                "Greuther Fürth - Win": "1,89"
+            }
+        },
+        {
+            "teams": "Rostocker FC vs Draw vs Heidenheim",
+            "date_time": "13/08/2023 13:00",
+            "odds": {
+                "Rostocker FC - Win": "19,50",
+                "Draw": "6,10",
+                "Heidenheim - Win": "1,01"
+            }
+        },
+        {
+            "teams": "Rot-Weiss Essen vs Draw vs Hamburger SV",
+            "date_time": "13/08/2023 13:00",
+            "odds": {
+                "Rot-Weiss Essen - Win": "3,90",
+                "Draw": "3,58",
+                "Hamburger SV - Win": "1,48"
+            }
+        },
+        {
+            "teams": "Coblence vs Draw vs Kaiserslautern",
+            "date_time": "13/08/2023 15:30",
+            "odds": {
+                "Coblence - Win": "9,45",
+                "Draw": "6,35",
+                "Kaiserslautern - Win": "1,06"
+            }
+        },
+        {
+            "teams": "SV Oberachern vs Draw vs Fribourg",
+            "date_time": "13/08/2023 15:30",
+            "odds": {
+                "SV Oberachern - Win": "14,50",
+                "Draw": "7,00",
+                "Fribourg - Win": "1,01"
+            }
+        },
+        {
+            "teams": "SpVgg Unterhaching vs Draw vs Augsbourg",
+            "date_time": "13/08/2023 15:30",
+            "odds": {
+                "SpVgg Unterhaching - Win": "4,50",
+                "Draw": "3,58",
+                "Augsbourg - Win": "1,41"
+            }
+        }
+    ]
+}

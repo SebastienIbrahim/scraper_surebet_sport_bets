@@ -1,0 +1,185 @@
+{
+    "name": "Coupe du Brésil",
+    "matches": [
+        {
+            "teams": "Palmeiras vs N vs Fortaleza CE",
+            "date_time": "Aujourd'hui à 21h00",
+            "odds": {
+                "Palmeiras - Win": "1,45",
+                "Draw": "4,00",
+                "Fortaleza CE - Win": "6,30"
+            }
+        },
+        {
+            "teams": "Flamengo vs N vs AmericaMineiro",
+            "date_time": "Aujourd'hui à 21h00",
+            "odds": {
+                "Flamengo - Win": "1,34",
+                "Draw": "4,60",
+                "AmericaMineiro - Win": "7,20"
+            }
+        },
+        {
+            "teams": "Cuiaba MT vs N vs Sao Paulo",
+            "date_time": "Aujourd'hui à 23h30",
+            "odds": {
+                "Cuiaba MT - Win": "2,80",
+                "Draw": "2,90",
+                "Sao Paulo - Win": "2,50"
+            }
+        },
+        {
+            "teams": "Bahia Salvador vs N vs Corinthians",
+            "date_time": "Aujourd'hui à 23h30",
+            "odds": {
+                "Bahia Salvador - Win": "2,35",
+                "Draw": "2,95",
+                "Corinthians - Win": "3,00"
+            }
+        },
+        {
+            "teams": "Gremio vs N vs Atletico MG",
+            "date_time": "Demain à 02h00",
+            "odds": {
+                "Gremio - Win": "2,20",
+                "Draw": "3,20",
+                "Atletico MG - Win": "3,05"
+            }
+        },
+        {
+            "teams": "Cruzeiro vs N vs Goias",
+            "date_time": "Demain à 21h00",
+            "odds": {
+                "Cruzeiro - Win": "1,53",
+                "Draw": "3,55",
+                "Goias - Win": "5,40"
+            }
+        },
+        {
+            "teams": "Bragantino SP vs N vs Internacional",
+            "date_time": "Demain à 21h00",
+            "odds": {
+                "Bragantino SP - Win": "2,05",
+                "Draw": "3,10",
+                "Internacional - Win": "3,20"
+            }
+        },
+        {
+            "teams": "Santos vs N vs Botafogo",
+            "date_time": "Demain à 21h00",
+            "odds": {
+                "Santos - Win": "3,30",
+                "Draw": "3,00",
+                "Botafogo - Win": "2,05"
+            }
+        },
+        {
+            "teams": "Vasco De Gama vs N vs Atletico PR",
+            "date_time": "Demain à 23h30",
+            "odds": {
+                "Vasco De Gama - Win": "2,90",
+                "Draw": "3,00",
+                "Atletico PR - Win": "2,25"
+            }
+        },
+        {
+            "teams": "Coritiba vs N vs Fluminense",
+            "date_time": "mardi 25 juillet à 00h00",
+            "odds": {
+                "Coritiba - Win": "2,95",
+                "Draw": "3,15",
+                "Fluminense - Win": "2,10"
+            }
+        },
+        {
+            "teams": "Internacional vs N vs Cuiaba MT",
+            "date_time": "samedi 29 juillet à 21h00",
+            "odds": {
+                "Internacional - Win": "1,75",
+                "Draw": "3,30",
+                "Cuiaba MT - Win": "3,65"
+            }
+        },
+        {
+            "teams": "Fluminense vs N vs Santos",
+            "date_time": "samedi 29 juillet à 21h00",
+            "odds": {
+                "Fluminense - Win": "1,56",
+                "Draw": "3,25",
+                "Santos - Win": "4,90"
+            }
+        },
+        {
+            "teams": "Fortaleza CE vs N vs Bragantino SP",
+            "date_time": "samedi 29 juillet à 23h30",
+            "odds": {
+                "Fortaleza CE - Win": "1,89",
+                "Draw": "3,05",
+                "Bragantino SP - Win": "3,45"
+            }
+        },
+        {
+            "teams": "Atletico PR vs N vs Cruzeiro",
+            "date_time": "samedi 29 juillet à 23h30",
+            "odds": {
+                "Atletico PR - Win": "1,98",
+                "Draw": "2,95",
+                "Cruzeiro - Win": "3,25"
+            }
+        },
+        {
+            "teams": "Corinthians vs N vs Vasco De Gama",
+            "date_time": "samedi 29 juillet à 23h30",
+            "odds": {
+                "Corinthians - Win": "1,83",
+                "Draw": "3,00",
+                "Vasco De Gama - Win": "3,75"
+            }
+        },
+        {
+            "teams": "Atletico MG vs N vs Flamengo",
+            "date_time": "dimanche 30 juillet à 02h00",
+            "odds": {
+                "Atletico MG - Win": "2,00",
+                "Draw": "3,00",
+                "Flamengo - Win": "3,10"
+            }
+        },
+        {
+            "teams": "Sao Paulo vs N vs Bahia Salvador",
+            "date_time": "dimanche 30 juillet à 16h00",
+            "odds": {
+                "Sao Paulo - Win": "1,48",
+                "Draw": "3,45",
+                "Bahia Salvador - Win": "5,50"
+            }
+        },
+        {
+            "teams": "Botafogo vs N vs Coritiba",
+            "date_time": "dimanche 30 juillet à 21h00",
+            "odds": {
+                "Botafogo - Win": "1,43",
+                "Draw": "3,40",
+                "Coritiba - Win": "6,40"
+            }
+        },
+        {
+            "teams": "AmericaMineiro vs N vs Palmeiras",
+            "date_time": "dimanche 30 juillet à 21h00",
+            "odds": {
+                "AmericaMineiro - Win": "3,25",
+                "Draw": "3,10",
+                "Palmeiras - Win": "1,92"
+            }
+        },
+        {
+            "teams": "Goias vs N vs Gremio",
+            "date_time": "mardi 01 août à 01h00",
+            "odds": {
+                "Goias - Win": "3,00",
+                "Draw": "3,10",
+                "Gremio - Win": "2,00"
+            }
+        }
+    ]
+}

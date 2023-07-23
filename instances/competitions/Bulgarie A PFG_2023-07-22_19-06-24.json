@@ -1,0 +1,30 @@
+{
+    "name": "Bulgarie A PFG",
+    "matches": [
+        {
+            "teams": "Botev Plovdiv vs Draw vs Levski Sofia",
+            "date_time": "\n            \n                ",
+            "odds": {}
+        },
+        {
+            "teams": "Ludogorets Razgrad vs Draw vs Etar Tarnovo",
+            "date_time": "Aujourd'hui 20:30",
+            "odds": {}
+        },
+        {
+            "teams": "Cherno More Varna vs Draw vs Hebar Pazardzhik",
+            "date_time": "Demain 18:00",
+            "odds": {}
+        },
+        {
+            "teams": "Lokomotiv Sofia vs Draw vs Loko Plovdiv",
+            "date_time": "Demain 20:15",
+            "odds": {}
+        },
+        {
+            "teams": "Beroe Stara Zagora vs Draw vs Arda",
+            "date_time": "Après-demain 20:15",
+            "odds": {}
+        }
+    ]
+}

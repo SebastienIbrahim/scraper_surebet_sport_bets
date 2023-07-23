@@ -1,0 +1,86 @@
+{
+    "name": "Italie Serie B",
+    "matches": [
+        {
+            "teams": "Bari vs Draw vs Palerme",
+            "date_time": "19/08/2023 20:45",
+            "odds": {
+                "Bari - Win": "2,39",
+                "Draw": "2,80",
+                "Palerme - Win": "2,60"
+            }
+        },
+        {
+            "teams": "Cittadella vs Draw vs Reggiana",
+            "date_time": "19/08/2023 20:45",
+            "odds": {
+                "Cittadella - Win": "2,16",
+                "Draw": "2,83",
+                "Reggiana - Win": "2,91"
+            }
+        },
+        {
+            "teams": "Parme vs Draw vs Feralpisalo",
+            "date_time": "19/08/2023 20:45",
+            "odds": {
+                "Parme - Win": "1,62",
+                "Draw": "3,18",
+                "Feralpisalo - Win": "4,37"
+            }
+        },
+        {
+            "teams": "Cremonese vs Draw vs Catanzaro",
+            "date_time": "19/08/2023 20:45",
+            "odds": {
+                "Cremonese - Win": "1,74",
+                "Draw": "3,23",
+                "Catanzaro - Win": "3,63"
+            }
+        },
+        {
+            "teams": "Cosenza vs Draw vs Ascoli",
+            "date_time": "19/08/2023 20:45",
+            "odds": {
+                "Cosenza - Win": "2,50",
+                "Draw": "2,76",
+                "Ascoli - Win": "2,52"
+            }
+        },
+        {
+            "teams": "Pise vs Draw vs Lecco",
+            "date_time": "19/08/2023 20:45",
+            "odds": {
+                "Pise - Win": "1,85",
+                "Draw": "3,05",
+                "Lecco - Win": "3,43"
+            }
+        },
+        {
+            "teams": "Venezia vs Draw vs Côme",
+            "date_time": "19/08/2023 20:45",
+            "odds": {
+                "Venezia - Win": "2,07",
+                "Draw": "3,02",
+                "Côme - Win": "2,89"
+            }
+        },
+        {
+            "teams": "Ternana vs Draw vs Sampdoria",
+            "date_time": "19/08/2023 20:45",
+            "odds": {
+                "Ternana - Win": "3,37",
+                "Draw": "3,12",
+                "Sampdoria - Win": "1,84"
+            }
+        },
+        {
+            "teams": "Sudtirol vs Draw vs Spezia",
+            "date_time": "19/08/2023 20:45",
+            "odds": {
+                "Sudtirol - Win": "3,17",
+                "Draw": "2,75",
+                "Spezia - Win": "2,08"
+            }
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "name": "Copa Libertadores",
+    "matches": [
+        {
+            "teams": "Argentinos Jrs vs N vs Fluminense",
+            "date_time": "mercredi 02 août à 00h00",
+            "odds": {
+                "Argentinos Jrs - Win": "2,30",
+                "Draw": "2,95",
+                "Fluminense - Win": "2,70"
+            }
+        },
+        {
+            "teams": "River Plate vs N vs Internacional",
+            "date_time": "mercredi 02 août à 02h00",
+            "odds": {
+                "River Plate - Win": "1,45",
+                "Draw": "3,60",
+                "Internacional - Win": "5,50"
+            }
+        },
+        {
+            "teams": "Bolivar La Paz vs N vs Atletico PR",
+            "date_time": "mercredi 02 août à 02h00",
+            "odds": {
+                "Bolivar La Paz - Win": "1,80",
+                "Draw": "3,25",
+                "Atletico PR - Win": "3,50"
+            }
+        },
+        {
+            "teams": "Nac.Montevideo vs N vs Boca Juniors",
+            "date_time": "jeudi 03 août à 02h00",
+            "odds": {
+                "Nac.Montevideo - Win": "2,40",
+                "Draw": "2,85",
+                "Boca Juniors - Win": "2,65"
+            }
+        },
+        {
+            "teams": "Dep. Pereira vs N vs Ind.Del Valle",
+            "date_time": "jeudi 03 août à 02h00",
+            "odds": {
+                "Dep. Pereira - Win": "2,80",
+                "Draw": "3,00",
+                "Ind.Del Valle - Win": "2,15"
+            }
+        },
+        {
+            "teams": "Atletico MG vs N vs Palmeiras",
+            "date_time": "jeudi 03 août à 02h30",
+            "odds": {
+                "Atletico MG - Win": "2,35",
+                "Draw": "2,95",
+                "Palmeiras - Win": "2,60"
+            }
+        },
+        {
+            "teams": "Flamengo vs N vs Olimp.Asuncion",
+            "date_time": "vendredi 04 août à 02h00",
+            "odds": {
+                "Flamengo - Win": "1,16",
+                "Draw": "5,30",
+                "Olimp.Asuncion - Win": "9,70"
+            }
+        },
+        {
+            "teams": "Atl.Nacional vs N vs Racing Club",
+            "date_time": "vendredi 04 août à 02h00",
+            "odds": {
+                "Atl.Nacional - Win": "2,15",
+                "Draw": "2,95",
+                "Racing Club - Win": "2,95"
+            }
+        }
+    ]
+}

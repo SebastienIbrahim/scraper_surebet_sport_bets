@@ -1,0 +1,105 @@
+{
+    "name": "Angl. Championship",
+    "matches": [
+        {
+            "teams": "Sheffield Wed. vs Draw vs Southampton",
+            "date_time": "04/08/2023 21:00",
+            "odds": {}
+        },
+        {
+            "teams": "Bristol City vs Draw vs Preston North End",
+            "date_time": "05/08/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Norwich City vs Draw vs Hull",
+            "date_time": "05/08/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Middlesbrough vs Draw vs Millwall",
+            "date_time": "05/08/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Swansea vs Draw vs Birmingham",
+            "date_time": "05/08/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Blackburn vs Draw vs West Bromwich",
+            "date_time": "05/08/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Plymouth Argyle vs Draw vs Huddersfield",
+            "date_time": "05/08/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Stoke vs Draw vs Rotherham",
+            "date_time": "05/08/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Leicester vs Draw vs Coventry",
+            "date_time": "06/08/2023 13:00",
+            "odds": {}
+        },
+        {
+            "teams": "Leeds vs Draw vs Cardiff",
+            "date_time": "06/08/2023 15:30",
+            "odds": {}
+        },
+        {
+            "teams": "Sunderland vs Draw vs Ipswich",
+            "date_time": "06/08/2023 18:00",
+            "odds": {}
+        },
+        {
+            "teams": "Coventry vs Draw vs Middlesbrough",
+            "date_time": "12/08/2023 13:30",
+            "odds": {}
+        },
+        {
+            "teams": "Birmingham vs Draw vs Leeds",
+            "date_time": "12/08/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Huddersfield vs Draw vs Leicester",
+            "date_time": "12/08/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Cardiff vs Draw vs QPR",
+            "date_time": "12/08/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Hull vs Draw vs Sheffield Wed.",
+            "date_time": "12/08/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Ipswich vs Draw vs Stoke",
+            "date_time": "12/08/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Rotherham vs Draw vs Blackburn",
+            "date_time": "12/08/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Millwall vs Draw vs Bristol City",
+            "date_time": "12/08/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Preston North End vs Draw vs Sunderland",
+            "date_time": "12/08/2023 16:00",
+            "odds": {}
+        }
+    ]
+}

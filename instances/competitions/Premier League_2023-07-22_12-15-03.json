@@ -1,0 +1,14 @@
+{
+    "name": "Premier League",
+    "matches": [
+        {
+            "teams": "Man. City vs N vs Arsenal",
+            "date_time": "dimanche 06 août à 17h00",
+            "odds": {
+                "Man. City - Win": "1,66",
+                "Draw": "3,70",
+                "Arsenal - Win": "4,05"
+            }
+        }
+    ]
+}

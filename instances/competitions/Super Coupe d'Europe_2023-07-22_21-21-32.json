@@ -1,0 +1,14 @@
+{
+    "name": "Super Coupe d'Europe",
+    "matches": [
+        {
+            "teams": "Manchester City vs Draw vs Séville",
+            "date_time": "16/08/2023 21:00",
+            "odds": {
+                "Manchester City - Win": "1,33",
+                "Draw": "4,65",
+                "Séville - Win": "7,10"
+            }
+        }
+    ]
+}

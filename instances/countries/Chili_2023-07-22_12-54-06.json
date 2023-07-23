@@ -1,0 +1,73 @@
+{
+    "name": "Chili",
+    "competitions": [
+        {
+            "name": "D1 Chili",
+            "matches": [
+                {
+                    "teams": "Deportes Copia vs N vs Cobresal",
+                    "date_time": "Aujourd'hui à 21h00",
+                    "odds": {
+                        "Deportes Copia - Win": "2,50",
+                        "Draw": "3,15",
+                        "Cobresal - Win": "2,60"
+                    }
+                },
+                {
+                    "teams": "CD Huachipato vs N vs O'Higgins",
+                    "date_time": "Aujourd'hui à 23h30",
+                    "odds": {
+                        "CD Huachipato - Win": "2,05",
+                        "Draw": "3,25",
+                        "O'Higgins - Win": "3,30"
+                    }
+                },
+                {
+                    "teams": "Uni.De Chile vs N vs CD Palestino",
+                    "date_time": "Demain à 02h00",
+                    "odds": {
+                        "Uni.De Chile - Win": "2,20",
+                        "Draw": "3,20",
+                        "CD Palestino - Win": "3,05"
+                    }
+                },
+                {
+                    "teams": "Everton Vina vs N vs Uni.Espanola",
+                    "date_time": "Demain à 21h00",
+                    "odds": {
+                        "Everton Vina - Win": "2,05",
+                        "Draw": "3,05",
+                        "Uni.Espanola - Win": "3,15"
+                    }
+                },
+                {
+                    "teams": "Uni.Catolica vs N vs Coquimbo Unido",
+                    "date_time": "lundi 24 juillet à 00h00",
+                    "odds": {
+                        "Uni.Catolica - Win": "2,25",
+                        "Draw": "3,05",
+                        "Coquimbo Unido - Win": "2,75"
+                    }
+                },
+                {
+                    "teams": "Audax Italiano vs N vs Curico Unido",
+                    "date_time": "mardi 25 juillet à 02h30",
+                    "odds": {
+                        "Audax Italiano - Win": "1,88",
+                        "Draw": "3,25",
+                        "Curico Unido - Win": "3,45"
+                    }
+                },
+                {
+                    "teams": "Nublense vs N vs Colo Colo",
+                    "date_time": "mercredi 26 juillet à 00h00",
+                    "odds": {
+                        "Nublense - Win": "3,10",
+                        "Draw": "3,10",
+                        "Colo Colo - Win": "2,05"
+                    }
+                }
+            ]
+        }
+    ]
+}

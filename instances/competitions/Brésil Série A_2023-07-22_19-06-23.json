@@ -1,0 +1,105 @@
+{
+    "name": "Brésil Série A",
+    "matches": [
+        {
+            "teams": "Flamengo vs Draw vs America Mineiro",
+            "date_time": "Aujourd'hui 21:00",
+            "odds": {}
+        },
+        {
+            "teams": "Palmeiras vs Draw vs Fortaleza",
+            "date_time": "Aujourd'hui 21:00",
+            "odds": {}
+        },
+        {
+            "teams": "Cuiaba vs Draw vs Sao Paulo",
+            "date_time": "Aujourd'hui 23:30",
+            "odds": {}
+        },
+        {
+            "teams": "Bahia Salvador vs Draw vs Corinthians",
+            "date_time": "Aujourd'hui 23:30",
+            "odds": {}
+        },
+        {
+            "teams": "Gremio vs Draw vs Atletico Mineiro",
+            "date_time": "Demain 02:00",
+            "odds": {}
+        },
+        {
+            "teams": "Santos vs Draw vs Botafogo",
+            "date_time": "Demain 21:00",
+            "odds": {}
+        },
+        {
+            "teams": "Bragantino vs Draw vs Internacional",
+            "date_time": "Demain 21:00",
+            "odds": {}
+        },
+        {
+            "teams": "Cruzeiro vs Draw vs Goias",
+            "date_time": "Demain 21:00",
+            "odds": {}
+        },
+        {
+            "teams": "Vasco da Gama vs Draw vs Atletico Paranaense",
+            "date_time": "Demain 23:30",
+            "odds": {}
+        },
+        {
+            "teams": "Coritiba vs Draw vs Fluminense",
+            "date_time": "25/07/2023 00:00",
+            "odds": {}
+        },
+        {
+            "teams": "Internacional vs Draw vs Cuiaba",
+            "date_time": "29/07/2023 21:00",
+            "odds": {}
+        },
+        {
+            "teams": "Fluminense vs Draw vs Santos",
+            "date_time": "29/07/2023 21:00",
+            "odds": {}
+        },
+        {
+            "teams": "Corinthians vs Draw vs Vasco da Gama",
+            "date_time": "29/07/2023 23:30",
+            "odds": {}
+        },
+        {
+            "teams": "Atletico Paranaense vs Draw vs Cruzeiro",
+            "date_time": "29/07/2023 23:30",
+            "odds": {}
+        },
+        {
+            "teams": "Fortaleza vs Draw vs Bragantino",
+            "date_time": "29/07/2023 23:30",
+            "odds": {}
+        },
+        {
+            "teams": "Atletico Mineiro vs Draw vs Flamengo",
+            "date_time": "30/07/2023 02:00",
+            "odds": {}
+        },
+        {
+            "teams": "Sao Paulo vs Draw vs Bahia Salvador",
+            "date_time": "30/07/2023 16:00",
+            "odds": {}
+        },
+        {
+            "teams": "Botafogo vs Draw vs Coritiba",
+            "date_time": "30/07/2023 21:00",
+            "odds": {}
+        },
+        {
+            "teams": "America Mineiro vs Draw vs Palmeiras",
+            "date_time": "30/07/2023 21:00",
+            "odds": {}
+        },
+        {
+            "teams": "Goias vs Draw vs Gremio",
+            "date_time": "01/08/2023 01:00",
+            "odds": {}
+        }
+    ]
+}

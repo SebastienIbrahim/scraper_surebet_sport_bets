@@ -1,0 +1,55 @@
+{
+    "name": "Paraguay",
+    "competitions": [
+        {
+            "name": "D1 Paraguay",
+            "matches": [
+                {
+                    "teams": "Sportivo Trini vs N vs Resistencia FC",
+                    "date_time": "Aujourd'hui à 22h00",
+                    "odds": {
+                        "Sportivo Trini - Win": "1,74",
+                        "Draw": "3,45",
+                        "Resistencia FC - Win": "3,75"
+                    }
+                },
+                {
+                    "teams": "Cerro Porteno vs N vs Caballero JLM",
+                    "date_time": "Demain à 00h30",
+                    "odds": {
+                        "Cerro Porteno - Win": "1,42",
+                        "Draw": "4,05",
+                        "Caballero JLM - Win": "5,60"
+                    }
+                },
+                {
+                    "teams": "Sp.Luqueno vs N vs Ameliano",
+                    "date_time": "Demain à 22h00",
+                    "odds": {
+                        "Sp.Luqueno - Win": "2,20",
+                        "Draw": "3,15",
+                        "Ameliano - Win": "2,65"
+                    }
+                },
+                {
+                    "teams": "Olimp.Asuncion vs N vs Nac.Asuncion",
+                    "date_time": "lundi 24 juillet à 00h30",
+                    "odds": {
+                        "Olimp.Asuncion - Win": "1,72",
+                        "Draw": "3,30",
+                        "Nac.Asuncion - Win": "3,75"
+                    }
+                },
+                {
+                    "teams": "Lib.Asuncion vs N vs Guairena FC",
+                    "date_time": "mardi 25 juillet à 01h00",
+                    "odds": {
+                        "Lib.Asuncion - Win": "1,24",
+                        "Draw": "4,70",
+                        "Guairena FC - Win": "7,90"
+                    }
+                }
+            ]
+        }
+    ]
+}

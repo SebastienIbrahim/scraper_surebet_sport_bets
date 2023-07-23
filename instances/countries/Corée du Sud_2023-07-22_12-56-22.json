@@ -1,0 +1,19 @@
+{
+    "name": "Corée du Sud",
+    "competitions": [
+        {
+            "name": "D1 Corée du Sud",
+            "matches": [
+                {
+                    "teams": "Daejeon vs N vs Daegu FC",
+                    "date_time": "Aujourd'hui à 13h00",
+                    "odds": {
+                        "Daejeon - Win": "2,65",
+                        "Draw": "3,10",
+                        "Daegu FC - Win": "2,45"
+                    }
+                }
+            ]
+        }
+    ]
+}

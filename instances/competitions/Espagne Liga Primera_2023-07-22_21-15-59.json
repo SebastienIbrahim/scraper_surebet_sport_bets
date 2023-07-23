@@ -1,0 +1,185 @@
+{
+    "name": "Espagne Liga Primera",
+    "matches": [
+        {
+            "teams": "Almeria vs Draw vs Rayo Vallecano",
+            "date_time": "11/08/2023 19:30",
+            "odds": {
+                "Almeria - Win": "2,30",
+                "Draw": "3,20",
+                "Rayo Vallecano - Win": "2,78"
+            }
+        },
+        {
+            "teams": "Séville vs Draw vs Valence",
+            "date_time": "11/08/2023 21:30",
+            "odds": {
+                "Séville - Win": "2,15",
+                "Draw": "3,10",
+                "Valence - Win": "3,10"
+            }
+        },
+        {
+            "teams": "Real Sociedad vs Draw vs Girona",
+            "date_time": "12/08/2023 17:00",
+            "odds": {
+                "Real Sociedad - Win": "1,58",
+                "Draw": "3,75",
+                "Girona - Win": "4,80"
+            }
+        },
+        {
+            "teams": "Las Palmas vs Draw vs Majorque",
+            "date_time": "12/08/2023 19:30",
+            "odds": {
+                "Las Palmas - Win": "2,35",
+                "Draw": "2,85",
+                "Majorque - Win": "3,00"
+            }
+        },
+        {
+            "teams": "Athletic Bilbao vs Draw vs Real Madrid",
+            "date_time": "12/08/2023 21:30",
+            "odds": {
+                "Athletic Bilbao - Win": "3,10",
+                "Draw": "3,25",
+                "Real Madrid - Win": "2,10"
+            }
+        },
+        {
+            "teams": "Celta Vigo vs Draw vs Osasuna",
+            "date_time": "13/08/2023 17:00",
+            "odds": {
+                "Celta Vigo - Win": "2,08",
+                "Draw": "3,10",
+                "Osasuna - Win": "3,30"
+            }
+        },
+        {
+            "teams": "Villarreal vs Draw vs Betis",
+            "date_time": "13/08/2023 19:30",
+            "odds": {
+                "Villarreal - Win": "1,70",
+                "Draw": "3,65",
+                "Betis - Win": "4,00"
+            }
+        },
+        {
+            "teams": "Getafe vs Draw vs Barcelone",
+            "date_time": "13/08/2023 21:30",
+            "odds": {
+                "Getafe - Win": "4,95",
+                "Draw": "3,60",
+                "Barcelone - Win": "1,58"
+            }
+        },
+        {
+            "teams": "Cadix vs Draw vs Alavés",
+            "date_time": "14/08/2023 19:30",
+            "odds": {
+                "Cadix - Win": "2,13",
+                "Draw": "2,90",
+                "Alavés - Win": "3,35"
+            }
+        },
+        {
+            "teams": "Atletico Madrid vs Draw vs Grenade",
+            "date_time": "14/08/2023 21:30",
+            "odds": {
+                "Atletico Madrid - Win": "1,28",
+                "Draw": "4,70",
+                "Grenade - Win": "8,45"
+            }
+        },
+        {
+            "teams": "Majorque vs Draw vs Villarreal",
+            "date_time": "18/08/2023 19:30",
+            "odds": {
+                "Majorque - Win": "3,15",
+                "Draw": "3,05",
+                "Villarreal - Win": "2,17"
+            }
+        },
+        {
+            "teams": "Valence vs Draw vs Las Palmas",
+            "date_time": "18/08/2023 21:30",
+            "odds": {
+                "Valence - Win": "1,70",
+                "Draw": "3,35",
+                "Las Palmas - Win": "4,50"
+            }
+        },
+        {
+            "teams": "Real Sociedad vs Draw vs Celta Vigo",
+            "date_time": "19/08/2023 17:00",
+            "odds": {
+                "Real Sociedad - Win": "1,63",
+                "Draw": "3,40",
+                "Celta Vigo - Win": "4,90"
+            }
+        },
+        {
+            "teams": "Almeria vs Draw vs Real Madrid",
+            "date_time": "19/08/2023 19:30",
+            "odds": {
+                "Almeria - Win": "6,70",
+                "Draw": "4,60",
+                "Real Madrid - Win": "1,35"
+            }
+        },
+        {
+            "teams": "Osasuna vs Draw vs Athletic Bilbao",
+            "date_time": "19/08/2023 21:30",
+            "odds": {
+                "Osasuna - Win": "2,75",
+                "Draw": "3,05",
+                "Athletic Bilbao - Win": "2,40"
+            }
+        },
+        {
+            "teams": "Girona vs Draw vs Getafe",
+            "date_time": "20/08/2023 17:30",
+            "odds": {
+                "Girona - Win": "2,55",
+                "Draw": "2,88",
+                "Getafe - Win": "2,70"
+            }
+        },
+        {
+            "teams": "Barcelone vs Draw vs Cadix",
+            "date_time": "20/08/2023 19:30",
+            "odds": {
+                "Barcelone - Win": "1,19",
+                "Draw": "5,60",
+                "Cadix - Win": "11"
+            }
+        },
+        {
+            "teams": "Betis vs Draw vs Atletico Madrid",
+            "date_time": "20/08/2023 21:30",
+            "odds": {
+                "Betis - Win": "2,90",
+                "Draw": "3,10",
+                "Atletico Madrid - Win": "2,25"
+            }
+        },
+        {
+            "teams": "Alavés vs Draw vs Séville",
+            "date_time": "21/08/2023 19:00",
+            "odds": {
+                "Alavés - Win": "3,50",
+                "Draw": "3,05",
+                "Séville - Win": "2,03"
+            }
+        },
+        {
+            "teams": "Grenade vs Draw vs Rayo Vallecano",
+            "date_time": "21/08/2023 21:30",
+            "odds": {
+                "Grenade - Win": "2,58",
+                "Draw": "3,00",
+                "Rayo Vallecano - Win": "2,58"
+            }
+        }
+    ]
+}

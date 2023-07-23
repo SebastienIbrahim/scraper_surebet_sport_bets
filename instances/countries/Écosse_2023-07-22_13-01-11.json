@@ -1,0 +1,64 @@
+{
+    "name": "Écosse",
+    "competitions": [
+        {
+            "name": "D1 Ecosse",
+            "matches": [
+                {
+                    "teams": "Celtic vs N vs Ross County",
+                    "date_time": "samedi 05 août à 13h30",
+                    "odds": {
+                        "Celtic - Win": "1,08",
+                        "Draw": "6,50",
+                        "Ross County - Win": "12,00"
+                    }
+                },
+                {
+                    "teams": "Livingston FC vs N vs Aberdeen",
+                    "date_time": "samedi 05 août à 16h00",
+                    "odds": {
+                        "Livingston FC - Win": "2,60",
+                        "Draw": "3,10",
+                        "Aberdeen - Win": "2,20"
+                    }
+                },
+                {
+                    "teams": "St Johnstone vs N vs Hearts",
+                    "date_time": "samedi 05 août à 16h00",
+                    "odds": {
+                        "St Johnstone - Win": "2,60",
+                        "Draw": "3,15",
+                        "Hearts - Win": "2,20"
+                    }
+                },
+                {
+                    "teams": "Dundee FC vs N vs Motherwell",
+                    "date_time": "samedi 05 août à 16h00",
+                    "odds": {
+                        "Dundee FC - Win": "2,45",
+                        "Draw": "3,05",
+                        "Motherwell - Win": "2,35"
+                    }
+                },
+                {
+                    "teams": "Kilmarnock vs N vs Rangers",
+                    "date_time": "samedi 05 août à 18h15",
+                    "odds": {
+                        "Kilmarnock - Win": "5,10",
+                        "Draw": "4,20",
+                        "Rangers - Win": "1,38"
+                    }
+                },
+                {
+                    "teams": "Hibernian vs N vs St Mirren",
+                    "date_time": "dimanche 06 août à 16h00",
+                    "odds": {
+                        "Hibernian - Win": "1,78",
+                        "Draw": "3,20",
+                        "St Mirren - Win": "3,50"
+                    }
+                }
+            ]
+        }
+    ]
+}

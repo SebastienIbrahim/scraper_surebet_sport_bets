@@ -1,0 +1,91 @@
+{
+    "name": "Danemark",
+    "competitions": [
+        {
+            "name": "Danemark Superliga",
+            "matches": [
+                {
+                    "teams": "AGF Aarhus vs Draw vs Vejle",
+                    "date_time": "Demain 14:00",
+                    "odds": {
+                        "AGF Aarhus - Win": "1,53",
+                        "Draw": "3,65",
+                        "Vejle - Win": "5,85"
+                    }
+                },
+                {
+                    "teams": "Odense BK vs Draw vs Randers",
+                    "date_time": "Demain 16:00",
+                    "odds": {
+                        "Odense BK - Win": "1,95",
+                        "Draw": "3,45",
+                        "Randers - Win": "3,35"
+                    }
+                },
+                {
+                    "teams": "Silkeborg vs Draw vs Brondby IF",
+                    "date_time": "Demain 18:00",
+                    "odds": {
+                        "Silkeborg - Win": "2,63",
+                        "Draw": "3,33",
+                        "Brondby IF - Win": "2,38"
+                    }
+                },
+                {
+                    "teams": "Nordsjaelland vs Draw vs Viborg",
+                    "date_time": "Après-demain 19:00",
+                    "odds": {
+                        "Nordsjaelland - Win": "2,39",
+                        "Draw": "3,35",
+                        "Viborg - Win": "2,60"
+                    }
+                },
+                {
+                    "teams": "Viborg vs Draw vs Lyngby",
+                    "date_time": "28/07/2023 19:00",
+                    "odds": {
+                        "Viborg - Win": "1,64",
+                        "Draw": "3,55",
+                        "Lyngby - Win": "4,37"
+                    }
+                },
+                {
+                    "teams": "Vejle vs Draw vs Copenhague",
+                    "date_time": "29/07/2023 16:00",
+                    "odds": {
+                        "Vejle - Win": "4,60",
+                        "Draw": "3,72",
+                        "Copenhague - Win": "1,58"
+                    }
+                },
+                {
+                    "teams": "Midtjylland vs Draw vs Silkeborg",
+                    "date_time": "30/07/2023 14:00",
+                    "odds": {
+                        "Midtjylland - Win": "1,73",
+                        "Draw": "3,37",
+                        "Silkeborg - Win": "3,52"
+                    }
+                },
+                {
+                    "teams": "Brondby IF vs Draw vs Odense BK",
+                    "date_time": "30/07/2023 18:00",
+                    "odds": {
+                        "Brondby IF - Win": "1,71",
+                        "Draw": "3,28",
+                        "Odense BK - Win": "3,70"
+                    }
+                },
+                {
+                    "teams": "AGF Aarhus vs Draw vs Nordsjaelland",
+                    "date_time": "31/07/2023 19:00",
+                    "odds": {
+                        "AGF Aarhus - Win": "2,27",
+                        "Draw": "2,97",
+                        "Nordsjaelland - Win": "2,61"
+                    }
+                }
+            ]
+        }
+    ]
+}

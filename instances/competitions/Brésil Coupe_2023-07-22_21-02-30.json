@@ -1,0 +1,23 @@
+{
+    "name": "Brésil Coupe",
+    "matches": [
+        {
+            "teams": "Corinthians vs Draw vs Sao Paulo",
+            "date_time": "26/07/2023 02:30",
+            "odds": {
+                "Corinthians - Win": "2,38",
+                "Draw": "3,00",
+                "Sao Paulo - Win": "2,88"
+            }
+        },
+        {
+            "teams": "Gremio vs Draw vs Flamengo",
+            "date_time": "27/07/2023 02:30",
+            "odds": {
+                "Gremio - Win": "2,39",
+                "Draw": "2,97",
+                "Flamengo - Win": "2,47"
+            }
+        }
+    ]
+}

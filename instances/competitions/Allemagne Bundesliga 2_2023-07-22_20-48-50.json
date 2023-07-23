@@ -1,0 +1,131 @@
+{
+    "name": "Allemagne Bundesliga 2",
+    "matches": [
+        {
+            "teams": "Hamburger SV vs Draw vs Schalke",
+            "date_time": "28/07/2023 20:30",
+            "odds": {
+                "Hamburger SV - Win": "2,25",
+                "Draw": "3,25",
+                "Schalke - Win": "2,70"
+            }
+        },
+        {
+            "teams": "Kaiserslautern vs Draw vs St. Pauli",
+            "date_time": "29/07/2023 13:00",
+            "odds": {
+                "Kaiserslautern - Win": "2,90",
+                "Draw": "3,35",
+                "St. Pauli - Win": "2,10"
+            }
+        },
+        {
+            "teams": "Hanovre vs Draw vs Elversberg",
+            "date_time": "29/07/2023 13:00",
+            "odds": {
+                "Hanovre - Win": "2,12",
+                "Draw": "3,40",
+                "Elversberg - Win": "2,85"
+            }
+        },
+        {
+            "teams": "Osnabrück vs Draw vs Karlsruhe",
+            "date_time": "29/07/2023 13:00",
+            "odds": {
+                "Osnabrück - Win": "2,58",
+                "Draw": "3,35",
+                "Karlsruhe - Win": "2,30"
+            }
+        },
+        {
+            "teams": "Wehen Wiesbaden vs Draw vs Magdebourg",
+            "date_time": "29/07/2023 13:00",
+            "odds": {
+                "Wehen Wiesbaden - Win": "2,50",
+                "Draw": "3,40",
+                "Magdebourg - Win": "2,38"
+            }
+        },
+        {
+            "teams": "Fortuna Dusseldorf vs Draw vs Hertha Berlin",
+            "date_time": "29/07/2023 20:30",
+            "odds": {
+                "Fortuna Dusseldorf - Win": "2,25",
+                "Draw": "3,35",
+                "Hertha Berlin - Win": "2,68"
+            }
+        },
+        {
+            "teams": "Hansa Rostock vs Draw vs Nuremberg",
+            "date_time": "30/07/2023 13:30",
+            "odds": {
+                "Hansa Rostock - Win": "2,32",
+                "Draw": "3,05",
+                "Nuremberg - Win": "2,60"
+            }
+        },
+        {
+            "teams": "Greuther Fürth vs Draw vs Paderborn",
+            "date_time": "30/07/2023 13:30",
+            "odds": {
+                "Greuther Fürth - Win": "2,32",
+                "Draw": "3,30",
+                "Paderborn - Win": "2,48"
+            }
+        },
+        {
+            "teams": "Braunschweig vs Draw vs Holstein Kiel",
+            "date_time": "30/07/2023 13:30",
+            "odds": {
+                "Braunschweig - Win": "2,35",
+                "Draw": "3,30",
+                "Holstein Kiel - Win": "2,42"
+            }
+        },
+        {
+            "teams": "Hertha Berlin vs Draw vs Wehen Wiesbaden",
+            "date_time": "04/08/2023 18:30",
+            "odds": {
+                "Hertha Berlin - Win": "1,48",
+                "Draw": "3,85",
+                "Wehen Wiesbaden - Win": "4,85"
+            }
+        },
+        {
+            "teams": "Paderborn vs Draw vs Osnabrück",
+            "date_time": "04/08/2023 18:30",
+            "odds": {
+                "Paderborn - Win": "1,48",
+                "Draw": "3,85",
+                "Osnabrück - Win": "4,95"
+            }
+        },
+        {
+            "teams": "Schalke vs Draw vs Kaiserslautern",
+            "date_time": "05/08/2023 20:30",
+            "odds": {
+                "Schalke - Win": "1,50",
+                "Draw": "3,70",
+                "Kaiserslautern - Win": "4,95"
+            }
+        },
+        {
+            "teams": "Karlsruhe vs Draw vs Hamburger SV",
+            "date_time": "06/08/2023 13:30",
+            "odds": {
+                "Karlsruhe - Win": "2,50",
+                "Draw": "3,30",
+                "Hamburger SV - Win": "2,30"
+            }
+        },
+        {
+            "teams": "Nuremberg vs Draw vs Hanovre",
+            "date_time": "06/08/2023 13:30",
+            "odds": {
+                "Nuremberg - Win": "2,17",
+                "Draw": "3,15",
+                "Hanovre - Win": "2,78"
+            }
+        }
+    ]
+}

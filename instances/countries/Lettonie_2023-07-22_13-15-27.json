@@ -1,0 +1,28 @@
+{
+    "name": "Lettonie",
+    "competitions": [
+        {
+            "name": "D1 Lettonie",
+            "matches": [
+                {
+                    "teams": "FK Auda vs N vs FK RFS",
+                    "date_time": "Demain à 16h00",
+                    "odds": {
+                        "FK Auda - Win": "6,20",
+                        "Draw": "4,05",
+                        "FK RFS - Win": "1,39"
+                    }
+                },
+                {
+                    "teams": "FK Tukums 2000 vs N vs Riga FC",
+                    "date_time": "Demain à 18h00",
+                    "odds": {
+                        "FK Tukums 2000 - Win": "15,00",
+                        "Draw": "7,20",
+                        "Riga FC - Win": "1,08"
+                    }
+                }
+            ]
+        }
+    ]
+}
