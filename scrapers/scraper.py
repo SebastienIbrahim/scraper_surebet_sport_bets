@@ -167,8 +167,14 @@ class SiteScraper(BaseScraper):
             matches_blocs = self.safe_get(match_page, self.tags_odd["bloc_match"])
         for match_bloc in matches_blocs:
             teams_name = self.safe_get(match_bloc, self.tags_odd["name_team"])
-            teams_name = normalize_teams_name(teams_name)
-            teams = [Team(team_name.strip()) for team_name in teams_name]
+            try:
+                teams_name = normalize_teams_name(teams_name)
+                teams = [Team(team_name.strip()) for team_name in teams_name]
+            except Exception as e:
+                scraper_logger.error(
+                    f"Failed to extract teams name: {teams_name} with {e}"
+                )
+                continue
             date_time = self.safe_get(match_bloc, self.tags_odd["date_hours"])
             odds_elements = self.safe_get(match_bloc, self.tags_odd["odd"])
             odds = [

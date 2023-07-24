@@ -178,27 +178,151 @@ site_B = {
     ],
 }
 
+"""-----------------------------------------------------"""
 
-def merge_dicts_with_odds(*site_dicts):
-    merged_odds = {}
-
-    for site_data in site_dicts:
-        site_name = site_data["name"]
-        matches = site_data["matches"]
-
-        for match in matches:
-            teams = match["teams"]
-            odds = match["odds"]
-
-            for outcome, value in odds.items():
-                full_key = f"{teams} - {outcome}"
-                if site_name not in merged_odds:
-                    merged_odds[site_name] = {}
-
-                merged_odds[site_name][full_key] = value
-
-    return merged_odds
+from dateutil.parser import parse
 
 
-merged_data = merge_dicts_with_odds(site_A, site_B)
-print(merged_data)
+def format_dates_recursive(data, date_formats=None, output_format="%d/%m/%Y %H:%M"):
+    if date_formats is None:
+        date_formats = ["%d/%m/%Y %H:%M", "%d-%m-%Y %H:%M", "%Y-%m-%d %H:%M:%S"]
+
+    if isinstance(data, dict):
+        for key, value in data.items():
+            if isinstance(value, str):
+                # Vérifier si la valeur est une date
+                for date_format in date_formats:
+                    try:
+                        datetime_obj = parse(value, dayfirst=True, yearfirst=True)
+                        # Convertir la date au format spécifié
+                        data[key] = datetime_obj.strftime(output_format)
+                        break
+                    except ValueError:
+                        pass
+            elif isinstance(value, dict) or isinstance(value, list):
+                format_dates_recursive(value, date_formats, output_format)
+    elif isinstance(data, list):
+        for i in range(len(data)):
+            if isinstance(data[i], str):
+                # Vérifier si la valeur est une date
+                for date_format in date_formats:
+                    try:
+                        datetime_obj = parse(data[i], dayfirst=True, yearfirst=True)
+                        # Convertir la date au format spécifié
+                        data[i] = datetime_obj.strftime(output_format)
+                        break
+                    except ValueError:
+                        pass
+            elif isinstance(data[i], dict) or isinstance(data[i], list):
+                format_dates_recursive(data[i], date_formats, output_format)
+
+
+# Exemple d'utilisation avec le dictionnaire site_A
+site_A = {
+    "name": "Angl. Premier League",
+    "matches": [
+        {
+            "teams": "Burnley vs Draw vs Manchester City",
+            "date_time": "11/08/2023 21:00",
+            "odds": {
+                "Burnley - Win": "7,85",
+                "Draw": "4,90",
+                "Manchester City - Win": "1,29",
+            },
+        },
+        # Autres matchs...
+    ],
+}
+
+# Appel de la fonction pour mettre les dates au même format
+format_dates_recursive(site_A)
+
+# Affichage du dictionnaire site_A avec les dates formatées
+print(site_A)
+
+
+"""-----------------------------------------------------"""
+
+
+def replace_draw_with_n_recursive(data):
+    if isinstance(data, dict):
+        for key, value in data.items():
+            if isinstance(value, str):
+                data[key] = (
+                    value.replace("DRAW", "N", -1)
+                    .replace("Draw", "N", -1)
+                    .replace("draw", "N", -1)
+                )
+            elif isinstance(value, dict) or isinstance(value, list):
+                replace_draw_with_n_recursive(value)
+    elif isinstance(data, list):
+        for i in range(len(data)):
+            if isinstance(data[i], str):
+                data[i] = (
+                    data[i]
+                    .replace("DRAW", "N", -1)
+                    .replace("Draw", "N", -1)
+                    .replace("draw", "N", -1)
+                )
+            elif isinstance(data[i], dict) or isinstance(data[i], list):
+                replace_draw_with_n_recursive(data[i])
+
+
+# Exemple d'utilisation avec le dictionnaire site_A
+
+# Appel de la fonction pour remplacer "DRAW" par "N" (indépendamment de la casse)
+replace_draw_with_n_recursive(site_A)
+
+# Affichage du dictionnaire site_A après le remplacement
+print(site_A)
+
+
+"""-------------------------------------------------------"""
+
+
+def find_similar_matches(site_A, site_B, similarity_threshold=0.13):
+    similar_matches = {}
+
+    championship_similarity = difflib.SequenceMatcher(
+        None, site_A["name"], site_B["name"]
+    ).ratio()
+
+    if championship_similarity < similarity_threshold:
+        print("Les championnats ne sont pas similaires.")
+        return
+
+    for match_A in site_A["matches"]:
+        for match_B in site_B["matches"]:
+            teams_similarity = difflib.SequenceMatcher(
+                None, match_A["teams"], match_B["teams"]
+            ).ratio()
+
+            date_time_similarity = difflib.SequenceMatcher(
+                None, match_A["date_time"], match_B["date_time"]
+            ).ratio()
+
+            if (
+                teams_similarity > similarity_threshold
+                and date_time_similarity > similarity_threshold
+            ):
+                similar_matches[match_A["teams"]] = {
+                    "championship": site_A["name"],
+                    "date_time": match_A["date_time"],
+                    "odds_site_A": match_A["odds"],
+                    "odds_site_B": match_B["odds"],
+                }
+
+    return similar_matches
+
+
+# Utilisation de la fonction pour trouver les matchs similaires entre site_A et site_B
+similar_matches = find_similar_matches(site_A, site_B)
+
+# Affichage des résultats
+for teams, odds in similar_matches.items():
+    print("Championnat:", odds["championship"])
+    print("Match:", teams)
+    print("Date et heure:", odds["date_time"])
+    print("Côtes du site A:", odds["odds_site_A"])
+    print("Côtes du site B:", odds["odds_site_B"])
+    print("------------------------")

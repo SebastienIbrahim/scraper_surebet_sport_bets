@@ -33,7 +33,7 @@ betclic :
     sport_name:  //a[@class="sportList_itemWrapper" and @id="block-link-null"]/div[@class="sportlist_name"]/text()
     country_name:  //div[@class="sportList_itemWrapper"]/div[@class="sportlist_name"]/text() 
     country : .//ul//li[@routerlinkactive="active-link"] #.//li[@routerlinkactive="active-link" and @class="sportList_item has-children ng-star-inserted"]
-    championship :  //ul[@class="sportList_listLv2 ng-star-inserted"]//div[@class="sportlist_name"]
+    championship :  //ul[contains(@class,"sportList_listLv2 ")]//div[@class="sportlist_name"]
     championship_name :   //ul[@class="sportList_listLv2 ng-star-inserted"]//div[@class="sportlist_name"]/text()
   tags_button:
     bet_filter:
