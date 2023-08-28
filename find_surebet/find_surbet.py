@@ -1,3 +1,8 @@
+import itertools
+from typing import Dict, Any, List
+import pandas as pd
+
+
 def display_info(label, data):
     print(label + ":")
     for key, value in data.items():
@@ -116,168 +121,6 @@ data = {
 }
 
 
-def find_surebets(data, total_stake):
-    surebets = {}
-
-    for match, bookmakers_list in data.items():
-        n = len(bookmakers_list)
-        for i in range(n):
-            for j in range(i + 1, n):
-                for k in range(j + 1, n):
-                    bookmaker_a, data_a = list(bookmakers_list[i].items())[0]
-                    bookmaker_b, data_b = list(bookmakers_list[j].items())[0]
-                    bookmaker_c, data_c = list(bookmakers_list[k].items())[0]
-                    cote_victoire_a = data_a["victoire_equipe_a"]
-                    cote_victoire_b = data_b["victoire_equipe_b"]
-                    cote_match_nul = data_c["match_nul"]
-
-                    # Vérification d'une opportunité de surebet
-                    if (
-                        1 / cote_victoire_a + 1 / cote_victoire_b + 1 / cote_match_nul
-                        < 1
-                    ):
-                        M = total_stake / (
-                            1 / cote_victoire_a
-                            + 1 / cote_victoire_b
-                            + 1 / cote_match_nul
-                        )
-                        mise_victoire_a = round(M / cote_victoire_a, 2)
-                        mise_victoire_b = round(M / cote_victoire_b, 2)
-                        mise_match_nul = round(M / cote_match_nul, 2)
-
-                        gain_victoire_a = round(mise_victoire_a * cote_victoire_a, 2)
-                        gain_victoire_b = round(mise_victoire_b * cote_victoire_b, 2)
-                        gain_match_nul = round(mise_match_nul * cote_match_nul, 2)
-                        gain_total = round(
-                            gain_victoire_a + gain_victoire_b + gain_match_nul, 2
-                        )
-
-                        # Vérification des gains strictement positifs
-                        if M > 0 and gain_total > total_stake:
-                            surebet = {
-                                "Match": match,
-                                "Cotes": {
-                                    "Cote victoire équipe A": cote_victoire_a,
-                                    "Cote victoire équipe B": cote_victoire_b,
-                                    "Cote match nul": cote_match_nul,
-                                },
-                                "Montants de mise": {
-                                    "Mise victoire équipe A": mise_victoire_a,
-                                    "Mise victoire équipe B": mise_victoire_b,
-                                    "Mise match nul": mise_match_nul,
-                                },
-                                "Mise_totale": round(M, 2),
-                                "Gains": {
-                                    "Gain victoire équipe A": gain_victoire_a,
-                                    "Gain victoire équipe B": gain_victoire_b,
-                                    "Gain match nul": gain_match_nul,
-                                },
-                                "Gain_total": gain_total,
-                            }
-                            surebets[(bookmaker_a, bookmaker_b, bookmaker_c)] = surebet
-
-    return surebets
-
-
-"""
-
-La fonction find_surebets(data, total_stake) prend en entrée un dictionnaire data contenant les informations sur les paris sportifs (les cotes de différents bookmakers pour chaque match) et total_stake qui représente le montant total que vous prévoyez de parier.
-
-La fonction commence par initialiser un dictionnaire vide surebets qui sera utilisé pour stocker les opportunités de surebet identifiées.
-
-Ensuite, elle parcourt chaque match et les bookmakers associés à ce match en utilisant une boucle for.
-
-À l'aide de trois boucles for imbriquées, la fonction sélectionne toutes les combinaisons possibles de trois bookmakers différents pour chaque match. Cela permettra de comparer les cotes de chaque bookmaker et d'identifier s'il y a une opportunité de surebet.
-
-Pour chaque combinaison de bookmakers, la fonction vérifie si la somme inverse des cotes est inférieure à 1. Si c'est le cas, cela signifie qu'il y a une opportunité de surebet.
-
-Si une opportunité de surebet est trouvée, la fonction calcule les mises à effectuer sur chaque issue (victoire de l'équipe A, victoire de l'équipe B ou match nul) pour exploiter cette opportunité.
-
-La fonction vérifie ensuite que les mises sont strictement positives et que le gain total attendu est supérieur à la mise totale initiale (total_stake).
-
-Si toutes les conditions sont remplies, les informations concernant l'opportunité de surebet sont stockées dans le dictionnaire surebets.
-
-Une fois toutes les combinaisons de bookmakers pour tous les matchs évaluées, la fonction renvoie le dictionnaire surebets contenant les meilleures opportunités de surebet avec des gains positifs.
-
-L'exemple d'utilisation fourni utilise les données d'un seul match avec trois bookmakers. Il affiche les informations sur les opportunités de surebet identifiées, notamment les bookmakers à choisir, les mises à effectuer et les gains attendus pour chaque issue
-
-
-"""
-
-from typing import Dict, Any, List
-
-
-# Nouvelle fonction plus générique
-def find_surebets(
-    data: Dict[str, List[Dict[str, Any]]], total_stake: float
-) -> Dict[str, Any]:
-    """
-    Find surebets among different bookmakers' odds for given matches.
-
-    Args:
-        data (dict): A dictionary containing match names as keys and bookmakers' odds data as values.
-        total_stake (float): The total stake for the surebet.
-
-    Returns:
-        dict: A dictionary containing surebet opportunities and their details.
-    """
-    surebets = {}
-
-    for match, bookmakers_list in data.items():
-        teams = list(
-            bookmakers_list[0][list(bookmakers_list[0].keys())[0]]["odds"].keys()
-        )
-        n = len(list(bookmakers_list[0].keys()))
-
-        odds_list = []
-        bookmakers = []
-
-        # for i in range(n):
-        for bookmaker in bookmakers_list[0].keys():
-            odds = [
-                float(odds.replace(",", "."))
-                for odds in bookmakers_list[0][bookmaker]["odds"].values()
-            ]
-            odds_list.append(odds)
-            bookmakers.append(bookmaker)
-
-        for i in range(n):
-            for j in range(i + 1, n):
-                for k in range(j + 1, n):
-                    stake = total_stake / (
-                        sum(1 / odds[i] for odds in odds_list)
-                        + sum(1 / odds[j] for odds in odds_list)
-                        + sum(1 / odds[k] for odds in odds_list)
-                    )
-                    gain = stake * (
-                        sum(odds[i] for odds in odds_list)
-                        + sum(odds[j] for odds in odds_list)
-                        + sum(odds[k] for odds in odds_list)
-                    )
-
-                    # Check for surebet opportunity
-                    if gain > total_stake:
-                        surebet = {
-                            "Match": match,
-                            "Bookmakers": [bookmakers[i], bookmakers[j], bookmakers[k]],
-                            "Stake": stake,
-                            "Gain": gain,
-                        }
-
-                        for team in teams:
-                            surebet["Cotes_" + team] = [
-                                odds[i][team],
-                                odds[j][team],
-                                odds[k][team],
-                            ]
-
-                        surebets[
-                            (bookmakers[i], bookmakers[j], bookmakers[k])
-                        ] = surebet
-
-    return surebets
-
-
 data = {
     "Burnley  vs Manchester City": [
         {
@@ -366,5 +209,150 @@ def find_surebets(
     return surebets
 
 
-surebets = find_surebets(data, total_stake)
-print(surebets)
+def calculate_surebets(match_data):
+    surebets = []
+
+    for match_name, bookmakers_data in match_data.items():
+        teams = set()
+        for bookmaker_odds in bookmakers_data:
+            for bookmaker, odds in bookmaker_odds.items():
+                teams.update(odds["odds"].keys())
+
+        for team in teams:
+            probabilities = []
+            bookmaker_odds_info = {}  # To store bookmaker odds information
+            for bookmaker_odds in bookmakers_data:
+                for bookmaker, odds in bookmaker_odds.items():
+                    if team in odds["odds"]:
+                        odd = float(odds["odds"][team].replace(",", "."))
+                        inverse_odd = 1 / odd
+                        probabilities.append(inverse_odd)
+                        bookmaker_odds_info[bookmaker] = round(
+                            odd, 3
+                        )  # Store rounded odds associated with bookmaker
+
+            if len(probabilities) >= 3:
+                for combo in itertools.combinations(probabilities, 3):
+                    total_probability = sum(combo)
+                    if total_probability < 1:
+                        surebet = {
+                            "Match": match_name,
+                            "Bookmakers": [
+                                bookmaker for bookmaker in bookmaker_odds_info
+                            ],
+                            "Surebet Value": round(1 - total_probability, 3),
+                            "Teams": [team, team, team],
+                            "Inverse Odds": [round(inv_odds, 3) for inv_odds in combo],
+                            "Total Inverse Odds": round(sum(combo), 3),
+                            "Bookmaker Odds": {
+                                bookmaker: odds
+                                for bookmaker, odds in bookmaker_odds_info.items()
+                            },
+                        }
+                        surebets.append(surebet)
+
+    return surebets
+
+
+def calculate_stakes(surebets, bet_amount):
+    stakes = []
+
+    for surebet in surebets:
+        total_inverse_odds = surebet["Total Inverse Odds"]
+        stake_per_bet = bet_amount / total_inverse_odds
+
+        for team, inv_odds, bookmaker in zip(
+            surebet["Teams"], surebet["Inverse Odds"], surebet["Bookmakers"]
+        ):
+            stake = round(stake_per_bet * inv_odds, 3)
+            stakes.append(
+                {
+                    "Match": surebet["Match"],
+                    "Team": team,
+                    "Stake": stake,
+                    "Bookmaker": bookmaker,
+                }
+            )
+
+    # Group stakes by 3 to get the surebet combination
+    grouped_stakes = [stakes[i : i + 3] for i in range(0, len(stakes), 3)]
+
+    return grouped_stakes
+
+
+def find_surbets_opportunities(
+    data: Dict[str, Dict[str, Any]],
+    investissement_amount: float = 100,
+    nb_way: int = 3,
+    draw_position: int = 1,
+) -> Dict[str, Any]:
+    """Find surbets opportunities among different bookmakers' odds for given matches.
+    Args:
+        data (_type_): A dictionary containing match names as keys and bookmakers' odds data as values.
+        investissement_amount (int, optional): Total investissement for the surbet. Defaults to 100.
+        nb_way (int, optional): Number of way for the surbet. Defaults to 3 (win of each team plus draw).
+        draw_position (int, optional): Position of the draw in the list of teams. Defaults to 1.
+
+    Returns:
+        _type_: opportunities dict with stakes for each bookmaker and team
+    """
+    opportunities = {}
+    count_opportunity = 0
+    for teams_str, bookmakers_data_list in data.items():
+        odds_list = []
+        teams = teams_str.split(" vs ")
+        teams = [team.strip() for team in teams]
+        teams.insert(draw_position, "Draw")
+        bookmakers_data = bookmakers_data_list[0]
+        for bookmaker in bookmakers_data:
+            bookmakers_data[bookmaker]["odds"] = {
+                team: odd
+                for team, odd in zip(teams, bookmakers_data[bookmaker]["odds"].values())
+            }
+            for team, odd in bookmakers_data[bookmaker]["odds"].items():
+                odds_list.append(
+                    {
+                        "bookmaker": bookmaker,
+                        "team": team,
+                        "odds": float(odd.replace(",", ".")),
+                    }
+                )
+        for combinaison in itertools.combinations(odds_list, nb_way):
+            total_proba = sum(
+                1 / combinaison[iter_way]["odds"] for iter_way in range(nb_way)
+            )
+            is_valide_combinaison = (
+                len(pd.unique([combinaison[i]["team"] for i in range(nb_way)]))
+                == nb_way
+            )
+            if total_proba < 1 and is_valide_combinaison:
+                count_opportunity += 1
+                roi = 1 - total_proba
+                stakes = {
+                    combinaison[i]["team"]: {
+                        "bookmaker": combinaison[i]["bookmaker"],
+                        "odds": combinaison[i]["odds"],
+                        "mise": round(
+                            1
+                            / combinaison[i]["odds"]
+                            * (investissement_amount / total_proba),
+                            2,
+                        ),
+                        "gain": round(
+                            1
+                            / combinaison[i]["odds"]
+                            * (investissement_amount / total_proba)
+                            * combinaison[i]["odds"],
+                            2,
+                        ),
+                        "roi": f"{100*roi:.2f}%",
+                    }
+                    for i in range(nb_way)
+                }
+                opportunities[f"opportunity_{count_opportunity}"] = stakes
+    return opportunities
+
+
+opportunities = find_surbets_opportunities(
+    data, investissement_amount=100, nb_way=3, draw_position=1
+)
