@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 import yaml
 from undetected_chromedriver import Chrome, ChromeOptions
 from utils.logger import setup_scraper_logger
@@ -19,6 +20,10 @@ def dump_json_data(sport, filename):
     now = datetime.now()
     timestamp = now.strftime("%Y-%m-%d_%H-%M-%S")
     filename = f"{filename}_{timestamp}.json"
+    relative_site_directory = "/".join(filename.split("/")[:-2])
+    absolute_site_directory = Path(__file__).parent.parent / relative_site_directory
+    if not os.path.exists(absolute_site_directory):
+        os.makedirs(absolute_site_directory)
     path = Path(__file__).parent.parent / filename
     print(path)
     with open(path, "w", encoding="utf-8") as file:

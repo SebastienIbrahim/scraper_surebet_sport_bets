@@ -4,9 +4,23 @@ from pathlib import Path
 import yaml
 from unidecode import unidecode
 from nltk.corpus import stopwords
+from googletrans import Translator
+import json
 
 # Chemin vers le répertoire racine
 root_directory = "/home/mtd/Bureau/Ressistance/Projets/sports-betting-scraper/instance"
+
+
+def remplace_nom_clé_récursif(input_dict, ancienne_clé, nouvelle_clé):
+    output_dict = {}
+    for clé, valeur in input_dict.items():
+        if isinstance(valeur, dict):
+            output_dict[clé] = remplace_nom_clé_récursif(
+                valeur, ancienne_clé, nouvelle_clé
+            )
+        else:
+            output_dict[clé if clé != ancienne_clé else nouvelle_clé] = valeur
+    return output_dict
 
 
 def get_countries_names(root_directory):
@@ -28,11 +42,6 @@ def get_countries_names(root_directory):
                             all_countries.add(country_name)
             countries_by_site[site_name] = list(countries)
     return countries_by_site
-
-
-countries_names = get_countries_names(root_directory)
-
-from googletrans import Translator
 
 
 def convert_country_name_to_english(country_name, src="fr", target_lang="en"):
@@ -104,12 +113,37 @@ def match_countries_by_site(root_dir):
     return country_site_files
 
 
-def get_matched_countries(country_site_files, site_number):
+def open_json_file(file_path):
+    with open(file_path, "r") as file:
+        data = json.load(file)
+    return data
+
+
+def get_matched_countries(root_directory, site_number=2):
+    country_site_files = match_countries_by_site(root_directory)
     matched_countries = {}
     not_matched_countries = {}
     for country in country_site_files.keys():
-        if len(country_site_files[country].keys()) == site_number:
+        if len(country_site_files[country].keys()) >= site_number:
             matched_countries[country] = country_site_files[country]
         else:
             not_matched_countries[country] = country_site_files[country]
     return matched_countries, not_matched_countries
+
+
+def get_data_from_matched_countries_per_site(matched_countries, not_matched_countries):
+    union_matched_not_matched = {**matched_countries, **not_matched_countries}
+    all_data = []
+    for country, site_data in union_matched_not_matched.items():
+        for site, files in site_data.items():
+            for file in files:
+                country_data = open_json_file(file)
+                for competition_data in country_data["competitions"]:
+                    competition_data["Bookmaker"] = site
+                    if len(competition_data["matches"]) < 1:
+                        continue
+                    all_data.append(competition_data)
+    all_data = [
+        remplace_nom_clé_récursif(data, "name", "championship") for data in all_data
+    ]
+    return all_data

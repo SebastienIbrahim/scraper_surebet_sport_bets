@@ -34,7 +34,9 @@ class SiteScraper(BaseScraper):
         self.get_random_sleep_time()
         sports = self.extract_sports(home_page)
         for sport in sports:
-            dump_json_data(sport, f"instance/sports/{self.site_name}@{sport.name}")
+            dump_json_data(
+                sport, f"instance/{self.site_name}/sports/{self.site_name}@{sport.name}"
+            )
 
     def extract_sports(self, home_page: BeautifulSoup) -> list[Sport]:
         """Extract all sports from the home page
@@ -98,7 +100,8 @@ class SiteScraper(BaseScraper):
                 f"Country: Extracted {country_name} country with {len(competitions)} competitions"
             )
             dump_json_data(
-                country, f"instance/countries/{self.site_name}@{country.name}"
+                country,
+                f"instance/{self.site_name}/countries/{self.site_name}@{country.name}",
             )
             countries.append(country)
         return countries
@@ -135,7 +138,7 @@ class SiteScraper(BaseScraper):
             )
             dump_json_data(
                 competition,
-                f"instance/competitions/{self.site_name}@{competition.name}",
+                f"instance{self.site_name}/competitions/{self.site_name}@{competition.name}",
             )
             competitions.append(competition)
         return competitions

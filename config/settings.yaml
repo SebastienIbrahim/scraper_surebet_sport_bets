@@ -3,3 +3,4 @@ sleep_delay:
   max_seconds: 5
 port: 2023
 chromedriver_path: /usr/local/bin/chromedriver
+similarity_threshold: 0.43
