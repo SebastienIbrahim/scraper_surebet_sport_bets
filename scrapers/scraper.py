@@ -138,7 +138,7 @@ class SiteScraper(BaseScraper):
             )
             dump_json_data(
                 competition,
-                f"instance{self.site_name}/competitions/{self.site_name}@{competition.name}",
+                f"instance/{self.site_name}/competitions/{self.site_name}@{competition.name}",
             )
             competitions.append(competition)
         return competitions
