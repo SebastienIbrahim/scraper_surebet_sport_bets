@@ -11,6 +11,7 @@ from find_surebet.find_surbet import find_surbets_opportunities
 settings = load_config_file("settings.yaml")
 site_config = load_config_file("sites.yaml")
 sites_name = list(site_config.keys())
+raw_data_path = "instance"
 
 
 def main(sites_name, raw_data_path="instance"):
@@ -19,6 +20,7 @@ def main(sites_name, raw_data_path="instance"):
         SiteScraper(site_name, site_config[site_name], settings).scrape()
     root_dir = Path(__file__).parent / raw_data_path
     print(f"Root directory: {root_dir}")
+    data_matches = {}
     matched_countries, not_matched_countries = get_matched_countries(
         root_directory=root_dir, site_number=len(sites_name)
     )
@@ -27,8 +29,10 @@ def main(sites_name, raw_data_path="instance"):
     )
     similarity_threshold = settings["similarity_threshold"]
     similar_matches = find_similar_matches(comptetions_data, similarity_threshold)
+    for match in similar_matches.values():
+        data_matches.update(match)
     opportunities = find_surbets_opportunities(
-        similar_matches, investissement_amount=100, nb_way=3, draw_position=1
+        data_matches, investissement_amount=100, nb_way=3, draw_position=1
     )
     print(opportunities)
 

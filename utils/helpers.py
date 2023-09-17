@@ -25,7 +25,10 @@ def dump_json_data(sport, filename):
     if not os.path.exists(absolute_site_directory):
         os.makedirs(absolute_site_directory)
     path = Path(__file__).parent.parent / filename
-    print(path)
+    dump_path = Path(__file__).parent.parent / "/".join(str(path).split("/")[:-1])
+
+    if not os.path.exists(dump_path):
+        os.makedirs(dump_path)
     with open(path, "w", encoding="utf-8") as file:
         json.dump(sport.to_dict(), file, ensure_ascii=False, indent=4)
     # scraper_logger.info(f"Data for {sport.name} saved to {filename}")

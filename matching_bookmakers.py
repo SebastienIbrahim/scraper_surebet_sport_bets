@@ -242,6 +242,29 @@ import re
 import datetime
 from dateutil.parser import parse
 
+from typing import Optional
+import dateparser
+
+
+def convert_date_to_dd_mm_yyyy_hh_mm(text: str) -> Optional[str]:
+    """
+    Converts a date string to the format "dd/mm/yyyy hh:mm".
+
+    Args:
+        text (str): A date string.
+        current_date (datetime): The current date for relative date parsing.
+
+    Returns:
+        Optional[str]: The converted date string, or None if parsing fails.
+    """
+    # Try to parse the date using dateparser
+    date = dateparser.parse(text)
+
+    if date:
+        return date.strftime("%d/%m/%Y %H:%M")
+    else:
+        return None  # Unable to parse the date
+
 
 # Fonction pour formater les chaînes de date et d'heure
 def format_date(date_str, time_format="%H:%M"):
@@ -259,7 +282,6 @@ def format_date(date_str, time_format="%H:%M"):
         "novembre": 11,
         "décembre": 12,
     }
-
     # Vérifier si la date est au format "jj/mm/aaaa hh:mm"
     if re.match(r"\d{2}/\d{2}/\d{4} \d{2}:\d{2}", date_str):
         parties = date_str.split()
@@ -288,7 +310,7 @@ def format_date(date_str, time_format="%H:%M"):
 def format_dates_in_dictionary(input_dict, time_format="%H:%M"):
     output_dict = input_dict.copy()
     for match in output_dict["matches"]:
-        match["date_time"] = format_date(match["date_time"], time_format)
+        match["date_time"] = convert_date_to_dd_mm_yyyy_hh_mm(match["date_time"])
     return output_dict
 
 
@@ -396,11 +418,12 @@ def find_similar_matches(sites, similarity_threshold=0.13):
                     teams_B = process_team_name(match_B["teams"])
 
                     teams_similarity = calculate_team_similarity(teams_A, teams_B)
-
-                    date_time_similarity = difflib.SequenceMatcher(
-                        None, match_A["date_time"], match_B["date_time"]
-                    ).ratio()
-
+                    try:
+                        date_time_similarity = difflib.SequenceMatcher(
+                            None, match_A["date_time"], match_B["date_time"]
+                        ).ratio()
+                    except Exception as e:
+                        continue
                     championship_similarity = difflib.SequenceMatcher(
                         None, championship_A, championship_B
                     ).ratio()
@@ -415,11 +438,17 @@ def find_similar_matches(sites, similarity_threshold=0.13):
                             similar_matches[championship_A][match_key] = []
 
                         similar_match = {
-                            site_A["Bookmaker"]: {"odds": match_A["odds"]},
-                            site_B["Bookmaker"]: {"odds": match_B["odds"]},
+                            site_A["Bookmaker"]: {
+                                "odds": match_A["odds"],
+                                "date": match_A["date_time"],
+                            },
+                            site_B["Bookmaker"]: {
+                                "odds": match_B["odds"],
+                                "date": match_B["date_time"],
+                            },
                         }
                         similar_matches[championship_A][match_key].append(similar_match)
-    return similar_matches
+    return {k: v for k, v in similar_matches.items() if len(v) > 1}
 
 
 # Utilisation de la fonction pour trouver les matchs similaires entre site_A et site_B
@@ -427,7 +456,6 @@ similar_matches = find_similar_matches(
     [site_A_traite, site_B_traite, site_C_traite, site_D_traite],
     similarity_threshold=0.43,
 )
-len(similar_matches["Angl. Premier League"])
 
 
 for championship, matches in similar_matches.items():

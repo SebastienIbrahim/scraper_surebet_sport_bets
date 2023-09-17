@@ -1,6 +1,3 @@
-from dateutil import parser
-
-
 class Match:
     def __init__(self, teams, date_time, odds=None):
         self.teams = teams
@@ -8,19 +5,6 @@ class Match:
             date_time = date_time[0].strip()
         self.date_time = date_time
         self.odds = odds if odds is not None else []
-
-    @staticmethod
-    def convert_datetime_format(input_datetime_str):
-        try:
-            # Convertir la chaîne en objet de date et heure
-            input_datetime = parser.parse(input_datetime_str)
-
-            # Formater la date et l'heure dans le nouveau format
-            formatted_datetime_str = input_datetime.strftime("%Y/%m/%d/%H/%M")
-
-            return formatted_datetime_str
-        except ValueError as e:
-            raise ValueError("Format de date et heure invalide.")
 
     def add_odds(self, odds):
         self.odds.extend(odds)
@@ -45,9 +29,9 @@ class Match:
 
         match_dict = {
             "teams": teams_str,
-            "date_time": self.convert_datetime_format(self.date_time[0])
+            "date_time": self.date_time[0]
             if isinstance(self.date_time, list)
-            else self.convert_datetime_format(self.date_time),
+            else self.date_time,
             "odds": odds_dict,
         }
         return match_dict

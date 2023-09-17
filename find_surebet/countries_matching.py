@@ -6,21 +6,7 @@ from unidecode import unidecode
 from nltk.corpus import stopwords
 from googletrans import Translator
 import json
-
-# Chemin vers le répertoire racine
-root_directory = "/home/mtd/Bureau/Ressistance/Projets/sports-betting-scraper/instance"
-
-
-def remplace_nom_clé_récursif(input_dict, ancienne_clé, nouvelle_clé):
-    output_dict = {}
-    for clé, valeur in input_dict.items():
-        if isinstance(valeur, dict):
-            output_dict[clé] = remplace_nom_clé_récursif(
-                valeur, ancienne_clé, nouvelle_clé
-            )
-        else:
-            output_dict[clé if clé != ancienne_clé else nouvelle_clé] = valeur
-    return output_dict
+from matching_bookmakers import traiter_dictionnaire
 
 
 def get_countries_names(root_directory):
@@ -143,7 +129,5 @@ def get_data_from_matched_countries_per_site(matched_countries, not_matched_coun
                     if len(competition_data["matches"]) < 1:
                         continue
                     all_data.append(competition_data)
-    all_data = [
-        remplace_nom_clé_récursif(data, "name", "championship") for data in all_data
-    ]
+    all_data = [traiter_dictionnaire(data) for data in all_data]
     return all_data

@@ -51,31 +51,31 @@ betclic :
     - Draw
     - Win
 
-bet365: 
-  philosophy: click # or link
-  home_page : https://www.bet365.com/
-  absolute_url : False
-  tags_chamionship :
-    sport: //div[@class="wn-PreMatchItem "]/span
-    sport_name: //div[@class="wn-PreMatchItem "]/span/text()
-    group :  //div[@class="sm-SplashMarketGroupButton_Text "]
-    country_name:  
-    championship : //div[@class="sm-SplashMarket_Title "]
-    championship_name : //span[@class="sm-CouponLink_Title "]/text()
-  tags_button:
-    cookies: .//button[@id="popin_tc_privacy_button_2"]
-  tags_odd:
-    bloc_teams_hours_date : //div[@class="rcl-ParticipantFixtureDetails_LhsContainerInner "]
-    name_team : //div[@class="rcl-ParticipantFixtureDetailsTeam_TeamName "]
-    date : //div[@class="rcl-MarketHeaderLabel rcl-MarketHeaderLabel-isdate "]
-    hours : //div[@class="rcl-ParticipantFixtureDetails_BookCloses "]
-    columns_odd :  //div[contains(@class,"MarketOddsExpand")]
-    info_column_which_teams_win :  //div[@class="rcl-MarketColumnHeader "]
-    odd : //span[@class="sgl-ParticipantOddsOnly80_Odds"]
-  data-odd-type:
-    - Win
-    - Draw
-    - Win
+# bet365: 
+#   philosophy: click # or link
+#   home_page : https://www.bet365.com/
+#   absolute_url : False
+#   tags_chamionship :
+#     sport: //div[@class="wn-PreMatchItem "]/span
+#     sport_name: //div[@class="wn-PreMatchItem "]/span/text()
+#     group :  //div[@class="sm-SplashMarketGroupButton_Text "]
+#     country_name:  
+#     championship : //div[@class="sm-SplashMarket_Title "]
+#     championship_name : //span[@class="sm-CouponLink_Title "]/text()
+#   tags_button:
+#     cookies: .//button[@id="popin_tc_privacy_button_2"]
+#   tags_odd:
+#     bloc_teams_hours_date : //div[@class="rcl-ParticipantFixtureDetails_LhsContainerInner "]
+#     name_team : //div[@class="rcl-ParticipantFixtureDetailsTeam_TeamName "]
+#     date : //div[@class="rcl-MarketHeaderLabel rcl-MarketHeaderLabel-isdate "]
+#     hours : //div[@class="rcl-ParticipantFixtureDetails_BookCloses "]
+#     columns_odd :  //div[contains(@class,"MarketOddsExpand")]
+#     info_column_which_teams_win :  //div[@class="rcl-MarketColumnHeader "]
+#     odd : //span[@class="sgl-ParticipantOddsOnly80_Odds"]
+#   data-odd-type:
+#     - Win
+#     - Draw
+#     - Win
 
 # https://www.peopleperhour.com/freelance-jobs/technology-programming/programming-coding/web-scraping-prices-of-insurance-providers-3290248
 

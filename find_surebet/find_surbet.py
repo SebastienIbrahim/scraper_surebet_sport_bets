@@ -13,7 +13,7 @@ data = {
     "Burnley  vs Manchester City": [
         {
             "Betclic": {
-                "odds": {"Burnley": "7,85", "Draw": "4,90", "Manchester City": "1,29"}
+                "odds": {"Burnley": "7,85", "Draw": "4,90", "Manchester City": "1,29"},
             },
             "Parions Sport": {
                 "odds": {"Burnley": "7,70", "Draw": "4,80", "Man. City": "1,28"}
@@ -125,12 +125,17 @@ data = {
     "Burnley  vs Manchester City": [
         {
             "Betclic": {
-                "odds": {"Burnley": "20", "Draw": "4.0", "Manchester City": "3,0"}
+                "odds": {"Burnley": "20", "Draw": "4.0", "Manchester City": "3,0"},
+                "date": "12/08/2023",
             },
             "Parions Sport": {
-                "odds": {"Burnley": "2.2", "Draw": "3.8", "Man. City": "3.5"}
+                "odds": {"Burnley": "2.2", "Draw": "3.8", "Man. City": "3.5"},
+                "date": "12/08/2023",
             },
-            "Bet365": {"odds": {"Burnley": "2.2", "Draw": "3.0", "Man. City": "30.2"}},
+            "Bet365": {
+                "odds": {"Burnley": "2.2", "Draw": "3.0", "Man. City": "30.2"},
+                "date": "12/08/2023",
+            },
         }
     ]
 }
@@ -315,6 +320,7 @@ def find_surbets_opportunities(
                         "bookmaker": bookmaker,
                         "team": team,
                         "odds": float(odd.replace(",", ".")),
+                        "date": bookmakers_data[bookmaker]["date"],
                     }
                 )
         for combinaison in itertools.combinations(odds_list, nb_way):
@@ -325,7 +331,11 @@ def find_surbets_opportunities(
                 len(pd.unique([combinaison[i]["team"] for i in range(nb_way)]))
                 == nb_way
             )
-            if total_proba < 1 and is_valide_combinaison:
+            # verify if all odds are from the same date
+            same_date = (
+                len(pd.unique([combinaison[i]["date"] for i in range(nb_way)])) == 1
+            )
+            if total_proba < 1 and is_valide_combinaison and same_date:
                 count_opportunity += 1
                 roi = 1 - total_proba
                 stakes = {
@@ -346,6 +356,7 @@ def find_surbets_opportunities(
                             2,
                         ),
                         "roi": f"{100*roi:.2f}%",
+                        "date": combinaison[i]["date"],
                     }
                     for i in range(nb_way)
                 }
