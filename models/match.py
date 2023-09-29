@@ -26,12 +26,15 @@ class Match:
                 odds_dict[f"{team_name} - {odd.type}"] = odd.value
             elif odd.type == "Draw":
                 odds_dict["Draw"] = odd.value
-
-        match_dict = {
-            "teams": teams_str,
-            "date_time": self.date_time[0]
-            if isinstance(self.date_time, list)
-            else self.date_time,
-            "odds": odds_dict,
-        }
+        try:
+            match_dict = {
+                "teams": teams_str,
+                "date_time": " ".join(self.date_time)
+                if isinstance(self.date_time, list)
+                else self.date_time,
+                "odds": odds_dict,
+            }
+        except Exception as e:
+            print(f"Error: {e} in match {teams_str} with odds {odds_dict}")
+            match_dict = {}
         return match_dict

@@ -6,3 +6,4 @@ pandas==2.0.3
 undetected-chromedriver==3.5.0
 nltk==3.8.1
 pandas==2.0.3
+dateparser==1.1.8

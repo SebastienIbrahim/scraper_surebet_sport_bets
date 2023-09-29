@@ -310,7 +310,11 @@ def format_date(date_str, time_format="%H:%M"):
 def format_dates_in_dictionary(input_dict, time_format="%H:%M"):
     output_dict = input_dict.copy()
     for match in output_dict["matches"]:
-        match["date_time"] = convert_date_to_dd_mm_yyyy_hh_mm(match["date_time"])
+        try:
+            match["date_time"] = convert_date_to_dd_mm_yyyy_hh_mm(match["date_time"])
+        except Exception as e:
+            print(f"Failed to format date: {e}")
+            continue
     return output_dict
 
 
@@ -350,9 +354,13 @@ def supprime_suffixe_win_récursif(input_dict):
 def nettoie_noms_equipes(input_dict):
     output_dict = input_dict.copy()
     for match in output_dict["matches"]:
-        equipes = match["teams"]
-        equipes_propres = equipes.replace("vs N ", " ").replace("vs Draw ", " ")
-        match["teams"] = equipes_propres
+        try:
+            equipes = match["teams"]
+            equipes_propres = equipes.replace("vs N ", " ").replace("vs Draw ", " ")
+            match["teams"] = equipes_propres
+        except Exception as e:
+            print(f"Failed to clean team names: {e}")
+            continue
     return output_dict
 
 

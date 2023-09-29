@@ -58,6 +58,7 @@ class SiteScraper(BaseScraper):
         for sport_button, sport_name in zip(sports_buttons, sports_name):
             try:
                 self.click_element(sport_button)
+                self.get_random_sleep_time()
             except Exception as e:
                 scraper_logger.error(f"Failed to click sport {sport_name} button: {e}")
                 continue
@@ -84,9 +85,18 @@ class SiteScraper(BaseScraper):
         countries_names = self.safe_get(
             sport.button, self.tags_chamionship["country_name"]
         )
-        for country_name, country_button in zip(countries_names, countries_buttons):
+        close_country_buttons = self.safe_get(
+            self.driver.driver, self.tags_chamionship.get("close_country")
+        )
+        if len(close_country_buttons) == 0:
+            close_country_buttons = [None] * len(countries_buttons)
+
+        for country_name, country_button, close_country_button in zip(
+            countries_names, countries_buttons, close_country_buttons
+        ):
             try:
                 self.click_element(country_button)
+                self.get_random_sleep_time()
             except Exception as e:
                 scraper_logger.error(
                     f"Failed to click country {country_name} button: {e}"
@@ -95,6 +105,10 @@ class SiteScraper(BaseScraper):
             self.get_random_sleep_time()
             country = Country(country_name, country_button)
             competitions = self.extract_competitions(country)
+            if close_country_button is not None:
+                self.click_element(close_country_button)
+                print("=======close country button clicked======")
+                self.get_random_sleep_time()
             country.competitions.extend(competitions)
             scraper_logger.info(
                 f"Country: Extracted {country_name} country with {len(competitions)} competitions"

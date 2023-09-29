@@ -51,6 +51,112 @@ betclic :
     - Draw
     - Win
 
+winamax:
+  philosophy: link # or link
+  home_page: https://www.winamax.fr/paris-sportifs/
+  absolute_url: False
+  tags_chamionship:
+    sport: //a[@class="sc-iBkjds ehkIYx sc-papXJ kEoJqC sc-llJcti hkAQYJ" or @class="sc-iBkjds ehkIYx sc-papXJ dZRYHe sc-llJcti hkAQYJ"]/parent::div[@class="sc-iIPllB ieQLRI"]  #//a[@class="sc-iBkjds ehkIYx sc-papXJ kEoJqC sc-llJcti hkAQYJ" or @class="sc-iBkjds ehkIYx sc-papXJ dZRYHe sc-llJcti hkAQYJ"]
+    sport_name:  //div[@class="sc-iIPllB ieQLRI"]//a[@class="sc-iBkjds ehkIYx sc-papXJ kEoJqC sc-llJcti hkAQYJ" or @class="sc-iBkjds ehkIYx sc-papXJ dZRYHe sc-llJcti hkAQYJ"]//text()
+    country_name:  .//a[@class="sc-iBkjds ehkIYx sc-papXJ fWNpsq sc-llJcti bCeysP" or @class="sc-iBkjds ehkIYx sc-papXJ bzSATK sc-llJcti bCeysP"]//text()
+    country : (.//div[contains(@class, "CollapseListItem-collapse") and .//div[@class="sc-iIPllB ieQLRI"]])[position() > 1] #.//a[@class="sc-iBkjds ehkIYx sc-papXJ fWNpsq sc-llJcti bCeysP" or @class="sc-iBkjds ehkIYx sc-papXJ bzSATK sc-llJcti bCeysP"]
+    championship: .//div[@class="sc-iIPllB ieQLRI"]/a/@href #.//a[@class="sc-ftvSup kzqHjm sc-papXJ doVFwd sc-llJcti bCeysV" ]//@href
+    championship_name: .//div[@class="sc-iIPllB ieQLRI"]/a/div[@class="sc-jIZahH dmqQpe" or @class="sc-jIZahH gpAtDz"]/text()
+  tags_button:
+    bet_filter:
+    cookies: //button[@class="tarteaucitronCTAButton tarteaucitronAllow"]
+  tags_odd: 
+    date : //span[@class="sc-geuGuN fOfBwL"]/text()
+    bloc_match: .//div[@class="sc-cQQOYb iTbLnN" and not(contains(., "En cours"))] #//div[@class="sc-cQQOYb iTbLnN"]
+    date_hours: .//span[@class="sc-geuGuN fOfBwL"]/text() #//span[@class="sc-geuGuN fOfBwL"]/text()
+    bloc_odd: .//div[@class="sc-gbrkvF hSTBHh sc-hYYQjs cheNIR"]
+    name_team: .//div[@class="sc-cjCnCM iOBsim"]/text() #//div[@class="sc-cjCnCM iOBsim"]/text()
+    odd:  .//span[@class="sc-kkhAli cDmPxg"]/text()
+  data-odd-type:
+    - Win
+    - Draw
+    - Win
+
+france-pari:
+  philosophy: click # or link
+  home_page: https://www.france-pari.fr/
+  absolute_url: False
+  tags_chamionship:
+    sport: //li[contains(@class,"title type-sport")]
+    sport_name: //li[contains(@class,"type-sport")]//div[contains(@class,"title ")]//span/text()
+    country_name:  .//div[@class="menu-element-toggle"]//span/text()
+    country : .//li[contains(@class,"title item-category")] #.//li[contains(@class,"title item-category")]
+    close_country: .//li[contains(@class,"title item-category")]//div[@class="menu-element-toggle"]
+    championship:  //div[@class="uk-accordion-content menu-accordion-content" and @style=""]//ul[@class="type-competition"]
+    championship_name: //div[@class="menu-element-without-toggle avoid-close-competition-menu"]//span/text()
+  tags_button:
+    bet_filter:
+    cookies: //button[@class="termly-styles-module-root-f61419 termly-styles-module-primary-9738f2 termly-styles-module-solid-20a66a termly-styles-button-dd5ebb t-acceptAllButton"]
+  tags_odd: 
+    date : //div[@class="date-event"]//span[1]/text()
+    bloc_match: //div[@class="lines"][not(.//div[contains(@class,"isNextHour")])]
+    date_hours: .//div[@class="date-event" or @class="date-event event-isLive"]//span/text()
+    bloc_odd: //a[contains(@class,"odd vertical centered")]
+    name_team: .//div[@class="actors text-ellipsis"]//span/text()
+    odd:  .//span[@class="container-odd-and-trend"]/text()
+  data-odd-type:
+    - Win
+    - Draw
+    - Win
+
+pinnacle:
+  philosophy: click # or link
+  home_page: https://www.pinnacle.com/fr/
+  absolute_url: False
+  tags_chamionship:
+    sport: //li[@class="style_listItem__2X9gz undefined"]
+    sport_name: //li[@class="style_listItem__2X9gz undefined"]//span//span/text()
+    country_name:  
+    country:
+    go_to_championship_filrer: //a[contains(., 'Championnats')]
+    championship:  //div[@class="contentBlock" and not(contains(., 'Principaux championnats'))]//div[contains(@class, "style_supportFavoritesRow")]
+    championship_name: //div[@class="contentBlock" and not(contains(., 'Principaux championnats'))]//div[contains(@class, "style_supportFavoritesRow")]//label//text()
+  tags_button:
+    bet_filter: //button[@id="period:0"]
+    cookies: //button[@data-test-id="Button"][contains(., 'Accepter')]
+  tags_odd: 
+    date : //div[@data-test-id="Events.DateBar"]//text()
+    bloc_match: //div[contains(@class, "style_row__3CKCJ style_row__3")]
+    date_hours: //div[@class="style_matchupDate__1st0T"]//text()
+    bloc_odd: //div[@class="event-wrapper"]
+    name_team: .//div[@class="event-wrapper"]//span/text()
+    odd:  //div[@class="event-wrapper"]//span/text()
+  data-odd-type:
+    - Win
+    - Draw
+    - Win
+
+unibet:
+  philosophy: click # or link
+  home_page: https://www.unibet.fr/sport
+  absolute_url: False
+  tags_chamionship:
+    sport: //li[@class="item-arrow"]
+    sport_name:  //li[@class="item-arrow"]//span[contains(@class, "label-menu leftside_menu_group_link-label--sportsbook")]/text()
+    country_name:  .//li[@class="item-arrow ui-desktop"]//span[@class="label-menu"]/text() #//a[@nohref="nohref"]//span[@class="label-menu"  and not(contains(., "Tout voir"))]/text()
+    country: .//li[@class="item-arrow ui-desktop"] #.//li[@class="item-arrow ui-desktop"]/a[@class="linkaction"]
+    championship:  //li[@class="sublinks_link"]/a[@class="linkaction" and  not(contains(., "Tout voir"))]
+    championship_name: //li[@class="sublinks_link" and  not(contains(., "Tout voir"))]//span[@class="label-menu"]/text()
+  tags_button:
+    bet_filter:
+    cookies: //div/a[@class="ui-button ui-large ui-important link-track"]
+  tags_odd: 
+    date : //h2[@class="bettingbox-title"]//span[@class="bettingbox-date"]//text()
+    bloc_match: //div[@class="ui-mainview-block eventpath-wrapper"]//div[@class="bettingbox-item box"]
+    date_hours: .//span[@class="datetime"]//text()
+    bloc_odd: //div[@class="cell-market markets table-cell"]
+    name_team: //span[@class="odd-label"]//text()
+    odd:  .//span[@class="ui-touchlink-needsclick price odd-price"]/text()  
+  data-odd-type:
+    - Win
+    - Draw
+    - Win
+    
 # bet365: 
 #   philosophy: click # or link
 #   home_page : https://www.bet365.com/

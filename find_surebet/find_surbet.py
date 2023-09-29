@@ -304,63 +304,68 @@ def find_surbets_opportunities(
     opportunities = {}
     count_opportunity = 0
     for teams_str, bookmakers_data_list in data.items():
-        odds_list = []
-        teams = teams_str.split(" vs ")
-        teams = [team.strip() for team in teams]
-        teams.insert(draw_position, "Draw")
-        bookmakers_data = bookmakers_data_list[0]
-        for bookmaker in bookmakers_data:
-            bookmakers_data[bookmaker]["odds"] = {
-                team: odd
-                for team, odd in zip(teams, bookmakers_data[bookmaker]["odds"].values())
-            }
-            for team, odd in bookmakers_data[bookmaker]["odds"].items():
-                odds_list.append(
-                    {
-                        "bookmaker": bookmaker,
-                        "team": team,
-                        "odds": float(odd.replace(",", ".")),
-                        "date": bookmakers_data[bookmaker]["date"],
-                    }
-                )
-        for combinaison in itertools.combinations(odds_list, nb_way):
-            total_proba = sum(
-                1 / combinaison[iter_way]["odds"] for iter_way in range(nb_way)
-            )
-            is_valide_combinaison = (
-                len(pd.unique([combinaison[i]["team"] for i in range(nb_way)]))
-                == nb_way
-            )
-            # verify if all odds are from the same date
-            same_date = (
-                len(pd.unique([combinaison[i]["date"] for i in range(nb_way)])) == 1
-            )
-            if total_proba < 1 and is_valide_combinaison and same_date:
-                count_opportunity += 1
-                roi = 1 - total_proba
-                stakes = {
-                    combinaison[i]["team"]: {
-                        "bookmaker": combinaison[i]["bookmaker"],
-                        "odds": combinaison[i]["odds"],
-                        "mise": round(
-                            1
-                            / combinaison[i]["odds"]
-                            * (investissement_amount / total_proba),
-                            2,
-                        ),
-                        "gain": round(
-                            1
-                            / combinaison[i]["odds"]
-                            * (investissement_amount / total_proba)
-                            * combinaison[i]["odds"],
-                            2,
-                        ),
-                        "roi": f"{100*roi:.2f}%",
-                        "date": combinaison[i]["date"],
-                    }
-                    for i in range(nb_way)
+        try:
+            odds_list = []
+            teams = teams_str.split(" vs ")
+            teams = [team.strip() for team in teams]
+            teams.insert(draw_position, "Draw")
+            bookmakers_data = bookmakers_data_list[0]
+            for bookmaker in bookmakers_data:
+                bookmakers_data[bookmaker]["odds"] = {
+                    team: odd
+                    for team, odd in zip(
+                        teams, bookmakers_data[bookmaker]["odds"].values()
+                    )
                 }
-                opportunities[f"opportunity_{count_opportunity}"] = stakes
+                for team, odd in bookmakers_data[bookmaker]["odds"].items():
+                    odds_list.append(
+                        {
+                            "bookmaker": bookmaker,
+                            "team": team,
+                            "odds": float(odd.replace(",", ".")),
+                            "date": bookmakers_data[bookmaker]["date"],
+                        }
+                    )
+            for combinaison in itertools.combinations(odds_list, nb_way):
+                total_proba = sum(
+                    1 / combinaison[iter_way]["odds"] for iter_way in range(nb_way)
+                )
+                is_valide_combinaison = (
+                    len(pd.unique([combinaison[i]["team"] for i in range(nb_way)]))
+                    == nb_way
+                )
+                # verify if all odds are from the same date
+                same_date = (
+                    len(pd.unique([combinaison[i]["date"] for i in range(nb_way)])) == 1
+                )
+                if total_proba < 1 and is_valide_combinaison and same_date:
+                    count_opportunity += 1
+                    roi = 1 - total_proba
+                    stakes = {
+                        combinaison[i]["team"]: {
+                            "bookmaker": combinaison[i]["bookmaker"],
+                            "odds": combinaison[i]["odds"],
+                            "mise": round(
+                                1
+                                / combinaison[i]["odds"]
+                                * (investissement_amount / total_proba),
+                                2,
+                            ),
+                            "gain": round(
+                                1
+                                / combinaison[i]["odds"]
+                                * (investissement_amount / total_proba)
+                                * combinaison[i]["odds"],
+                                2,
+                            ),
+                            "roi": f"{100*roi:.2f}%",
+                            "date": combinaison[i]["date"],
+                        }
+                        for i in range(nb_way)
+                    }
+                    opportunities[f"opportunity_{count_opportunity}"] = stakes
+        except Exception as e:
+            continue
     return opportunities
 
 

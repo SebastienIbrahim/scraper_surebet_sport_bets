@@ -112,6 +112,8 @@ class BaseScraper:
                 f"Exception: {e} was raised when we tried to get elements by the selector: {selector}"
             )
             selected_elems = []
+        if all(isinstance(elem, str) for elem in selected_elems):
+            selected_elems = [elem.strip() for elem in selected_elems if elem.strip()]
         return selected_elems
 
     def click_on_button(self, button_selector: str) -> None:
@@ -139,17 +141,27 @@ class BaseScraper:
         """
         if isinstance(element, undetected_chromedriver.webelement.WebElement):
             try:
-                element.click()
-            except Exception:
-                # Scroll to the element if it is not in the visible area
-                actions = ActionChains(self.driver.driver)
-                actions.move_to_element(element).perform()
-            try:
                 wait = WebDriverWait(self.driver.driver, 10)
                 element = wait.until(EC.element_to_be_clickable(element))
                 element.click()
+                print("element clicked first try")
             except Exception:
-                self.driver.driver.execute_script("arguments[0].click();", element)
+                try:
+                    # Scroll to the element if it is not in the visible area
+                    actions = ActionChains(self.driver.driver)
+                    print("ActionChains instantiated")
+                    actions.move_to_element(element).perform()
+                    print("element moved to")
+                    wait = WebDriverWait(self.driver.driver, 10)
+                    print("WebDriverWait instantiated")
+                    element = wait.until(EC.element_to_be_clickable(element))
+                    print("element clickable")
+                    element.click()
+                    print("element clicked second try")
+                except Exception:
+                    print("element not clickable")
+                    self.driver.driver.execute_script("arguments[0].click();", element)
+                    print("element clicked third try")
 
     def get_random_sleep_time(self) -> None:
         """Get a random sleep time between min_delay and max_delay"""
