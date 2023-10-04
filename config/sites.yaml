@@ -131,7 +131,35 @@ pinnacle:
     - Draw
     - Win
 
+
 unibet:
+  philosophy: click # or link
+  home_page: https://www.unibet.com/betting/sports/home
+  absolute_url: False
+  tags_chamionship:
+    sport: //button[@data-test-name="allSports-sportsItem"]
+    sport_name:  //button[@data-test-name="allSports-sportsItem"]//div[contains( @data-test-name,"allSports-sportsItem-sportName")]/text()
+    country_name:  //div[@class="_5f930 "]//h3[@class="_4ec65 _12550"]/text() #//a[@nohref="nohref"]//span[@class="label-menu"  and not(contains(., "Tout voir"))]/text()
+    country: //div[@class="_5f930 "] #.//li[@class="item-arrow ui-desktop"]/a[@class="linkaction"]
+    view : //div[@data-test-name="viewAllLinkWrapper"]
+    championship:  //div[@data-test-name="accordionLevel2"]
+    championship_name: //div[@class="_5f930 "]//h3[@class="_4ec65 aabf1"]/text()
+  tags_button:
+    bet_filter:
+    cookies: //div/a[@class="ui-button ui-large ui-important link-track"]
+  tags_odd: 
+    date : //div[@role="button"]//time//text()
+    bloc_match: //div[@class="_79bb0"]
+    date_hours: .//div[@data-test-name="clockDisplayContainer"]//text()
+    bloc_odd: //div[@class="bb419"]
+    name_team: //div[@data-test-name="teamName"]//text()
+    odd:  //div[@data-test-name="betButtonDisplay" and not(.//div[@data-test-name="oddsHeader"])]//text()   
+  data-odd-type:
+    - Win
+    - Draw
+    - Win
+
+unibet.fr:
   philosophy: click # or link
   home_page: https://www.unibet.fr/sport
   absolute_url: False
