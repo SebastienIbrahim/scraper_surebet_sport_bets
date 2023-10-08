@@ -91,5 +91,3 @@ To use this project effectively, follow these steps:
 * Error Handling: In case of issues or errors during web scraping, refer to the log files located in the logs directory (captcha.log, errors.log, scraper.log) for detailed error information.
 
 Feel free to explore and adapt the project's codebase to suit your specific requirements or use cases. Additional documentation for individual modules and functions can be found within the project's source code files.
-
-For any questions or issues, please refer to the project's documentation or contact the project maintainers. Enjoy using the Sports Betting Odds Scraping and Surebet Detection project!
