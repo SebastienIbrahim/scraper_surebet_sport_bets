@@ -5,10 +5,10 @@ This README file provides a general overview of the sports betting odds scraping
 # Project Structure
 The project is structured as follows:
 
-## Main Folders
+Main Folders
 
 config: Contains YAML configuration files for project settings.
-  settings.yaml: Main configuration file for project settings.
+settings.yaml: Main configuration file for project settings.
   sites.yaml: Configuration file for target websites.
   
 find_surebet: Contains Python files for finding surebets.
