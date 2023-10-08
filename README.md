@@ -2,7 +2,7 @@
 
 This README file provides a general overview of the sports betting odds scraping project. The project is organized into multiple folders and files, each serving a specific purpose. Below is an overview of the various components of the project.
 
-# Project Structure
+# Project Structure
 The project is structured as follows:
 
 Main Folders
