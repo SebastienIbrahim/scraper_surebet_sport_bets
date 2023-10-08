@@ -1,11 +1,13 @@
-# Sports Betting Odds Scraping Project
+# Sports Betting Odds Scraping and Surebet Detection Project
 
-This README file provides a general overview of the sports betting odds scraping project. The project is organized into multiple folders and files, each serving a specific purpose. Below is an overview of the various components of the project.
+Welcome to the Sports Betting Odds Scraping and Surebet Detection project README. This project is designed to scrape sports betting odds from various websites and identify surebet opportunities. Below, you will find comprehensive information on the project's structure, functionality, and how to use it effectively.
 
-# Project Structure
+# Project Overview
+
+The project is organized into several directories and files, each serving a specific purpose. Here's a brief overview of the project's structure:
 The project is structured as follows:
 
-Main Folders
+# Project Structure
 
 * config: Contains YAML configuration files for project settings.
 * settings.yaml: Main configuration file for project settings.
@@ -59,15 +61,35 @@ Main Folders
 * run2.py: Script for running the project.
 * matching_bookmakers.cpython-39.pyc: Cache file for a Python module.
 
+# Project Functionality
+
+This project serves the following main functions:
+
+* Web Scraping: It employs web scraping techniques to collect sports betting odds data from specified websites. Each website's configuration details are stored in the sites.yaml file.
+
+* Data Matching: The project matches data from various websites to ensure consistency and accuracy. This includes identifying similar sports events, competitions, and matches from multiple sources.
+
+* Country Matching: The project provides functionality to match country names across different sources to maintain consistent data representation.
+
+* Surebet Detection: The primary objective of the project is to find surebet opportunities among the scraped betting odds. It identifies potential surebets based on user-defined settings such as investment amount, number of possible outcomes, and draw position.
+
 # Using the Project
-Ensure you have the required dependencies installed by running pip install -r requirements.txt.
+To use this project effectively, follow these steps:
 
-Configure project settings in the config/settings.yaml file according to your needs.
+* Install Dependencies: Ensure that you have the required Python dependencies installed. You can install them using pip with the command pip install -r requirements.txt.
 
-Execute the project using python main.py.
+* Configure the Project: Customize the project's configuration settings in the config/settings.yaml file to meet your specific requirements. You can also configure the target websites in the sites.yaml file.
 
-Scraped data will be stored in the instance folder.
+* Run the Project: Execute the project by running python main.py. This initiates the web scraping process for the specified websites, and the scraped data is stored in the instance directory.
 
-You can use the matching, displaying, and surebet finding modules to analyze the generated data.
+* Data Matching: The project automatically matches data from different sources based on the similarity threshold specified in the configuration. The matched data is used for surebet identification.
 
-Feel free to explore the different files and folders to learn more about each component of the project. If you have questions or encounter issues, check the logs in the logs folder for error information.
+* Surebet Detection: Surebet opportunities can be detected using the find_surebet.find_surbets_opportunities function. Configure the parameters such as investment amount, number of possible outcomes, and draw position according to your preferences.
+
+* View Results: The project can display or log the identified surebet opportunities. You can customize the output format and destination as needed.
+
+* Error Handling: In case of issues or errors during web scraping, refer to the log files located in the logs directory (captcha.log, errors.log, scraper.log) for detailed error information.
+
+Feel free to explore and adapt the project's codebase to suit your specific requirements or use cases. Additional documentation for individual modules and functions can be found within the project's source code files.
+
+For any questions or issues, please refer to the project's documentation or contact the project maintainers. Enjoy using the Sports Betting Odds Scraping and Surebet Detection project!
